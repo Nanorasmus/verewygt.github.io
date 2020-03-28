@@ -1,4 +1,5 @@
 var perk_json;
+var active_type;
 
 function loadPerks() {
 
@@ -9,11 +10,13 @@ function loadPerks() {
         request.open("GET", "js/survivor-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
+        active_type = "surv";
     } else if (document.getElementById('kill').checked) {
         var request = new XMLHttpRequest();
         request.open("GET", "js/killer-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
+        active_type = "kill";
     }
 
     for (var i = 0; i < perk_json.perks.length; i++) {
@@ -131,34 +134,15 @@ function pickRandomPerk() {
 
         }
 
-        document.getElementById("pn0").innerHTML = perk_json.perks[sel_perks[0]].perk_name;
-        document.getElementById("pn1").innerHTML = perk_json.perks[sel_perks[1]].perk_name;
-        document.getElementById("pn2").innerHTML = perk_json.perks[sel_perks[2]].perk_name;
-        document.getElementById("pn3").innerHTML = perk_json.perks[sel_perks[3]].perk_name;
+        for (var i = 0; i < 3; i++) {
+            document.getElementById("pn" + toString(i) + "\"").innerHTML = perk_json.perks[sel_perks[i]].perk_name;
+            document.getElementById("pc" + toString(i) + "\"").innerHTML = perk_json.perks[sel_perks[i]].character;
+            document.getElementById("pi" + toString(i) + "\"").style.backgroundImage = "url(css/img/" + active_type + "/iconperks-" + perk_json.perks[sel_perks[i]].perk_name.value.toLowerCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/é/gi, 'e').replace(/è/gi, 'e').replace(/à/gi, 'a').replace(/&/gi, 'and') + ".png)";
 
-        document.getElementById("pc0").innerHTML = perk_json.perks[sel_perks[0]].character;
-        document.getElementById("pc1").innerHTML = perk_json.perks[sel_perks[1]].character;
-        document.getElementById("pc2").innerHTML = perk_json.perks[sel_perks[2]].character;
-        document.getElementById("pc3").innerHTML = perk_json.perks[sel_perks[3]].character;
-
-        document.getElementById("pi0").style.backgroundImage = "url(" + perk_json.perks[sel_perks[0]].perk_img_url + ")";
-        document.getElementById("pi1").style.backgroundImage = "url(" + perk_json.perks[sel_perks[1]].perk_img_url + ")";
-        document.getElementById("pi2").style.backgroundImage = "url(" + perk_json.perks[sel_perks[2]].perk_img_url + ")";
-        document.getElementById("pi3").style.backgroundImage = "url(" + perk_json.perks[sel_perks[3]].perk_img_url + ")";
-
-        document.getElementById("pn0").style.opacity = "0";
-        document.getElementById("pc0").style.opacity = "0";
-        document.getElementById("pn1").style.opacity = "0";
-        document.getElementById("pc1").style.opacity = "0";
-        document.getElementById("pn2").style.opacity = "0";
-        document.getElementById("pc2").style.opacity = "0";
-        document.getElementById("pn3").style.opacity = "0";
-        document.getElementById("pc3").style.opacity = "0";
-
-        document.getElementById("p0").style.opacity = "0";
-        document.getElementById("p1").style.opacity = "0";
-        document.getElementById("p2").style.opacity = "0";
-        document.getElementById("p3").style.opacity = "0";
+            document.getElementById("pn" + toString(i) + "\"").style.opacity = "0";
+            document.getElementById("pc" + toString(i) + "\"").style.opacity = "0";
+            document.getElementById("p" + toString(i) + "\"").style.opacity = "0";
+        }
 
         window.setTimeout(perk1an, 250);
     }

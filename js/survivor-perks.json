@@ -2,398 +2,328 @@
     "perks" : [
 
     {   "perk_name"     : "Ace in The Hole",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-aceinthehole.png",
         "perk_color"    : "purple",
         "character"     : "Ace Visconti Teachable Perk"
     },
     {
         "perk_name"     : "Adrenaline",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-adrenaline.png",
         "perk_color"    : "purple",
         "character"     : "Meg Thomas Teachable Perk"
     },
     {
         "perk_name"     : "Aftercare",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-aftercare.png",
         "perk_color"    : "purple",
         "character"     : "Jeff Johansen Teachable Perk"
     },
     {
         "perk_name"     : "Alert",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-alert.png",
         "perk_color"    : "purple",
         "character"     : "Feng Min Teachable Perk"
     },
     {
         "perk_name"     : "Autodidact",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-autodidact.png",
         "perk_color"    : "purple",
         "character"     : "Adam Francis Teachable Perk"
     },
     {
         "perk_name"     : "Balanced Landing",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-balancedlanding.png",
         "perk_color"    : "purple",
         "character"     : "Nea Karlsson Teachable Perk"
     },
     {
         "perk_name"     : "Boil Over",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-boilover.png",
         "perk_color"    : "purple",
         "character"     : "Kate Denson Teachable Perk"
     },
     {
         "perk_name"     : "Bond",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-bond.png",
         "perk_color"    : "green",
         "character"     : "Dwight Fairfield Teachable Perk"
     },
     {
         "perk_name"     : "Borrowed Time",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-borrowedtime.png",
         "perk_color"    : "purple",
         "character"     : "Bill Overbeck Teachable Perk"
     },
     {
         "perk_name"     : "Botany Knowledge",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-botanyknowledge.png",
         "perk_color"    : "purple",
         "character"     : "Claudette Morel Teachable Perk"
     },
     {
         "perk_name"     : "Breakdown",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-breakdown.png",
         "perk_color"    : "green",
         "character"     : "Jeff Johansen Teachable Perk"
     },
     {
         "perk_name"     : "Buckle Up",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-buckleup.png",
         "perk_color"    : "purple",
         "character"     : "Ash Williams Teachable Perk"
     },
     {
         "perk_name"     : "Calm Spirit",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-calmspirit.png",
         "perk_color"    : "purple",
         "character"     : "Jake Park Teachable Perk"
     },
     {
         "perk_name"     : "Dance With Me",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-dancewithme.png",
         "perk_color"    : "purple",
         "character"     : "Kate Denson Teachable Perk"
     },
     {
         "perk_name"     : "Dark Sense",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-darksense.png",
         "perk_color"    : "purple",
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Dead Hard",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-deadhard.png",
         "perk_color"    : "purple",
         "character"     : "David King Teachable Perk"
     },
     {
         "perk_name"     : "Decisive Strike",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-decisivestrike.png",
         "perk_color"    : "purple",
         "character"     : "Laurie Strode Teachable Perk"
     },
     {
         "perk_name"     : "Déjà Vu",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-dejavu.png",
         "perk_color"    : "purple",
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Deliverance",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-deliverance.png",
         "perk_color"    : "purple",
         "character"     : "Adam Francis Teachable Perk"
     },
     {
         "perk_name"     : "Detective's Hunch",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-detectiveshunch.png",
         "perk_color"    : "purple",
         "character"     : "David Tapp Teachable Perk"
     },
     {
         "perk_name"     : "Distortion",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-distortion.png",
         "perk_color"    : "purple",
         "character"     : "Jeff Johansen Teachable Perk"
     },
     {
         "perk_name"     : "Diversion",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-diversion.png",
         "perk_color"    : "green",
         "character"     : "Adam Francis Teachable Perk"
     },
     {
         "perk_name"     : "Empathy",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-empathy.png",
         "perk_color"    : "green",
         "character"     : "Claudette Morel Teachable Perk"
     },
     {
         "perk_name"     : "Flip-Flop",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-flipflop.png",
         "perk_color"    : "purple",
         "character"     : "Ash Williams Teachable Perk"
     },
     {
         "perk_name"     : "Head On",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-headon.png",
         "perk_color"    : "purple",
         "character"     : "Jane Romero Teachable Perk"
     },
     {
         "perk_name"     : "Hope",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-hope.png",
         "perk_color"    : "purple",
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Iron Will",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-ironwill.png",
         "perk_color"    : "green",
         "character"     : "Jake Park Teachable Perk"
     },
     {
         "perk_name"     : "Kindred",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-kindred.png",
         "perk_color"    : "purple",
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Leader",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-leader.png",
         "perk_color"    : "purple",
         "character"     : "Dwight Fairfield Teachable Perk"
     },
     {
         "perk_name"     : "Left Behind",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-leftbehind.png",
         "perk_color"    : "green",
         "character"     : "Bill Overbeck Teachable Perk"
     },
     {
         "perk_name"     : "Lightweight",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-lightweight.png",
         "perk_color"    : "green",
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Lithe",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-lithe.png",
         "perk_color"    : "purple",
         "character"     : "Feng Min Teachable Perk"
     },
     {
         "perk_name"     : "Mettle of Man",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-mettleofman.png",
         "perk_color"    : "purple",
         "character"     : "Ash Williams Teachable Perk"
     },
     {
         "perk_name"     : "No Mither",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-nomither.png",
         "perk_color"    : "purple",
         "character"     : "David King Teachable Perk"
     },
     {
         "perk_name"     : "No One Left Behind",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-nooneleftbehind.png",
         "perk_color"    : "purple",
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Object of Obsession",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-objectofobsession.png",
         "perk_color"    : "purple",
         "character"     : "Laurie Strode Teachable Perk"
     },
     {
         "perk_name"     : "Open Handed",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-openhanded.png",
         "perk_color"    : "purple",
         "character"     : "Ace Visconti Teachable Perk"
     },
     {
         "perk_name"     : "Pharmacy",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-pharmacy.png",
         "perk_color"    : "purple",
         "character"     : "Quentin Smith Teachable Perk"
     },
     {
         "perk_name"     : "Plunderer's Instinct",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-plunderersinstinct.png",
         "perk_color"    : "green",
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Poised",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-poised.png",
         "perk_color"    : "purple",
         "character"     : "Jane Romero Teachable Perk"
     },
     {
         "perk_name"     : "Premonition",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-premonition.png",
         "perk_color"    : "purple",
         "character"     : "Dwight Fairfield Teachable Perk"
     },
     {
         "perk_name"     : "Prove Thyself",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-provethyself.png",
         "perk_color"    : "purple",
         "character"     : "Dwight Fairfield Teachable Perk"
     },
     {
         "perk_name"     : "Quick & Quiet",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-quickandquiet.png",
         "perk_color"    : "green",
         "character"     : "Meg Thomas Teachable Perk"
     },
     {
         "perk_name"     : "Resilience",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-resilience.png",
         "perk_color"    : "purple",
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Saboteur",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-saboteur.png",
         "perk_color"    : "purple",
         "character"     : "Jake Park Teachable Perk"
     },
     {
         "perk_name"     : "Self-Care",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-selfcare.png",
         "perk_color"    : "purple",
         "character"     : "Claudette Morel Teachable Perk"
     },
     {
         "perk_name"     : "Slippery Meat",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-slipperymeat.png",
         "perk_color"    : "green",
-
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Small Game",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-smallgame.png",
         "perk_color"    : "green",
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Sole Survivor",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-solesurvivor.png",
         "perk_color"    : "purple",
         "character"     : "Laurie Strode Teachable Perk"
     },
     {
         "perk_name"     : "Solidarity",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-solidarity.png",
         "perk_color"    : "purple",
         "character"     : "Jane Romero Teachable Perk"
     },
     {
         "perk_name"     : "Spine Chill",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-spinechill.png",
         "perk_color"    : "purple",
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Sprint Burst",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-sprintburst.png",
         "perk_color"    : "purple",
         "character"     : "Meg Thomas Teachable Perk"
     },
     {
         "perk_name"     : "Stake Out",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-stakeout.png",
         "perk_color"    : "purple",
         "character"     : "David Tapp Teachable Perk"
     },
     {
         "perk_name"     : "Streetwise",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-streetwise.png",
         "perk_color"    : "purple",
         "character"     : "Nea Karlsson Teachable Perk"
     },
     {
         "perk_name"     : "This Is Not Happening",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-thisisnothappening.png",
         "perk_color"    : "purple",
-
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "Technician",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-technician.png",
         "perk_color"    : "green",
         "character"     : "Feng Min Teachable Perk"
     },
     {
         "perk_name"     : "Tenacity",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-tenacity.png",
         "perk_color"    : "green",
         "character"     : "David Tapp Teachable Perk"
     },
     {
         "perk_name"     : "Up The Ante",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-uptheante.png",
         "perk_color"    : "purple",
         "character"     : "Ace Visconti Teachable Perk"
     },
     {
         "perk_name"     : "Unbreakable",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-unbreakable.png",
         "perk_color"    : "purple",
         "character"     : "Bill Overbeck Teachable Perk"
     },
     {
         "perk_name"     : "Urban Evasion",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-urbanevasion.png",
         "perk_color"    : "purple",
-
         "character"     : "Nea Karlsson Teachable Perk"
     },
     {
         "perk_name"     : "Vigil",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-vigil.png",
         "perk_color"    : "purple",
         "character"     : "Quentin Smith Teachable Perk"
     },
     {
         "perk_name"     : "Wake Up!",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-wakeup.png",
         "perk_color"    : "green",
         "character"     : "Quentin Smith Teachable Perk"
     },
     {
         "perk_name"     : "We'll Make It",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-wellmakeit.png",
         "perk_color"    : "purple",
         "character"     : "All Characters"
     },
     {
         "perk_name"     : "We're Gonna Live Forever",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-weregonnaliveforever.png",
         "perk_color"    : "green",
-
         "character"     : "David King Teachable Perk"
     },
     {
         "perk_name"     : "Windows Of Opportunity",
-        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-windowsofopportunity.png",
         "perk_color"    : "green",
         "character"     : "Kate Denson Teachable Perk"
     }
-
     ]
 }
