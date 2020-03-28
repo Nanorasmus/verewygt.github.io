@@ -1,6 +1,7 @@
+var perk_json;
+
 function loadPerks() {
 
-    var perk_json;
     var list = document.getElementById('perk-list');
 
     if (document.getElementById('surv').checked) {
