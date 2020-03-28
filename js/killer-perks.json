@@ -1,0 +1,86 @@
+{
+    "perks" : [
+
+    {   "perk_name"     : "A Nurse's Calling",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-anursescalling.png",
+        "perk_color"    : "purple",
+        "character"     : "The Nurse Teachable Perk"
+    },
+    {   "perk_name"     : "Agitation",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-agitation.png",
+        "perk_color"    : "purple",
+        "character"     : "The Trapper Teachable Perk"
+    },
+    {   "perk_name"     : "Bamboozle",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-bamboozle.png",
+        "perk_color"    : "green",
+        "character"     : "The Clown Teachable Perk"
+    },
+    {   "perk_name"     : "Barbecue & Chili",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-barbecueandchili.png",
+        "perk_color"    : "purple",
+        "character"     : "The Cannibal Teachable Perk"
+    },
+    {   "perk_name"     : "Beast of Prey",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-beastofprey.png",
+        "perk_color"    : "green",
+        "character"     : "The Huntress Teachable Perk"
+    },
+    {   "perk_name"     : "Bitter Murmur",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-bittermurmur.png",
+        "perk_color"    : "purple",
+        "character"     : "All Characters"
+    },
+    {   "perk_name"     : "Bloodhound",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-bloodhound.png",
+        "perk_color"    : "purple",
+        "character"     : "The Wraith Teachable Perk"
+    },
+    {   "perk_name"     : "Blood Warden",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-bloodwarden.png",
+        "perk_color"    : "purple",
+        "character"     : "The Nightmare Teachable Perk"
+    },
+    {   "perk_name"     : "Brutal Strength",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-brutalstrength.png",
+        "perk_color"    : "purple",
+        "character"     : "Trapper Teachable Perk"
+    },
+    {   "perk_name"     : "Corrupt Intervention",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-corruptintervention.png",
+        "perk_color"    : "green",
+        "character"     : "The Plague Teachable Perk"
+    },
+    {   "perk_name"     : "Coulrophobia",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-coulrophobia.png",
+        "perk_color"    : "purple",
+        "character"     : "The Clown Teachable Perk"
+    },
+    {   "perk_name"     : "Dark Devotion",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-darkdevotion.png",
+        "perk_color"    : "purple",
+        "character"     : "The Plague Teachable Perk"
+    },
+    {   "perk_name"     : "Deerstalker",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-deerstalker.png",
+        "perk_color"    : "green",
+        "character"     : "All Characters"
+    },
+    {   "perk_name"     : "Discordance",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-discordance.png",
+        "perk_color"    : "green",
+        "character"     : "The Legion Teachable Perk"
+    },
+    {   "perk_name"     : "Distressing",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-distressing.png",
+        "perk_color"    : "purple",
+        "character"     : "All Characters"
+    },
+    {   "perk_name"     : "aaaaaaa",
+        "perk_img_url"  : "https://u.jimcdn.com/cms/o/s4edc3b3b6b73f656/userlayout/img/iconperks-aaaaaaa.png",
+        "perk_color"    : "aaaaaaa",
+        "character"     : "aaaaaaa Teachable Perk"
+    },
+
+    ]
+}
