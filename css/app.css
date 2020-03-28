@@ -41,6 +41,10 @@ h3 {
     text-transform: uppercase;
     color: #cccccc;
 }
+p {
+    margin: unset;
+    display: unset;
+}
 a.link {
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
     text-decoration: none;
@@ -315,7 +319,7 @@ div.perk_outline:hover {
     line-height: 28px;
     position: absolute;
     bottom: 0;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards !important;
     word-break: break-word;
 }
 .perk_name_container {
@@ -331,7 +335,7 @@ div.perk_outline:hover {
     font-size: 13px;
     line-height: 13px;
     margin-top: 10px;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards !important;
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 768px) {
