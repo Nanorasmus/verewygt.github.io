@@ -43,7 +43,7 @@ h3 {
 }
 p {
     margin: unset;
-    display: unset;
+    display: block;
 }
 a.link {
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
@@ -71,7 +71,6 @@ header .header-inner {
 }
 
 a.logo-link {
-    /* padding: 5px; */
     display: block;
     text-decoration: none;
     color: #fff;
@@ -82,6 +81,7 @@ a.logo-link {
     /* flex-flow: row; */
 }
 p#subtext {
+    display: block;
     margin: 0;
     font-size: 14px;
     line-height: 14px;
@@ -90,6 +90,7 @@ p#subtext {
     }
 
 p#main-text {
+    display: block;
     margin: 0;
     font-size: 28px;
     line-height: 24px;
@@ -514,6 +515,7 @@ label[for="surv"]:hover, label[for="kill"]:hover {
     position: relative;
     display: block;
     font-size: 14px;
+    line-height: 24px;
     padding: 5px 10px;
     border-bottom: 1px solid #2b2b2b;
     cursor: default;
