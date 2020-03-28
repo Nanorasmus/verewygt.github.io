@@ -3,12 +3,12 @@ function loadPerks() {
     var perk_json;
     var list = document.getElementById('perk-list');
 
-    if (document.querySelector("input#surv").checked) {
+    if (document.getElementById('surv').checked) {
         var request = new XMLHttpRequest();
         request.open("GET", "js/survivor-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
-    } else if (document.querySelector("input#kill").checked) {
+    } else if (document.getElementById('kill').checked) {
         var request = new XMLHttpRequest();
         request.open("GET", "js/killer-perks.json", false);
         request.send(null);
@@ -29,8 +29,6 @@ function loadPerks() {
         list.appendChild(newLabel);
     }
 }
-
-window.onload = loadPerks();
 
 
 function selAll() {
