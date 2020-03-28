@@ -134,7 +134,7 @@ function pickRandomPerk() {
 
         }
 
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < 4; i++) {
             document.getElementById("pn" + i).innerHTML = perk_json.perks[sel_perks[i]].perk_name;
             document.getElementById("pc" + i).innerHTML = perk_json.perks[sel_perks[i]].character;
             document.getElementById("pi" + i).style.backgroundImage = "url(css/img/" + active_type + "/iconperks-" + perk_json.perks[sel_perks[i]].perk_name.toLowerCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/é/gi, 'e').replace(/è/gi, 'e').replace(/à/gi, 'a').replace(/&/gi, 'and') + ".png)";
