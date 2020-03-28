@@ -131,29 +131,29 @@ function pickRandomPerk() {
 
         }
 
-        document.getElementById("pn1").innerHTML = perk_json.perks[sel_perks[0]].perk_name;
-        document.getElementById("pn2").innerHTML = perk_json.perks[sel_perks[1]].perk_name;
-        document.getElementById("pn3").innerHTML = perk_json.perks[sel_perks[2]].perk_name;
-        document.getElementById("pn4").innerHTML = perk_json.perks[sel_perks[3]].perk_name;
+        document.getElementById("pn0").innerHTML = perk_json.perks[sel_perks[0]].perk_name;
+        document.getElementById("pn1").innerHTML = perk_json.perks[sel_perks[1]].perk_name;
+        document.getElementById("pn2").innerHTML = perk_json.perks[sel_perks[2]].perk_name;
+        document.getElementById("pn3").innerHTML = perk_json.perks[sel_perks[3]].perk_name;
 
-        document.getElementById("pc1").innerHTML = perk_json.perks[sel_perks[0]].character;
-        document.getElementById("pc2").innerHTML = perk_json.perks[sel_perks[1]].character;
-        document.getElementById("pc3").innerHTML = perk_json.perks[sel_perks[2]].character;
-        document.getElementById("pc4").innerHTML = perk_json.perks[sel_perks[3]].character;
+        document.getElementById("pc0").innerHTML = perk_json.perks[sel_perks[0]].character;
+        document.getElementById("pc1").innerHTML = perk_json.perks[sel_perks[1]].character;
+        document.getElementById("pc2").innerHTML = perk_json.perks[sel_perks[2]].character;
+        document.getElementById("pc3").innerHTML = perk_json.perks[sel_perks[3]].character;
 
-        document.getElementById("pi1").style.backgroundImage = "url(" + perk_json.perks[sel_perks[0]].perk_img_url + ")";
-        document.getElementById("pi2").style.backgroundImage = "url(" + perk_json.perks[sel_perks[1]].perk_img_url + ")";
-        document.getElementById("pi3").style.backgroundImage = "url(" + perk_json.perks[sel_perks[2]].perk_img_url + ")";
-        document.getElementById("pi4").style.backgroundImage = "url(" + perk_json.perks[sel_perks[3]].perk_img_url + ")";
+        document.getElementById("pi0").style.backgroundImage = "url(" + perk_json.perks[sel_perks[0]].perk_img_url + ")";
+        document.getElementById("pi1").style.backgroundImage = "url(" + perk_json.perks[sel_perks[1]].perk_img_url + ")";
+        document.getElementById("pi2").style.backgroundImage = "url(" + perk_json.perks[sel_perks[2]].perk_img_url + ")";
+        document.getElementById("pi3").style.backgroundImage = "url(" + perk_json.perks[sel_perks[3]].perk_img_url + ")";
 
+        document.getElementById("pn0").style.opacity = "0";
+        document.getElementById("pc0").style.opacity = "0";
         document.getElementById("pn1").style.opacity = "0";
         document.getElementById("pc1").style.opacity = "0";
         document.getElementById("pn2").style.opacity = "0";
         document.getElementById("pc2").style.opacity = "0";
         document.getElementById("pn3").style.opacity = "0";
         document.getElementById("pc3").style.opacity = "0";
-        document.getElementById("pn4").style.opacity = "0";
-        document.getElementById("pc4").style.opacity = "0";
 
         document.getElementById("p0").style.opacity = "0";
         document.getElementById("p1").style.opacity = "0";
@@ -168,8 +168,8 @@ function perk1an() {
     document.getElementById("p0").style.opacity = "1";
 
     document.getElementById("p0").style.animation = "perkRevealAnimation 1.5s ease-out";
-    document.getElementById("pn1").style.animation = "perkRevealAnimation 1s ease-out";
-    document.getElementById("pc1").style.animation = "perkRevealAnimation 1s ease-out 0.3s";
+    document.getElementById("pn0").style.animation = "perkRevealAnimation 1s ease-out";
+    document.getElementById("pc0").style.animation = "perkRevealAnimation 1s ease-out 0.3s";
 
     window.setTimeout(perk2an, 1000);
 }
@@ -178,8 +178,8 @@ function perk2an() {
     document.getElementById("p1").style.opacity = "1";
 
     document.getElementById("p1").style.animation = "perkRevealAnimation 1.5s ease-out";
-    document.getElementById("pn2").style.animation = "perkRevealAnimation 1s ease-out";
-    document.getElementById("pc2").style.animation = "perkRevealAnimation 1s ease-out 0.3s";
+    document.getElementById("pn1").style.animation = "perkRevealAnimation 1s ease-out";
+    document.getElementById("pc1").style.animation = "perkRevealAnimation 1s ease-out 0.3s";
 
     window.setTimeout(perk3an, 1000);
 }
@@ -188,8 +188,8 @@ function perk3an() {
     document.getElementById("p2").style.opacity = "1";
 
     document.getElementById("p2").style.animation = "perkRevealAnimation 1.5s ease-out";
-    document.getElementById("pn3").style.animation = "perkRevealAnimation 1s ease-out";
-    document.getElementById("pc3").style.animation = "perkRevealAnimation 1s ease-out 0.3s";
+    document.getElementById("pn2").style.animation = "perkRevealAnimation 1s ease-out";
+    document.getElementById("pc2").style.animation = "perkRevealAnimation 1s ease-out 0.3s";
 
     window.setTimeout(perk4an, 1000);
 }
@@ -198,8 +198,8 @@ function perk4an() {
     document.getElementById("p3").style.opacity = "1";
 
     document.getElementById("p3").style.animation = "perkRevealAnimation 1.5s ease-out";
-    document.getElementById("pn4").style.animation = "perkRevealAnimation 1s ease-out";
-    document.getElementById("pc4").style.animation = "perkRevealAnimation 1s ease-out 0.3s";
+    document.getElementById("pn3").style.animation = "perkRevealAnimation 1s ease-out";
+    document.getElementById("pc3").style.animation = "perkRevealAnimation 1s ease-out 0.3s";
 
     window.setTimeout(enableButton, 1500);
 }
@@ -214,13 +214,13 @@ function cleanup() {
     document.getElementById("p2").removeAttribute("style");
     document.getElementById("p3").removeAttribute("style");
 
+    document.getElementById("pn0").removeAttribute("style");
     document.getElementById("pn1").removeAttribute("style");
     document.getElementById("pn2").removeAttribute("style");
     document.getElementById("pn3").removeAttribute("style");
-    document.getElementById("pn4").removeAttribute("style");
 
+    document.getElementById("pc0").removeAttribute("style");
     document.getElementById("pc1").removeAttribute("style");
     document.getElementById("pc2").removeAttribute("style");
     document.getElementById("pc3").removeAttribute("style");
-    document.getElementById("pc4").removeAttribute("style");
 }
