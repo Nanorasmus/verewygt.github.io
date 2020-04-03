@@ -21,14 +21,29 @@
         "character"     : "Feng Min Teachable Perk"
     },
     {
+        "perk_name"     : "Any Means Necessary",
+        "perk_color"    : "green",
+        "character"     : "Yui Kimura Teachable Perk"
+    },
+    {
         "perk_name"     : "Autodidact",
         "perk_color"    : "purple",
         "character"     : "Adam Francis Teachable Perk"
     },
     {
+        "perk_name"     : "Babysitter",
+        "perk_color"    : "green",
+        "character"     : "Steve Harrington Teachable Perk"
+    },
+    {
         "perk_name"     : "Balanced Landing",
         "perk_color"    : "purple",
         "character"     : "Nea Karlsson Teachable Perk"
+    },
+    {
+        "perk_name"     : "Better Together",
+        "perk_color"    : "green",
+        "character"     : "Nancy Wheeler Teachable Perk"
     },
     {
         "perk_name"     : "Boil Over",
@@ -56,6 +71,11 @@
         "character"     : "Jeff Johansen Teachable Perk"
     },
     {
+        "perk_name"     : "Breakout",
+        "perk_color"    : "purple",
+        "character"     : "Yui Kimura Teachable Perk"
+    },
+    {
         "perk_name"     : "Buckle Up",
         "perk_color"    : "purple",
         "character"     : "Ash Williams Teachable Perk"
@@ -64,6 +84,11 @@
         "perk_name"     : "Calm Spirit",
         "perk_color"    : "purple",
         "character"     : "Jake Park Teachable Perk"
+    },
+    {
+        "perk_name"     : "Camaraderie",
+        "perk_color"    : "purple",
+        "character"     : "Steve Harrington Teachable Perk"
     },
     {
         "perk_name"     : "Dance With Me",
@@ -116,9 +141,19 @@
         "character"     : "Claudette Morel Teachable Perk"
     },
     {
+        "perk_name"     : "Fixated",
+        "perk_color"    : "purple",
+        "character"     : "Nancy Wheeler Teachable Perk"
+    },
+    {
         "perk_name"     : "Flip-Flop",
         "perk_color"    : "purple",
         "character"     : "Ash Williams Teachable Perk"
+    },
+    {
+        "perk_name"     : "For the People",
+        "perk_color"    : "purple",
+        "character"     : "Zarina Kassir Teachable Perk"
     },
     {
         "perk_name"     : "Head On",
@@ -129,6 +164,11 @@
         "perk_name"     : "Hope",
         "perk_color"    : "purple",
         "character"     : "All Characters"
+    },
+    {
+        "perk_name"     : "Inner Strength",
+        "perk_color"    : "purple",
+        "character"     : "Nancy Wheeler Teachable Perk"
     },
     {
         "perk_name"     : "Iron Will",
@@ -161,6 +201,11 @@
         "character"     : "Feng Min Teachable Perk"
     },
     {
+        "perk_name"     : "Lucky Break",
+        "perk_color"    : "purple",
+        "character"     : "Yui Kimura Teachable Perk"
+    },
+    {
         "perk_name"     : "Mettle of Man",
         "perk_color"    : "purple",
         "character"     : "Ash Williams Teachable Perk"
@@ -179,6 +224,11 @@
         "perk_name"     : "Object of Obsession",
         "perk_color"    : "purple",
         "character"     : "Laurie Strode Teachable Perk"
+    },
+    {
+        "perk_name"     : "Off the Record",
+        "perk_color"    : "purple",
+        "character"     : "Zarina Kassir Teachable Perk"
     },
     {
         "perk_name"     : "Open Handed",
@@ -216,6 +266,11 @@
         "character"     : "Meg Thomas Teachable Perk"
     },
     {
+        "perk_name"     : "Red Herring",
+        "perk_color"    : "green",
+        "character"     : "Zarina Kassir Teachable Perk"
+    },
+    {
         "perk_name"     : "Resilience",
         "perk_color"    : "purple",
         "character"     : "All Characters"
@@ -224,6 +279,11 @@
         "perk_name"     : "Saboteur",
         "perk_color"    : "purple",
         "character"     : "Jake Park Teachable Perk"
+    },
+    {
+        "perk_name"     : "Second Wind",
+        "perk_color"    : "purple",
+        "character"     : "Steve Harrington Teachable Perk"
     },
     {
         "perk_name"     : "Self-Care",
@@ -271,11 +331,6 @@
         "character"     : "Nea Karlsson Teachable Perk"
     },
     {
-        "perk_name"     : "This Is Not Happening",
-        "perk_color"    : "purple",
-        "character"     : "All Characters"
-    },
-    {
         "perk_name"     : "Technician",
         "perk_color"    : "green",
         "character"     : "Feng Min Teachable Perk"
@@ -284,6 +339,11 @@
         "perk_name"     : "Tenacity",
         "perk_color"    : "green",
         "character"     : "David Tapp Teachable Perk"
+    },
+    {
+        "perk_name"     : "This Is Not Happening",
+        "perk_color"    : "purple",
+        "character"     : "All Characters"
     },
     {
         "perk_name"     : "Up The Ante",

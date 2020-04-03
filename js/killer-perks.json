@@ -1,70 +1,86 @@
 {
     "perks" : [
 
-    {   "perk_name"     : "A Nurse's Calling",
+    {
+        "perk_name"     : "A Nurse's Calling",
         "perk_color"    : "purple",
         "character"     : "The Nurse Teachable Perk"
     },
-    {   "perk_name"     : "Agitation",
+    {
+        "perk_name"     : "Agitation",
         "perk_color"    : "purple",
         "character"     : "The Trapper Teachable Perk"
     },
-    {   "perk_name"     : "Bamboozle",
+    {
+        "perk_name"     : "Bamboozle",
         "perk_color"    : "green",
         "character"     : "The Clown Teachable Perk"
     },
-    {   "perk_name"     : "Barbecue & Chili",
+    {
+        "perk_name"     : "Barbecue & Chili",
         "perk_color"    : "purple",
         "character"     : "The Cannibal Teachable Perk"
     },
-    {   "perk_name"     : "Beast of Prey",
+    {
+        "perk_name"     : "Beast of Prey",
         "perk_color"    : "green",
         "character"     : "The Huntress Teachable Perk"
     },
-    {   "perk_name"     : "Bitter Murmur",
+    {
+        "perk_name"     : "Bitter Murmur",
         "perk_color"    : "purple",
         "character"     : "All Characters"
     },
-    {   "perk_name"     : "Bloodhound",
+    {
+        "perk_name"     : "Bloodhound",
         "perk_color"    : "purple",
         "character"     : "The Wraith Teachable Perk"
     },
-    {   "perk_name"     : "Blood Warden",
+    {
+        "perk_name"     : "Blood Warden",
         "perk_color"    : "purple",
         "character"     : "The Nightmare Teachable Perk"
     },
-    {   "perk_name"     : "Brutal Strength",
+    {
+        "perk_name"     : "Brutal Strength",
         "perk_color"    : "purple",
         "character"     : "Trapper Teachable Perk"
     },
-    {   "perk_name"     : "Corrupt Intervention",
+    {
+        "perk_name"     : "Corrupt Intervention",
         "perk_color"    : "green",
         "character"     : "The Plague Teachable Perk"
     },
-    {   "perk_name"     : "Coulrophobia",
+    {
+        "perk_name"     : "Coulrophobia",
         "perk_color"    : "purple",
         "character"     : "The Clown Teachable Perk"
     },
-    {   "perk_name"     : "Dark Devotion",
+    {
+        "perk_name"     : "Dark Devotion",
         "perk_color"    : "purple",
         "character"     : "The Plague Teachable Perk"
     },
-    {   "perk_name"     : "Deerstalker",
+    {
+        "perk_name"     : "Deerstalker",
         "perk_color"    : "green",
         "character"     : "All Characters"
     },
-    {   "perk_name"     : "Discordance",
+    {
+        "perk_name"     : "Discordance",
         "perk_color"    : "green",
         "character"     : "The Legion Teachable Perk"
     },
-    {   "perk_name"     : "Distressing",
+    {
+        "perk_name"     : "Distressing",
         "perk_color"    : "purple",
         "character"     : "All Characters"
     },
-    {   "perk_name"     : "aaaaaaa",
+    {
+        "perk_name"     : "aaaaaaa",
         "perk_color"    : "aaaaaaa",
         "character"     : "aaaaaaa Teachable Perk"
-    },
+    }
 
     ]
 }
