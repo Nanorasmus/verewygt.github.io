@@ -2,348 +2,348 @@
     "perks" : [
 
     {
-        "perk_name" : "A Nurse's Calling"
-        "perk_color" : "purple"
+        "perk_name" : "A Nurse's Calling",
+        "perk_color" : "purple",
         "character" : "The Nurse Teachable Perk"
     },
     {
-        "perk_name" : "Agitation"
-        "perk_color" : "purple"
+        "perk_name" : "Agitation",
+        "perk_color" : "purple",
         "character" : "The Trapper Teachable Perk"
     },
     {
-        "perk_name" : "Bamboozle"
-        "perk_color" : "green"
+        "perk_name" : "Bamboozle",
+        "perk_color" : "green",
         "character" : "The Clown Teachable Perk"
     },
     {
-        "perk_name" : "Barbecue & Chilli"
-        "perk_color" : "purple"
+        "perk_name" : "Barbecue & Chilli",
+        "perk_color" : "purple",
         "character" : "The Cannibal Teachable Perk"
     },
     {
-        "perk_name" : "Beast of Prey"
-        "perk_color" : "green"
+        "perk_name" : "Beast of Prey",
+        "perk_color" : "green",
         "character" : "The Huntress Teachable Perk"
     },
     {
-        "perk_name" : "Bitter Murmur"
-        "perk_color" : "purple"
+        "perk_name" : "Bitter Murmur",
+        "perk_color" : "purple",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "Blood Echo"
-        "perk_color" : "purple"
+        "perk_name" : "Blood Echo",
+        "perk_color" : "purple",
         "character" : "The Oni Teachable Perk"
     },
     {
-        "perk_name" : "Blood Warden"
-        "perk_color" : "purple"
+        "perk_name" : "Blood Warden",
+        "perk_color" : "purple",
         "character" : "The Nightmare Teachable Perk"
     },
     {
-        "perk_name" : "Bloodhound"
-        "perk_color" : "purple"
+        "perk_name" : "Bloodhound",
+        "perk_color" : "purple",
         "character" : "The Wraith Teachable Perk"
     },
     {
-        "perk_name" : "Brutal Strength"
-        "perk_color" : "purple"
+        "perk_name" : "Brutal Strength",
+        "perk_color" : "purple",
         "character" : "The Trapper Teachable Perk"
     },
     {
-        "perk_name" : "Corrupt Intervention"
-        "perk_color" : "green"
+        "perk_name" : "Corrupt Intervention",
+        "perk_color" : "green",
         "character" : "The Plague Teachable Perk"
     },
     {
-        "perk_name" : "Coulrophobia"
-        "perk_color" : "purple"
+        "perk_name" : "Coulrophobia",
+        "perk_color" : "purple",
         "character" : "The Clown Teachable Perk"
     },
     {
-        "perk_name" : "Cruel Limits"
-        "perk_color" : "purple"
+        "perk_name" : "Cruel Limits",
+        "perk_color" : "purple",
         "character" : "The Demogorgon Teachable Perk"
     },
     {
-        "perk_name" : "Dark Devotion"
-        "perk_color" : "purple"
+        "perk_name" : "Dark Devotion",
+        "perk_color" : "purple",
         "character" : "The Plague Teachable Perk"
     },
     {
-        "perk_name" : "Dead Man's Switch"
-        "perk_color" : "purple"
+        "perk_name" : "Dead Man's Switch",
+        "perk_color" : "purple",
         "character" : "The Deathslinger Teachable Perk"
     },
     {
-        "perk_name" : "Deerstalker"
-        "perk_color" : "green"
+        "perk_name" : "Deerstalker",
+        "perk_color" : "green",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "Discordance"
-        "perk_color" : "green"
+        "perk_name" : "Discordance",
+        "perk_color" : "green",
         "character" : "The Legion Teachable Perk"
     },
     {
-        "perk_name" : "Distressing"
-        "perk_color" : "purple"
+        "perk_name" : "Distressing",
+        "perk_color" : "purple",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "Dying Light"
-        "perk_color" : "purple"
+        "perk_name" : "Dying Light",
+        "perk_color" : "purple",
         "character" : "The Shape Teachable Perk"
     },
     {
-        "perk_name" : "Enduring"
-        "perk_color" : "green"
+        "perk_name" : "Enduring",
+        "perk_color" : "green",
         "character" : "The Hillbilly Teachable Perk"
     },
     {
-        "perk_name" : "Fire Up"
-        "perk_color" : "green"
+        "perk_name" : "Fire Up",
+        "perk_color" : "green",
         "character" : "The Nightmare Teachable Perk"
     },
     {
-        "perk_name" : "Franklin's Demise"
-        "perk_color" : "purple"
+        "perk_name" : "Franklin's Demise",
+        "perk_color" : "purple",
         "character" : "The Cannibal Teachable Perk"
     },
     {
-        "perk_name" : "Furtive Chase"
-        "perk_color" : "purple"
+        "perk_name" : "Furtive Chase",
+        "perk_color" : "purple",
         "character" : "The Ghost Face Teachable Perk"
     },
     {
-        "perk_name" : "Gearhead"
-        "perk_color" : "green"
+        "perk_name" : "Gearhead",
+        "perk_color" : "green",
         "character" : "The Deathslinger Teachable Perk"
     },
     {
-        "perk_name" : "Hangman's Trick"
-        "perk_color" : "green"
+        "perk_name" : "Hangman's Trick",
+        "perk_color" : "green",
         "character" : "The Pig Teachable Perk"
     },
     {
-        "perk_name" : "Hex: Devour Hope"
-        "perk_color" : "purple"
+        "perk_name" : "Hex: Devour Hope",
+        "perk_color" : "purple",
         "character" : "The Hag Teachable Perk"
     },
     {
-        "perk_name" : "Hex: Haunted Ground"
-        "perk_color" : "purple"
+        "perk_name" : "Hex: Haunted Ground",
+        "perk_color" : "purple",
         "character" : "The Spirit Teachable Perk"
     },
     {
-        "perk_name" : "Hex: Huntress Lullaby"
-        "perk_color" : "purple"
+        "perk_name" : "Hex: Huntress Lullaby",
+        "perk_color" : "purple",
         "character" : "The Huntress Teachable Perk"
     },
     {
-        "perk_name" : "Hex: No One Escapes Death"
-        "perk_color" : "purple"
+        "perk_name" : "Hex: No One Escapes Death",
+        "perk_color" : "purple",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "Hex: Retribution"
-        "perk_color" : "purple"
+        "perk_name" : "Hex: Retribution",
+        "perk_color" : "purple",
         "character" : "The Deathslinger Teachable Perk"
     },
     {
-        "perk_name" : "Hex: Ruin"
-        "perk_color" : "purple"
+        "perk_name" : "Hex: Ruin",
+        "perk_color" : "purple",
         "character" : "The Hag Teachable Perk"
     },
     {
-        "perk_name" : "Hex: The Third Seal"
-        "perk_color" : "purple"
+        "perk_name" : "Hex: The Third Seal",
+        "perk_color" : "purple",
         "character" : "The Hag Teachable Perk"
     },
     {
-        "perk_name" : "Hex: Thrill of the Hunt"
-        "perk_color" : "green"
+        "perk_name" : "Hex: Thrill of the Hunt",
+        "perk_color" : "green",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "I'm All Ears"
-        "perk_color" : "green"
+        "perk_name" : "I'm All Ears",
+        "perk_color" : "green",
         "character" : "The Ghost Face Teachable Perk"
     },
     {
-        "perk_name" : "Infectious Fright"
-        "perk_color" : "purple"
+        "perk_name" : "Infectious Fright",
+        "perk_color" : "purple",
         "character" : "The Plague Teachable Perk"
     },
     {
-        "perk_name" : "Insidious"
-        "perk_color" : "purple"
+        "perk_name" : "Insidious",
+        "perk_color" : "purple",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "Iron Grasp"
-        "perk_color" : "greenv"
+        "perk_name" : "Iron Grasp",
+        "perk_color" : "green",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "Iron Maiden"
-        "perk_color" : "purple"
+        "perk_name" : "Iron Maiden",
+        "perk_color" : "purple",
         "character" : "The Legion Teachable Perk"
     },
     {
-        "perk_name" : "Knock Out"
-        "perk_color" : "green"
+        "perk_name" : "Knock Out",
+        "perk_color" : "green",
         "character" : "The Cannibal Teachable Perk"
     },
     {
-        "perk_name" : "Lightborn"
-        "perk_color" : "purple"
+        "perk_name" : "Lightborn",
+        "perk_color" : "purple",
         "character" : "The Hillbilly Teachable Perk"
     },
     {
-        "perk_name" : "Mad Grit"
-        "perk_color" : "purple"
+        "perk_name" : "Mad Grit",
+        "perk_color" : "purple",
         "character" : "The Legion Teachable Perk"
     },
     {
-        "perk_name" : "Make Your Choice"
-        "perk_color" : "purple"
+        "perk_name" : "Make Your Choice",
+        "perk_color" : "purple",
         "character" : "The Pig Teachable Perk"
     },
     {
-        "perk_name" : "Mindbreaker"
-        "perk_color" : "purple"
+        "perk_name" : "Mindbreaker",
+        "perk_color" : "purple",
         "character" : "The Demogorgon Teachable Perk"
     },
     {
-        "perk_name" : "Monitor & Abuse"
-        "perk_color" : "purple"
+        "perk_name" : "Monitor & Abuse",
+        "perk_color" : "purple",
         "character" : "The Doctor Teachable Perk"
     },
     {
-        "perk_name" : "Monstrous Shrine"
-        "perk_color" : "purple"
+        "perk_name" : "Monstrous Shrine",
+        "perk_color" : "purple",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "Nemesis"
-        "perk_color" : "purple"
+        "perk_name" : "Nemesis",
+        "perk_color" : "purple",
         "character" : "The Oni Teachable Perk"
     },
     {
-        "perk_name" : "Overcharge"
-        "perk_color" : "purple"
+        "perk_name" : "Overcharge",
+        "perk_color" : "purple",
         "character" : "The Doctor Teachable Perk"
     },
     {
-        "perk_name" : "Overwhelming Presence"
-        "perk_color" : "green"
+        "perk_name" : "Overwhelming Presence",
+        "perk_color" : "green",
         "character" : "The Doctor Teachable Perk"
     },
     {
-        "perk_name" : "Play with Your Food"
-        "perk_color" : "purple"
+        "perk_name" : "Play with Your Food",
+        "perk_color" : "purple",
         "character" : "The Shape Teachable Perk"
     },
     {
-        "perk_name" : "Pop Goes the Weasel"
-        "perk_color" : "purple"
+        "perk_name" : "Pop Goes the Weasel",
+        "perk_color" : "purple",
         "character" : "The Clown Teachable Perk"
     },
     {
-        "perk_name" : "Predator"
-        "perk_color" : "green"
+        "perk_name" : "Predator",
+        "perk_color" : "green",
         "character" : "The Wraith Teachable Perk"
     },
     {
-        "perk_name" : "Rancor"
-        "perk_color" : "purple"
+        "perk_name" : "Rancor",
+        "perk_color" : "purple",
         "character" : "The Spirit Teachable Perk"
     },
     {
-        "perk_name" : "Remember Me"
-        "perk_color" : "purple"
+        "perk_name" : "Remember Me",
+        "perk_color" : "purple",
         "character" : "The Nightmare Teachable Perk"
     },
     {
-        "perk_name" : "Save the Best for Last"
-        "perk_color" : "purple"
+        "perk_name" : "Save the Best for Last",
+        "perk_color" : "purple",
         "character" : "The Shape Teachable Perk"
     },
     {
-        "perk_name" : "Shadowborn"
-        "perk_color" : "purple"
+        "perk_name" : "Shadowborn",
+        "perk_color" : "purple",
         "character" : "The Wraith Teachable Perk"
     },
     {
-        "perk_name" : "Sloppy Butcher"
-        "perk_color" : "green"
+        "perk_name" : "Sloppy Butcher",
+        "perk_color" : "green",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "Spies from the Shadows"
-        "perk_color" : "purple"
+        "perk_name" : "Spies from the Shadows",
+        "perk_color" : "purple",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "Spirit Fury"
-        "perk_color" : "green"
+        "perk_name" : "Spirit Fury",
+        "perk_color" : "green",
         "character" : "The Spirit Teachable Perk"
     },
     {
-        "perk_name" : "Stridor"
-        "perk_color" : "green"
+        "perk_name" : "Stridor",
+        "perk_color" : "green",
         "character" : "The Nurse Teachable Perk"
     },
     {
-        "perk_name" : "Surge"
-        "perk_color" : "green"
+        "perk_name" : "Surge",
+        "perk_color" : "green",
         "character" : "The Demogorgon Teachable Perk"
     },
     {
-        "perk_name" : "Surveillance"
-        "perk_color" : "purple"
+        "perk_name" : "Surveillance",
+        "perk_color" : "purple",
         "character" : "The Pig Teachable Perk"
     },
     {
-        "perk_name" : "Territorial Imperative"
-        "perk_color" : "purple"
+        "perk_name" : "Territorial Imperative",
+        "perk_color" : "purple",
         "character" : "The Huntress Teachable Perk"
     },
     {
-        "perk_name" : "Thanatophobia"
-        "perk_color" : "purple"
+        "perk_name" : "Thanatophobia",
+        "perk_color" : "purple",
         "character" : "The Nurse Teachable Perk"
     },
     {
-        "perk_name" : "Thrilling Tremors"
-        "perk_color" : "purple"
+        "perk_name" : "Thrilling Tremors",
+        "perk_color" : "purple",
         "character" : "The Ghost Face Teachable Perk"
     },
     {
-        "perk_name" : "Tinkerer"
-        "perk_color" : "purple"
+        "perk_name" : "Tinkerer",
+        "perk_color" : "purple",
         "character" : "The Hillbilly Teachable Perk"
     },
     {
-        "perk_name" : "Unnerving Presence"
-        "perk_color" : "green"
+        "perk_name" : "Unnerving Presence",
+        "perk_color" : "green",
         "character" : "The Trapper Teachable Perk"
     },
     {
-        "perk_name" : "Unrelenting"
-        "perk_color" : "purple"
+        "perk_name" : "Unrelenting",
+        "perk_color" : "purple",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "Whispers"
-        "perk_color" : "purple"
+        "perk_name" : "Whispers",
+        "perk_color" : "purple",
         "character" : "All Characters"
     },
     {
-        "perk_name" : "Zanshin Tactics"
-        "perk_color" : "green"
+        "perk_name" : "Zanshin Tactics",
+        "perk_color" : "green",
         "character" : "The Oni Teachable Perk"
     }
 
