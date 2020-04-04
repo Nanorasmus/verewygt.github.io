@@ -4,6 +4,7 @@ var active_type;
 function loadPerks() {
 
     var list = document.getElementById('perk-list');
+    list.innerHTML = "";
 
     if (document.getElementById('surv').checked) {
         var request = new XMLHttpRequest();
