@@ -540,6 +540,12 @@ input[name="perk-check"]:not(:checked) ~ span.perk-name {
     text-decoration: line-through;
 }
 
+/*------------------------------ ADS ---------------------------------*/
+
+.ad-box-top {
+    margin-bottom: 50px;
+}
+
 /*------------------------------ FOOTER ---------------------------------*/
 
 footer {
