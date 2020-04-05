@@ -46,8 +46,13 @@ p {
     display: block;
 }
 a.link {
+    color: #fff;
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
     text-decoration: none;
+    transition: color 1s ease-in-out;
+}
+a.link:hover {
+    color: #aaa;
 }
 
 /*------------------------------ HEADER ---------------------------------*/
@@ -551,6 +556,17 @@ input[name="perk-check"]:not(:checked) ~ span.perk-name {
 footer {
     padding: 75px 100px;
     background: var(--bgf);
+}
+
+footer .footer-text {
+    font-weight: bold;
+    color: #999;
+}
+footer .uppercase {
+    text-transform: uppercase;
+}
+footer .white {
+    color: #fff;
 }
 
 /*---------------------- NO JAVASCRIPT MESSAGE ------------------------*/
