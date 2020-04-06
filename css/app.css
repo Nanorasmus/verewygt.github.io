@@ -103,6 +103,29 @@ p#main-text {
     font-weight: 900;
 }
 
+nav.navigation {
+    margin: 0 50px 0 auto;
+}
+
+ul.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+a.nav-link {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-left: 25px;
+    transition: color  0.3s ease-in-out;
+}
+a.nav-link.current, a.nav-link:hover {
+    color: #fff;
+}
+
 /*------------------------------ APP GRID ---------------------------------*/
 
 div.app {
