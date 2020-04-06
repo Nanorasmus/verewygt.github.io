@@ -570,8 +570,8 @@ input[name="perk-check"]:not(:checked) ~ span.perk-name {
 
 /*------------------------------ ADS ---------------------------------*/
 
-.ad-box-top {
-    margin-bottom: 50px;
+.ad-box {
+    margin-top: 35px;
 }
 
 /*------------------------------ FOOTER ---------------------------------*/
