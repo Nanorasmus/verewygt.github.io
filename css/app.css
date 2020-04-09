@@ -1,14 +1,10 @@
-:root {
-  --acc: #aa0000;
-  --bg: #1b1b1b;
-  --bgf: #111111;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body.perkroulette-app {
     margin: 0;
     padding: 0;
-    background: var(--bg);
-    font-family: Roboto, sans-serif;
+    background: #1b1b1b;
+    font-family: 'Roboto', sans-serif;
     color: #fff;
 }
 h1 {
@@ -49,6 +45,7 @@ a.link {
     color: #fff;
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
     text-decoration: none;
+    cursor: pointer;
     transition: color 0.1s ease-in-out;
 }
 a.link:hover {
@@ -60,7 +57,7 @@ a.link:hover {
 header.app-header {
     position: fixed;
     z-index: 999;
-    background-color: var(--acc);
+    background-color: #aa0000;
     height: 65px;
     width: 100%;
 }
@@ -133,9 +130,15 @@ div.app {
     padding-top: 65px;
 }
 
-div.main-content-area {
+body#perkroulette-app div.main-content-area {
     margin: 0 100px 0 350px;
     padding: 50px 0;
+}
+
+body#privacy-policy div.main-content-area {
+    margin: auto;
+    padding: 75px 25px 150px;
+    max-width: 1200px;
 }
 
 /*------------------------------ BUTTONS ---------------------------------*/
@@ -145,7 +148,7 @@ div.main-content-area {
     margin: 100px 0 15px;
 }
 .big-main {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: rgb(170, 0, 0);
     color: #fff;
     border: none;
@@ -200,7 +203,7 @@ div.main-content-area {
 }
 
 .selection-button {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: unset;
     border: 1px solid rgba(34, 34, 34, 0.75);
     color: #fff;
@@ -497,7 +500,7 @@ label[for="surv"]:hover, label[for="kill"]:hover {
     border: none;
     padding: 8px 8px 8px 35px;
     width: calc(100% - 35px - 8px);
-    font-family: "Roboto", sans-serif, "google";
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     border-radius: 3px;
     color: #fff;
@@ -568,43 +571,87 @@ input[name="perk-check"]:not(:checked) ~ span.perk-name {
     text-decoration: line-through;
 }
 
+/*------------------------------ PRIVACY POLICY ---------------------------------*/
+
+h1.site-title {
+    margin-bottom: 25px;
+}
+
+h2.site-subtitle {
+    margin-bottom: 10px;
+}
+
+p.site-paragraph {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
 /*------------------------------ ADS ---------------------------------*/
 
 .ad-box {
     margin-top: 50px;
 }
 
-/*------------------------------ FOOTER ---------------------------------*/
+/*------------------------------ SIDEBAR ---------------------------------*/
 
-footer {
+section#sidebar {
     display: flex;
     padding: 75px 100px;
-    background: var(--bgf);
+    background: #111111;
 }
 
-.footer-column {
+section#sidebar .sidebar-column {
     width: 48%;
 }
-.footer-column:first-of-type {
+section#sidebar .sidebar-column:first-of-type {
     margin-right: 4%;
 }
 
-footer h2 {
-    margin-top: 50px;
+section#sidebar h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
 }
 
-footer .footer-text {
+section#sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+section#sidebar .sidebar-text {
     font-weight: bold;
     color: #999;
     margin-bottom: 25px;
     line-height: 1.5;
 }
-footer .uppercase {
+section#sidebar .uppercase {
     text-transform: uppercase;
 }
-footer .white {
+section#sidebar .white {
     color: #fff;
 }
+
+/*------------------------------ FOOTER ---------------------------------*/
+
+footer {
+    display: flex;
+    padding: 25px 100px;
+    background: #010101;
+}
+
+footer .footer-text, footer .footer-links {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer .footer-text {
+    margin: 10px auto 10px 0;
+}
+
+footer .footer-links {
+    margin: 10px 0 10px auto;
+}
+
 
 /*---------------------- NO JAVASCRIPT MESSAGE ------------------------*/
 
