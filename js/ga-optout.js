@@ -5,14 +5,11 @@ if (document.cookie.indexOf(disableStr + '=true') > -1) {
   window[disableStr] = true;
 }
 
-function displayOptOutMsg() {
+window.onload = function cookieHandler() {
     if (document.cookie.indexOf(disableStr + '=true') > -1) {
         var optout = document.getElementById('optout-msg');
         optout.textContent = " Opt-out cookie was set in your browser.";
     }
-}
-
-function hideCookieBanner() {
     if (document.cookie.indexOf('allowCookies=true') > -1) {
         var banner = document.getElementById('cookie-banner');
         banner.style = "display: none;"
