@@ -681,3 +681,7 @@ footer .footer-links {
 
 
 /*------------------------------ COOKIES ---------------------------------*/
+
+span#optout-msg {
+    color: green;
+}
