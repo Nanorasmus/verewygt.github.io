@@ -5,7 +5,7 @@ if (document.cookie.indexOf(disableStr + '=true') > -1) {
     window[disableStr] = true;
 }
 
-function cookieHandler() {
+window.addEventListener("load", function() {
     console.log("debug 1");
     if (document.cookie.indexOf(disableStr + '=true') > -1) {
         console.log("debug 2");
@@ -23,9 +23,7 @@ function cookieHandler() {
         var banner = document.getElementById('cookie-banner');
         banner.style = "display: none;";
     }
-}
-
-document.window.onload = cookieHandler();
+});
 
 function gaOptout() {
   document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/;';
