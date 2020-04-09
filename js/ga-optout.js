@@ -4,6 +4,11 @@ var disableStr = 'ga-disable-' + gaProperty;
 if (document.cookie.indexOf(disableStr + '=true') > -1) {
     window[disableStr] = true;
 }
+if (document.cookie.indexOf('allowCookies=true') > -1) {
+    ga('create', 'UA-162970659-1', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+}
 
 window.addEventListener("load", function() {
     console.log("debug 1");
@@ -40,4 +45,8 @@ function acceptCookies() {
   document.cookie = 'allowCookies=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/;';
   var banner = document.getElementById('cookie-banner');
   banner.style = "display: none;";
+
+  ga('create', 'UA-162970659-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
 }
