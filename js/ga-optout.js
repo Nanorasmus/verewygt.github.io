@@ -11,24 +11,19 @@ if (document.cookie.indexOf('allowCookies=true') > -1) {
 }
 
 window.addEventListener("load", function() {
-    console.log("debug 1");
     if (document.cookie.indexOf(disableStr + '=true') > -1) {
-        console.log("debug 2");
         var banner = document.getElementById('cookie-banner');
         banner.style = "display: none;";
 
         if (window.location.href == "https://verewygt.github.io/privacy/") {
-            console.log("debug 3");
             var optout = document.getElementById('optout-msg');
             optout.textContent = " Opt-out cookie was set in your browser.";
         }
 
     } else if (document.cookie.indexOf('allowCookies=true') < 0) {
-        console.log("debug 4");
         var banner = document.getElementById('cookie-banner');
         banner.style = "display: flex;";
     } else if (document.cookie.indexOf('allowCookies=true') > -1) {
-        console.log("debug 5");
         var banner = document.getElementById('cookie-banner');
         banner.style = "display: none;";
     }
