@@ -18,8 +18,12 @@ window.addEventListener("load", function() {
             optout.textContent = " Opt-out cookie was set in your browser.";
         }
 
-    } else if (document.cookie.indexOf('allowCookies=true') > -1) {
+    } else if (document.cookie.indexOf('allowCookies=true') < 0) {
         console.log("debug 4");
+        var banner = document.getElementById('cookie-banner');
+        banner.style = "display: flex;";
+    } else if (document.cookie.indexOf('allowCookies=true') > -1) {
+        console.log("debug 5");
         var banner = document.getElementById('cookie-banner');
         banner.style = "display: none;";
     }
