@@ -682,6 +682,21 @@ button[name="accept-cookies"] {
 
     /*--------- HEADER ----------*/
 
+    .logo {
+        margin: 0 0 0 25px;
+    }
+
+    p#main-text {
+        font-size: 22px;
+    }
+    p#subtext {
+        font-size: 12px;
+    }
+
+    nav.navigation {
+        margin: 0 25px 0 auto;
+    }
+
     /*--------- SIDEBAR ----------*/
 
     .toggle-button {
@@ -730,6 +745,7 @@ button[name="accept-cookies"] {
     }
 
     .config-wrapper {
+        z-index: 998;
         width: 0px;
         background: url(img/icns/settings.png);
     }
