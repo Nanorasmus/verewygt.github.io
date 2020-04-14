@@ -53,30 +53,39 @@
             </header>
 
             <div class="app" id="app">
-                <div class="configuration" id="config">
-                    <div class="teams">
-                        <h3>Perk type</h3>
-                        <input onclick="loadPerks()" type="radio" name="teams" id="surv" checked>
-                        <input onclick="loadPerks()" type="radio" name="teams" id="kill">
-                        <div class="label_container">
-                            <label for="surv" onclick="loadPerks()">Survivor</label>
-                            <label for="kill" onclick="loadPerks()">Killer</label>
-                        </div>
+
+                <div class="config-wrapper">
+                    <input type="checkbox" name="menu-toggle" id="menu-toggle">
+                    <div class="toggle-button">
+                        <label for="menu-toggle"></label>
                     </div>
 
-                    <div class="perks">
-                        <h3>Perk Management
-                        </h3>
+                    <div class="configuration" id="config">
 
-                        <form id="search-input-wrapper" name="search-input-wrapper">
-                            <input type="text" id="search-input" onkeyup="filter()" placeholder="Search for perk" title="Search for perk"> <input type="reset" value="" style="display: none;" onclick="resetFilter()" id="search-clear">
-                        </form>
-                        <div class="selection-wrapper">
-                            <button class="selection-button" onclick="selAll()">Select all</button>
-                            <button class="selection-button" onclick="selNone()">Select none</button>
+                        <div class="teams">
+                            <h3>Perk type</h3>
+                            <input onclick="loadPerks()" type="radio" name="teams" id="surv" checked>
+                            <input onclick="loadPerks()" type="radio" name="teams" id="kill">
+                            <div class="label_container">
+                                <label for="surv" onclick="loadPerks()">Survivor</label>
+                                <label for="kill" onclick="loadPerks()">Killer</label>
+                            </div>
                         </div>
 
-                        <div class="generated-list" id="perk-list">
+                        <div class="perks">
+                            <h3>Perk Management
+                            </h3>
+
+                            <form id="search-input-wrapper" name="search-input-wrapper">
+                                <input type="text" id="search-input" onkeyup="filter()" placeholder="Search for perk" title="Search for perk"> <input type="reset" value="" style="display: none;" onclick="resetFilter()" id="search-clear">
+                            </form>
+                            <div class="selection-wrapper">
+                                <button class="selection-button" onclick="selAll()">Select all</button>
+                                <button class="selection-button" onclick="selNone()">Select none</button>
+                            </div>
+
+                            <div class="generated-list" id="perk-list">
+                            </div>
                         </div>
                     </div>
                 </div>

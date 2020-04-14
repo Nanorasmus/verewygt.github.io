@@ -56,7 +56,7 @@ a.link:hover {
 
 header.app-header {
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     background-color: #aa0000;
     height: 65px;
     width: 100%;
@@ -125,6 +125,10 @@ a.nav-link.current, a.nav-link:hover {
 
 /*------------------------------ APP GRID ---------------------------------*/
 
+.app-content-parent {
+    overflow: hidden;
+}
+
 div.app {
     position: relative;
     padding-top: 65px;
@@ -172,30 +176,6 @@ body#privacy-policy div.main-content-area {
 .big-main:not(:disabled):hover {
     color: rgb(170, 0, 0);
     background-color: #fff;
-}
-
-@media only screen and (max-width: 767px) {
-    .big-main {
-        border-radius: unset;
-        font-size: 24px;
-        padding: 15px;
-        box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.5);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-    }
-    #btn-error-msg {
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 58px;
-        width: 100%;
-        margin: 0;
-        padding: 10px 0;
-        border-radius: unset;
-    }
 }
 
 .selection-wrapper {
@@ -370,84 +350,40 @@ div.perk_outline:hover {
     animation-fill-mode: forwards !important;
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 768px) {
-    .perk_name_container {
-        height: 60px;
-    }
-    .perk_name {
-        font-size: 20px;
-        line-height: 20px;
-    }
+.perk_name_container {
+    height: 60px;
 }
 
-@media only screen and (max-width: 767px) {
-    .perk_desc {
-        height: unset;
-        padding-bottom: unset;
-    }
-    .j-hgrid {
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .cc-m-hgrid-column {
-        width: 46%;
-        min-width: unset;
-        padding: 0 2% 50px 2%;
-    }
-    .cc-m-hgrid-column.last {
-        padding: 0 2% 50px 2%;
-    }
+.perk_name {
+    font-size: 20px;
+    line-height: 20px;
 }
 
 
 /*------------------------------ CUSTOMIZATION ---------------------------------*/
 
-@media only screen and (min-width: 768px) {
-    .configuration {
-        z-index: 100;
-        position: absolute;
-        left: 0;
-        top: 65px;
-        bottom: 0;
-        background: #333;
-        width: 250px;
-    }
-}
-@media only screen and (max-width: 767px) {
-    .configuration {
-        z-index: 100;
-        position: static;
-        height: 600px;
-        background: #333;
-        margin-bottom: 25px;
-    }
-    .configuration > div {
-        margin: 0 15px;
-        padding: 15px 0;
-    }
-    #perk-list {
-        overflow-y: scroll;
-        position: unset;
-        height: 340px;
-    }
-    .perk-list-item {
-        font-size: 16px ;
-        padding: 10px 15px;
-    }
-    input[name="perk-check"] {
-        right: 15px;
-        top: 14px;
-    }
-    #search-input {
-        font-size: 16px;
-    }
-    #search-clear {
-        top: 5px;
-    }
+.config-wrapper {
+    z-index: 100;
+    position: absolute;
+    width: 250px;
+    background: #333;
+    top: 65px;
+    bottom: 0;
+    left: 0;
 }
 
-/*-------*/
+input#menu-toggle, .toggle-button {
+    display: none;
+}
+
+.configuration {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #333;
+    width: 250px;
+}
 
 .inputs {
     display: none;
@@ -718,4 +654,136 @@ button[name="accept-cookies"] {
     padding: 10px 30px;
     margin-left: 25px;
     cursor: pointer;
+}
+
+/*------------------------------ RESPONSIVE ---------------------------------*/
+
+
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+
+    section#sidebar h1 {
+        font-size: 24px;
+    }
+
+    section#sidebar h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /*--------- HEADER ----------*/
+
+    /*--------- SIDEBAR ----------*/
+
+    .toggle-button {
+        z-index: 999;
+        display: unset;
+        position: fixed;
+        background: #444;
+        border-radius: 100px;
+        box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.5);
+        height: 65px;
+        width: 65px;
+        top: 90px;
+        left: 25px;
+        transition: left 0.1s ease-in-out;
+    }
+
+    .toggle-button:hover {
+        background: #555;
+    }
+
+    label[for="menu-toggle"] {
+        display: block;
+        background: url(img/icns/settings.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40px;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        transition: all 0.1s ease-in-out;
+    }
+
+    input#menu-toggle:checked ~ .configuration {
+        transform: unset;
+    }
+
+    input#menu-toggle:checked ~ .toggle-button {
+        left: calc(100% - 90px);
+    }
+
+    input#menu-toggle:checked ~ .toggle-button > label {
+        background: url(img/icns/delete.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 35px;
+    }
+
+    .config-wrapper {
+        width: 0px;
+        background: url(img/icns/settings.png);
+    }
+
+    .configuration {
+        z-index: 998;
+        position: fixed;
+        top: 65px;
+        height: calc(100vh - 65px);
+        width: calc(100vw - 125px);
+        box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.5);
+        transform: translateX(-100%);
+        transition: transform 0.1s ease-in-out;
+    }
+
+    /*--------- APP ----------*/
+
+    body#perkroulette-app div.main-content-area {
+        margin: 0 25px 0 120px;
+        padding: 25px 0;
+    }
+
+    .big-main {
+        z-index: 990;
+        position: fixed;
+        font-size: 24px;
+        bottom: 25px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+    #btn-error-msg {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 58px;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        border-radius: unset;
+    }
+
+    /*--------- SIDEBAR / FOOTER ----------*/
+
+    section#sidebar {
+        padding: 50px 25px 50px 120px;
+    }
+
+    /*--------- COOKIES ----------*/
+
+    .cookie-banner {
+        z-index: 999;
+        top: 65px;
+        bottom: unset;
+        border-radius: unset;
+    }
 }
