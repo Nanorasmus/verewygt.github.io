@@ -791,6 +791,28 @@ button[name="accept-cookies"] {
         padding: 25px 0;
     }
 
+    .perks-hgrid {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+    }
+
+    .perk_wrapper {
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        padding-right: unset;
+        margin-bottom: 10px;
+    }
+    .perk {
+        flex-basis: 100px;
+        width: 100px;
+        margin: 0 25px 0 0;
+        height: 0;
+        padding-bottom: 100px;
+    }
+
     .big-main {
         z-index: 990;
         position: fixed;
