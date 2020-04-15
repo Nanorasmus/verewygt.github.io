@@ -107,6 +107,7 @@ nav.navigation {
 ul.nav-list {
     display: flex;
     list-style: none;
+    padding: 0;
 }
 
 a.nav-link {
@@ -697,14 +698,22 @@ button[name="accept-cookies"] {
     }
 
     p#main-text {
-        font-size: 22px;
+        font-size: 18px;
     }
     p#subtext {
-        font-size: 12px;
+        font-size: 11px;
     }
+
+    /*--------- NAVIGATION ----------*/
 
     nav.navigation {
         margin: 0 25px 0 auto;
+    }
+
+    a.nav-link {
+        font-size: 16px;
+        padding: 10px;
+        margin-left: 5px;
     }
 
     /*--------- CONFIG ----------*/
