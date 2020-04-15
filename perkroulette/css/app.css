@@ -712,6 +712,10 @@ button[name="accept-cookies"] {
         margin-left: 5px;
     }
 
+    a.nav-link[href="#"] {
+        display: none;
+    }
+
     /*--------- CONFIG ----------*/
 
     .toggle-button {
@@ -771,7 +775,7 @@ button[name="accept-cookies"] {
         width: calc(100vw - 80px);
         box-shadow: none;
         transform: translateX(-100%);
-        transition: all 0.1s ease-in-out;
+        transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     }
 
     input#menu-toggle:checked ~ .configuration {
@@ -853,12 +857,37 @@ button[name="accept-cookies"] {
         margin-bottom: 15px;
     }
 
+    footer {
+        display: block;
+        text-align: center;
+        padding: 25px 25px 125px;
+    }
+
+    footer .footer-links {
+        margin: 36px 0 0 0;
+    }
+
     /*--------- COOKIES ----------*/
 
     .cookie-banner {
-        z-index: 999;
-        top: 65px;
-        bottom: unset;
-        border-radius: unset;
+        font-size: 12px;
+        z-index: 997;
+        bottom: 100px;
+        left: 25px;
+        right: 25px;
+        width: unset;
+        padding: 10px 10px 10px 40px;
+        background-position: 12px center;
+        border-radius: 10px;
+    }
+
+    .cookie-banner > p {
+        font-size: 12px;
+    }
+
+    button[name="accept-cookies"] {
+        font-size: 14px;
+        padding: 10px 15px;
+        margin-left: 15px;
     }
 }
