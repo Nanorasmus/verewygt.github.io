@@ -146,6 +146,12 @@ body#privacy-policy div.main-content-area {
     max-width: 1200px;
 }
 
+body#error-404 div.main-content-area {
+    margin: auto;
+    padding: 75px 25px 150px;
+    max-width: 1200px;
+}
+
 /*------------------------------ BUTTONS ---------------------------------*/
 
 .big-main-wrapper {
@@ -517,6 +523,46 @@ h2.site-subtitle {
 p.site-paragraph {
     line-height: 1.5;
     font-size: 18px;
+}
+
+/*------------------------------ ERROR 404 ---------------------------------*/
+
+.img-404 {
+    position: absolute;
+    background-image: url(/perkroulette/css/img/surv/iconperks-distortion.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h1.site-title.big {
+    font-size: 210px;
+    line-height: 190px;
+    margin: 100px 0 0;
+    text-align: center;
+}
+
+h2.site-subtitle.big {
+    font-size: 44px;
+    line-height: 38px;
+    text-align: center;
+}
+
+p.site-subtitle.big {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+a.big-main.btn-link {
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
 }
 
 /*------------------------------ ADS ---------------------------------*/
