@@ -60,6 +60,7 @@ header.app-header {
     background-color: #aa0000;
     height: 65px;
     width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 header .header-inner {
