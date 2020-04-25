@@ -22,7 +22,7 @@ h2 {
     font-weight: bold;
     font-style: normal;
     line-height: 24px;
-    margin: 0 0 5px 0;
+    margin: 0 0 10px 0;
     text-align: left;
     text-transform: uppercase;
     color: #aa0101;
@@ -40,6 +40,11 @@ h3 {
 p {
     margin: unset;
     display: block;
+}
+p.site-paragraph {
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 a.link {
     color: #fff;
@@ -137,6 +142,7 @@ div.app {
 }
 
 body#perkroulette-app div.main-content-area {
+    position: relative;
     margin: 0 100px 0 350px;
     padding: 50px 0;
 }
@@ -237,7 +243,155 @@ div.error-message::after {
     background: #111;
 }
 
+/*------------------------------ TUTORIAL ---------------------------------*/
+
+@keyframes show {
+    0% {
+        z-index: -1;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        z-index: 999;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes hide {
+    0% {
+        z-index: 999;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        z-index: -1;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.info > input {
+    display: none;
+}
+
+#show-tut:checked ~ .tutorial-panel {
+    animation: show 0.3s ease-in-out forwards;
+}
+
+#hide-tut:checked ~ .tutorial-panel {
+    animation: hide 0.3s ease-in-out forwards;
+}
+
+.tutorial-panel {
+    position: absolute;
+    display: unset;
+    opacity: 0;
+    z-index: -1;
+    top: 75px;
+    background: #000;
+    padding: 65px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25), 0 0 0 3000px rgba(0, 0, 0, 0.4);
+    transform: translateY(0px);
+}
+
+label[for="show-tut"] {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    border: unset;
+    border-radius: 50px;
+    background: #fff;
+    color: #000;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out;
+}
+
+label[for="show-tut"]:hover {
+    color: #aa0000;
+}
+
+label[for="hide-tut"] {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    display: block;
+    height: 45px;
+    width: 45px;
+    background-image: url(css/img/icns/delete.png);
+    background-color: #000;
+    border-radius: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+label[for="hide-tut"]:hover {
+    background-color: #111;
+    border-radius: 50%;
+}
+
+.tutorial-panel h2 {
+    margin-bottom: 20px;
+}
+.tutorial-panel h2:nth-of-type(2) {
+    margin-top: 50px;
+}
+
+.tutorial-panel p.site-paragraph:nth-of-type(1n+2):not(:nth-of-type(5))::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    background: rgb(170, 0, 0);
+    text-align: center;
+    font-size: 14px;
+    line-height: 35px;
+    margin: 0 15px 0 0;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.tutorial-panel p.site-paragraph:nth-of-type(2)::before {
+    content: '1' !important;
+}
+.tutorial-panel p.site-paragraph:nth-of-type(3)::before {
+    content: '2' !important;
+}
+.tutorial-panel p.site-paragraph:nth-of-type(4)::before {
+    content: '3' !important;
+}
+
+.tutorial-panel p.site-paragraph:nth-of-type(1n+2):not(:nth-of-type(5)) {
+    position: relative;
+    padding: 5px 0 5px 50px;
+    line-height: 25px;
+}
+
+.tutorial-panel p.site-paragraph:last-of-type {
+    margin-top: 50px;
+}
+
+
 /*------------------------------ PERKS ---------------------------------*/
+
+body#perkroulette-app h1.site-title {
+    padding-right: 100px;
+}
 
 @keyframes perkRevealAnimation {
     0% {
@@ -356,11 +510,6 @@ div.perk_outline:hover {
     line-height: 13px;
     margin-top: 10px;
     animation-fill-mode: forwards !important;
-}
-
-.perk_name {
-    font-size: 20px;
-    line-height: 20px;
 }
 
 
@@ -513,17 +662,12 @@ input[name="perk-check"]:not(:checked) ~ span.perk-name {
 
 /*------------------------------ PRIVACY POLICY ---------------------------------*/
 
-h1.site-title {
+body#privacy-policy h1.site-title {
     margin-bottom: 25px;
 }
 
-h2.site-subtitle {
+body#privacy-policy h2.site-subtitle {
     margin-bottom: 10px;
-}
-
-p.site-paragraph {
-    line-height: 1.5;
-    font-size: 18px;
 }
 
 /*------------------------------ ERROR 404 ---------------------------------*/
@@ -587,12 +731,12 @@ section#sidebar .sidebar-column:first-of-type {
     margin-right: 4%;
 }
 
-section#sidebar h1 {
+section#sidebar h2 {
     font-size: 38px;
     margin-bottom: 25px;
 }
 
-section#sidebar h2 {
+section#sidebar h3 {
     font-size: 22px;
     margin-bottom: 15px;
 }
@@ -700,6 +844,10 @@ button[name="accept-cookies"] {
     cursor: pointer;
 }
 
+button[name="accept-cookies"]:hover {
+    color: #aa0000;
+}
+
 /*------------------------------ RESPONSIVE ---------------------------------*/
 
 
@@ -714,13 +862,13 @@ button[name="accept-cookies"] {
         line-height: 18px;
     }
 
-    section#sidebar h1 {
+    section#sidebar h2 {
         font-size: 24px;
         line-height: 24px;
         margin-bottom: 10px;
     }
 
-    section#sidebar h2 {
+    section#sidebar h3 {
         font-size: 16px;
         line-height: 16px;
         margin-bottom: 5px;
@@ -834,6 +982,7 @@ button[name="accept-cookies"] {
     /*--------- APP ----------*/
 
     body#perkroulette-app div.main-content-area {
+        position: relative;
         margin: 0 25px;
         padding: 25px 0;
     }
@@ -866,6 +1015,8 @@ button[name="accept-cookies"] {
     }
 
     .perk_name {
+        font-size: 20px;
+        line-height: 20px;
         position: unset;
         bottom: unset;
     }
