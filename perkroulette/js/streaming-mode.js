@@ -1,11 +1,12 @@
 var perk_json;
 var active_type;
 
-var getParam = function(name, w){
-    w = w || window;
-    var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'),
-        val = w.location.search.match(rx);
-    return !val ? '':val[1];
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+        vars[key] = value;
+    });
+    return vars;
 }
 
 function loadPerks() {
@@ -13,13 +14,13 @@ function loadPerks() {
     var list = document.getElementById('perk-list');
     list.innerHTML = "";
 
-    if getParam('type') == "surv" {
+    if getUrlVars()["type"] == "surv" {
         var request = new XMLHttpRequest();
         request.open("GET", "https://verewygt.github.io/perkroulette/js/survivor-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
         active_type = "surv";
-    } else if getParam('type') == "kill" {
+    } else if getUrlVars()["type"] == "kill" {
         var request = new XMLHttpRequest();
         request.open("GET", "https://verewygt.github.io/perkroulette/js/killer-perks.json", false);
         request.send(null);
