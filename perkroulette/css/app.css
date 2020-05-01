@@ -159,6 +159,14 @@ body#error-404 div.main-content-area {
     max-width: 1200px;
 }
 
+body#streaming-mode-embed {
+    background: transparent;
+}
+
+body#streaming-mode-embed .perks-hgrid {
+    margin: 25px;
+}
+
 /*------------------------------ BUTTONS ---------------------------------*/
 
 .big-main-wrapper {
