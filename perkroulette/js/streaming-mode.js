@@ -14,13 +14,13 @@ function loadPerks() {
     var list = document.getElementById('perk-list');
     list.innerHTML = "";
 
-    if getUrlVars()["type"] == "surv" {
+    if (getUrlVars()["type"] == "surv") {
         var request = new XMLHttpRequest();
         request.open("GET", "https://verewygt.github.io/perkroulette/js/survivor-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
         active_type = "surv";
-    } else if getUrlVars()["type"] == "kill" {
+    } else if (getUrlVars()["type"] == "kill") {
         var request = new XMLHttpRequest();
         request.open("GET", "https://verewygt.github.io/perkroulette/js/killer-perks.json", false);
         request.send(null);
