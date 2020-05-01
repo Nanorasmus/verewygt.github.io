@@ -99,6 +99,7 @@ function resetFilter() {
 }
 
 function pickRandomPerk() {
+    getUrlVars();
     loadPerks();
 
     var perk_blacklist = [];
