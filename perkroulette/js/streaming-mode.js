@@ -25,104 +25,17 @@ function loadPerks() {
     }
 }
 
-function generatePerkList() {
-    for (var i = 0; i < perk_json.perks.length; i++) {
-        var pn = perk_json.perks[i].perk_name;
-
-        var newLabel = document.createElement('label');
-        newLabel.id = 'element-' + i;
-        newLabel.classList.add('perk-list-item');
-
-        var pchid = "pch-" + i;
-        newLabel.setAttribute("for", pchid);
-        newLabel.innerHTML = "<input type=\"checkbox\" name=\"perk-check\" id=\"pch-" + i + "\" checked><span class=\"perk-name\">" + pn + "<\/span>";
-
-        list.appendChild(newLabel);
-    }
-}
-
-
-function selAll() {
-    for (var i = 0; i < perk_json.perks.length; i++) {
-        var pchid = "pch-" + i;
-        var checkbox = document.getElementById(pchid);
-
-        checkbox.checked = true;
-
-    }
-}
-
-function selNone() {
-    for (var i = 0; i < perk_json.perks.length; i++) {
-        var pchid = "pch-" + i;
-        var checkbox = document.getElementById(pchid);
-
-        checkbox.checked = false;
-
-    }
-}
-
-function filter() {
-    var input = document.getElementById("search-input");
-    var perk_elements = document.getElementById("perk-list").getElementsByTagName("label");
-    var filter = input.value.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
-
-    for (var i = 0; i < perk_elements.length; i++) {
-        var perk_name = perk_elements[i].getElementsByTagName("span")[0];
-        if (perk_name) {
-            if (perk_name.innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '').indexOf(filter) != -1) {
-                perk_elements[i].style.display = "";
-            } else {
-                perk_elements[i].style.display = "none";
-            }
-        }
-    }
-
-    if (input.value == "") {
-        document.getElementById("search-clear").style.display = "none";
-    } else {
-        document.getElementById("search-clear").style.display = "";
-    }
-}
-
-function resetFilter() {
-    var perk_elements = document.getElementById("perk-list").getElementsByTagName("label");
-
-    for (i = 0; i < perk_elements.length; i++) {
-            perk_elements[i].style.display = "";
-    }
-    document.getElementById("search-clear").style.display = "none";
-}
-
 function pickRandomPerk() {
     getUrlVars();
     loadPerks();
 
-    var perk_blacklist = [];
-    for (var i = 0; i < perk_json.perks.length; i++) {
-
-        var pchid = "pch-" + i;
-        var checkbox = document.getElementById(pchid);
-
-        if (checkbox.checked == false) {
-            perk_blacklist.push(i);
-        }
-    }
+    var perk_blacklist = getUrlVars()["exclude"].split(",");
 
     if (perk_blacklist.length > (perk_json.perks.length - 4)) {
 
-        var errorbox = document.getElementById('btn-error-msg');
-        errorbox.innerHTML = "Not enough perks selected. Please select at least four.";
-        errorbox.style.display = "table";
+        // TODO: Error: Not enough perks selected
 
     } else {
-
-        var errorbox = document.getElementById('btn-error-msg');
-        errorbox.style.display = "none";
-
-        cleanup();
-        document.getElementById("stcky").disabled = true;
-
         var sel_perks = [];
         while (sel_perks.length < 4) {
             var randomnumber = Math.floor(Math.random() * (perk_json.perks.length));
