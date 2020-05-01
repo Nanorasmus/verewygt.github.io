@@ -29,7 +29,12 @@ function pickRandomPerk() {
     getUrlVars();
     loadPerks();
 
-    var perk_blacklist = getUrlVars()["exclude"].split(",");
+
+    if (getUrlVars()["exclude"] != null) {
+        var perk_blacklist = getUrlVars()["exclude"].split(",");
+    } else {
+        perk_blacklist = [];
+    }
 
     if (perk_blacklist.length > (perk_json.perks.length - 4)) {
 
@@ -48,9 +53,9 @@ function pickRandomPerk() {
         while (i < 4) {
             var id = 'p' + i.toString();
             if (perk_json.perks[sel_perks[i]].perk_color == "purple") {
-                document.getElementById(id).style.backgroundImage = "url(css/img/perk_purple.png)";
+                document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_purple.png)";
             } else if (perk_json.perks[sel_perks[i]].perk_color == "green") {
-                document.getElementById(id).style.backgroundImage = "url(css/img/perk_green.png)";
+                document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_green.png)";
             }
             i++;
 
@@ -59,7 +64,7 @@ function pickRandomPerk() {
         for (var i = 0; i < 4; i++) {
             document.getElementById("pn" + i).innerHTML = perk_json.perks[sel_perks[i]].perk_name;
             document.getElementById("pc" + i).innerHTML = perk_json.perks[sel_perks[i]].character;
-            document.getElementById("pi" + i).style.backgroundImage = "url(css/img/" + active_type + "/iconperks-" + perk_json.perks[sel_perks[i]].perk_name.toLowerCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/é/gi, 'e').replace(/è/gi, 'e').replace(/à/gi, 'a').replace(/&/gi, 'and').replace(/!/gi, '').replace(/:/gi, '') + ".png)";
+            document.getElementById("pi" + i).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/" + active_type + "/iconperks-" + perk_json.perks[sel_perks[i]].perk_name.toLowerCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/é/gi, 'e').replace(/è/gi, 'e').replace(/à/gi, 'a').replace(/&/gi, 'and').replace(/!/gi, '').replace(/:/gi, '') + ".png)";
 
             document.getElementById("pn" + i).style.opacity = "0";
             document.getElementById("pc" + i).style.opacity = "0";
