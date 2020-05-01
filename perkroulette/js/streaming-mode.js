@@ -10,10 +10,6 @@ function getUrlVars() {
 }
 
 function loadPerks() {
-
-    var list = document.getElementById('perk-list');
-    list.innerHTML = "";
-
     if (getUrlVars()["type"] == "surv") {
         var request = new XMLHttpRequest();
         request.open("GET", "https://verewygt.github.io/perkroulette/js/survivor-perks.json", false);
