@@ -750,10 +750,34 @@ input#link-copy-btn {
 
 body#streaming-mode-embed {
     background: transparent;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 
 body#streaming-mode-embed .perks-hgrid {
-    margin: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 25px;
+    height: fit-content;
+    width: calc(100% - 50px);
+}
+
+body#streaming-mode-embed .perk_name_container {
+    height: 5vw;
+}
+
+body#streaming-mode-embed .perk_name {
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+}
+
+body#streaming-mode-embed .perk_character {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
 }
 
 /*------------------------------ ERROR 404 ---------------------------------*/
