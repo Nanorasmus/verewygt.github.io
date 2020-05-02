@@ -72,9 +72,7 @@
                         </div>
 
                         <div class="perks">
-                            <h3>Perk Management
-                            </h3>
-
+                            <h3>Perk Management</h3>
                             <form id="search-input-wrapper" name="search-input-wrapper">
                                 <input type="text" id="search-input" onkeyup="filter()" placeholder="Search for perk" title="Search for perk"> <input type="reset" value="" style="display: none;" onclick="resetFilter()" id="search-clear">
                             </form>
@@ -82,10 +80,26 @@
                                 <button class="selection-button" onclick="selAll()">Select all</button>
                                 <button class="selection-button" onclick="selNone()">Select none</button>
                             </div>
-
-                            <div class="generated-list" id="perk-list">
-                            </div>
+                            <div class="generated-list" id="perk-list"></div>
                         </div>
+
+                        <div class="appearance">
+                            <h3>Appearance</h3>
+                            <form>
+                                <label for="bg-color">Background Color</label>
+                                <input type="text" name="bg-color" value="transparent">
+                                <label for="perk-name-color">Perk Name Color</label>
+                                <input type="text" name="perk-name-color" value="#ffffff">
+                                <label for="char-color">Character Color</label>
+                                <input type="text" name="char-color" value="#ff8800">
+                                <label for="bg-p-url">Perk Image URL (Purple)</label>
+                                <input type="url" name="bg-p-url" value="Default">
+                                <label for="bg-g-url">Perk Image URL (Green)</label>
+                                <input type="url" name="bg-g-url" value="Default">
+                            </form>
+                        </div>
+
+                        <button id="apply" type="button" name="apply">Apply Changes</button>
                     </div>
                 </div>
 
@@ -98,7 +112,6 @@
                     </noscript>
 
                     <h1 class="site-title">Streaming mode</h1>
-                    <h2 class="site-subtitle">Dead by Daylight Randomizer</h2>
 
                     <div class="info">
                         <input type="radio" name="tut-toggle" id="hide-tut">
@@ -118,12 +131,16 @@
                         </div>
                     </div>
 
-                    <iframe id="embed-preview" src="embed" width="100%" height="100%"></iframe>
+                    <h2 class="site-subtitle">Preview</h2>
+                    <div class="preview-container">
+                        <iframe id="embed-preview" src="https://verewygt.github.io/perkroulette/streaming-mode/embed?type=surv" width="100%" height="100%"></iframe>
+                    </div>
 
-                    <div class="big-main-wrapper">
-                        <div class="error-message" style="display: none;" id="btn-error-msg">
-                        </div>
-                        <button class="big-main" id="stcky" onclick="pickRandomPerk()">Randomize</button>
+
+                    <h2 class="site-subtitle">Streaming Software Link</h2>
+                    <div class="link-field">
+                        <input id="link-input" type="text" name="stream-software-url" value="https://verewygt.github.io/perkroulette/streaming-mode/embed?type=surv">
+                        <input id="link-copy-btn" type="button" value="Copy URL" onclick="copyToClipboard()">
                     </div>
                 </div>
             </div>
