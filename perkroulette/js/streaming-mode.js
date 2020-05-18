@@ -9,7 +9,21 @@ function getUrlVars() {
     return vars;
 }
 
+function customColors() {
+    if (getUrlVars()["bg-c"] != null) {
+        document.querySelector("#streaming-mode-embed").style.background = getUrlVars()["bg-c"];
+    }
+    if (getUrlVars()["pn-c"] != null) {
+        document.querySelector(".perk_name").style.color = getUrlVars()["pn-c"];
+    }
+    if (getUrlVars()["ch-c"] != null) {
+        document.querySelector(".perk_character").style.color = getUrlVars()["ch-c"];
+    }
+}
+
 function loadPerks() {
+    customColors()
+
     if (getUrlVars()["type"] == "surv") {
         var request = new XMLHttpRequest();
         request.open("GET", "https://verewygt.github.io/perkroulette/js/survivor-perks.json", false);
@@ -24,6 +38,54 @@ function loadPerks() {
         active_type = "kill";
     }
 }
+
+function selAll() {
+    for (var i = 0; i < perk_json.perks.length; i++) {
+        var pchid = "pch-" + i;
+        var checkbox = document.getElementById(pchid);
+
+        checkbox.checked = true;
+    }
+}
+function selNone() {
+    for (var i = 0; i < perk_json.perks.length; i++) {
+        var pchid = "pch-" + i;
+        var checkbox = document.getElementById(pchid);
+
+        checkbox.checked = false;
+    }
+}
+function filter() {
+    var input = document.getElementById("search-input");
+    var perk_elements = document.getElementById("perk-list").getElementsByTagName("label");
+    var filter = input.value.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
+
+    for (var i = 0; i < perk_elements.length; i++) {
+        var perk_name = perk_elements[i].getElementsByTagName("span")[0];
+        if (perk_name) {
+            if (perk_name.innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '').indexOf(filter) != -1) {
+                perk_elements[i].style.display = "";
+            } else {
+                perk_elements[i].style.display = "none";
+            }
+        }
+    }
+
+    if (input.value == "") {
+        document.getElementById("search-clear").style.display = "none";
+    } else {
+        document.getElementById("search-clear").style.display = "";
+    }
+}
+function resetFilter() {
+    var perk_elements = document.getElementById("perk-list").getElementsByTagName("label");
+
+    for (i = 0; i < perk_elements.length; i++) {
+            perk_elements[i].style.display = "";
+    }
+    document.getElementById("search-clear").style.display = "none";
+}
+
 
 function pickRandomPerk() {
     getUrlVars();
@@ -53,9 +115,17 @@ function pickRandomPerk() {
         while (i < 4) {
             var id = 'p' + i.toString();
             if (perk_json.perks[sel_perks[i]].perk_color == "purple") {
-                document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_purple.png)";
+                if (getUrlVars()["img-p-url"] != null) {
+                    document.getElementById(id).style.backgroundImage = "url(" + getUrlVars()["img_p"] + ")";
+                } else {
+                    document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_purple.png)";
+                }
             } else if (perk_json.perks[sel_perks[i]].perk_color == "green") {
-                document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_green.png)";
+                if (getUrlVars()["img-g-url"] != null) {
+                    document.getElementById(id).style.backgroundImage = "url(" + getUrlVars()["img_g"] + ")";
+                } else {
+                    document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_green.png)";
+                }
             }
             i++;
 
