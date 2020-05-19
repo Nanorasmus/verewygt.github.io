@@ -9,15 +9,67 @@ function getUrlVars() {
     return vars;
 }
 
+function applyChanges() {
+    var link = "https://verewygt.github.io/perkroulette/streaming-mode/embed/";
+
+    if (document.querySelector("input#surv").checked) {
+        link += "?type=surv";
+    } else if (document.querySelector("input#kill").checked) {
+        link += "?type=kill";
+    }
+
+    var perk_blacklist = [];
+    for (var i = 0; i < perk_json.perks.length; i++) {
+
+        var pchid = "pch-" + i;
+        var checkbox = document.getElementById(pchid);
+
+        if (checkbox.checked == false) {
+            perk_blacklist.push(i);
+        }
+    }
+    if (perk_blacklist != []) {
+        link += "&exclude=" + perk_blacklist;
+    }
+
+    if (document.querySelector("input[name=bg-color]").value != "transparent") {
+        link += "&bg-c=" + document.querySelector("input[name=bg-color]").value;
+    }
+    if (document.querySelector("input[name=perk-name-color]").value != "#ffffff") {
+        link += "&pn-c=" + document.querySelector("input[name=perk-name-color]").value;
+    }
+    if (document.querySelector("input[name=char-color]").value != "#ff8800") {
+        link += "&ch-c=" + document.querySelector("input[name=char-color]").value;
+    }
+    if (document.querySelector("input[name=bg-g-url]").value != "Default") {
+        link += "&img-g-url=" + document.querySelector("input[name=bg-g-url]").value;
+    }
+    if (document.querySelector("input[name=bg-p-url]").value != "Default") {
+        link += "&img-p-url=" + document.querySelector("input[name=bg-p-url]").value;
+    }
+
+    document.querySelector("#link-input").value = link;
+    document.querySelector("#embed-preview").src = link;
+}
+
+
 function customColors() {
     if (getUrlVars()["bg-c"] != null) {
         document.querySelector("#streaming-mode-embed").style.background = getUrlVars()["bg-c"];
     }
-    if (getUrlVars()["pn-c"] != null) {
-        document.querySelector(".perk_name").style.color = getUrlVars()["pn-c"];
+    if (getUrlVars()["pn-c"] != null)
+        var x, i;
+        x = document.querySelectorAll(".perk_name");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = getUrlVars()["pn-c"];
+        }
     }
     if (getUrlVars()["ch-c"] != null) {
-        document.querySelector(".perk_character").style.color = getUrlVars()["ch-c"];
+        var x, i;
+        x = document.querySelectorAll(".perk_character");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.color = getUrlVars()["ch-c"];
+        }
     }
 }
 
@@ -117,13 +169,13 @@ function pickRandomPerk() {
             var id = 'p' + i.toString();
             if (perk_json.perks[sel_perks[i]].perk_color == "purple") {
                 if (getUrlVars()["img-p-url"] != null) {
-                    document.getElementById(id).style.backgroundImage = "url(" + getUrlVars()["img_p"] + ")";
+                    document.getElementById(id).style.backgroundImage = "url(" + getUrlVars()["img-p-url"] + ")";
                 } else {
                     document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_purple.png)";
                 }
             } else if (perk_json.perks[sel_perks[i]].perk_color == "green") {
                 if (getUrlVars()["img-g-url"] != null) {
-                    document.getElementById(id).style.backgroundImage = "url(" + getUrlVars()["img_g"] + ")";
+                    document.getElementById(id).style.backgroundImage = "url(" + getUrlVars()["img-g-url"] + ")";
                 } else {
                     document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_green.png)";
                 }
@@ -182,8 +234,6 @@ function perk4an() {
     document.getElementById("p3").classList.add('animate1');
     document.getElementById("pn3").classList.add('animate2');
     document.getElementById("pc3").classList.add('animate3');
-
-    window.setTimeout(enableButton, 1500);
 }
 
 function cleanup() {
