@@ -65,17 +65,17 @@ function filter() {
         var perk_name = perk_elements[i].getElementsByTagName("span")[0];
         if (perk_name) {
             if (perk_name.innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '').indexOf(filter) != -1) {
-                perk_elements[i].style.display = "";
+                perk_elements[i].classList.remove('hidden');
             } else {
-                perk_elements[i].style.display = "none";
+                perk_elements[i].classList.add('hidden');
             }
         }
     }
 
     if (input.value == "") {
-        document.getElementById("search-clear").style.display = "none";
+        document.getElementById("search-clear").classList.add('hidden');
     } else {
-        document.getElementById("search-clear").style.display = "";
+        document.getElementById("search-clear").classList.remove('hidden');
     }
 }
 
@@ -83,9 +83,9 @@ function resetFilter() {
     var perk_elements = document.getElementById("perk-list").getElementsByTagName("label");
 
     for (i = 0; i < perk_elements.length; i++) {
-            perk_elements[i].style.display = "";
+            perk_elements[i].classList.remove('hidden');
     }
-    document.getElementById("search-clear").style.display = "none";
+    document.getElementById("search-clear").classList.add('hidden');
 }
 
 function pickRandomPerk() {

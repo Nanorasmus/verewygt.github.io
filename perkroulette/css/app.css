@@ -57,6 +57,28 @@ a.link:hover {
     color: #aaa;
 }
 
+/*------------------------------ JS ---------------------------------*/
+
+.hidden {
+    display: none !important;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.animate1 {
+    animation: perkRevealAnimation 1.5s ease-out;
+}
+
+.animate2 {
+    animation: perkRevealAnimation 1s ease-out;
+}
+
+.animate3 {
+    animation: perkRevealAnimation 1s ease-out 0.3s;
+}
+
 /*------------------------------ HEADER ---------------------------------*/
 
 header.app-header {
