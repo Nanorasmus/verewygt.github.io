@@ -186,10 +186,6 @@ function perk4an() {
     window.setTimeout(enableButton, 1500);
 }
 
-function enableButton() {
-    document.getElementById("stcky").disabled = false;
-}
-
 function cleanup() {
     document.getElementById("p0").classList.remove('animate1');
     document.getElementById("p1").classList.remove('animate1');
