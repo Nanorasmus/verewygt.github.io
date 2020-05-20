@@ -9,7 +9,7 @@ function applyChanges() {
         link += "?type=kill";
     }
 
-    var perk_blacklist;
+    var perk_blacklist = [];
     for (var i = 0; i < perk_json.perks.length; i++) {
 
         var pchid = "pch-" + i;
@@ -19,6 +19,7 @@ function applyChanges() {
             perk_blacklist.push(i);
         }
     }
+    console.log(perk_blacklist);
     if (perk_blacklist != null) {
         link += "&exclude=" + perk_blacklist;
     }
