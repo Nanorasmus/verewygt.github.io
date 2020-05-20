@@ -57,7 +57,7 @@ function customColors() {
     if (getUrlVars()["bg-c"] != null) {
         document.querySelector("#streaming-mode-embed").style.background = getUrlVars()["bg-c"];
     }
-    if (getUrlVars()["pn-c"] != null)
+    if (getUrlVars()["pn-c"] != null) {
         var x, i;
         x = document.querySelectorAll(".perk_name");
         for (i = 0; i < x.length; i++) {
