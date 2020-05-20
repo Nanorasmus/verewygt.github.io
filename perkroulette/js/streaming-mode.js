@@ -44,6 +44,9 @@ function applyChanges() {
 }
 
 function loadPerks() {
+    var list = document.getElementById('perk-list');
+    list.innerHTML = "";
+
     if (document.querySelector("input#surv").checked) {
         var request = new XMLHttpRequest();
         request.open("GET", "https://verewygt.github.io/perkroulette/js/survivor-perks.json", false);
