@@ -781,18 +781,19 @@ body#streaming-mode div#perk-list {
     height: 300px;
 }
 
-body#streaming-mode div.appearance > form > label {
+body#streaming-mode div.appearance > form > div > label {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     line-height: 18px;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     color: #888;
+    margin-bottom: 5px;
 }
 
-body#streaming-mode div.appearance > form > input {
-    width: calc(50% - 28px);
+body#streaming-mode div.appearance > form > div > input {
+    width: calc(100% - 25px);
     background-color: #222;
     border: none;
     padding: 8px 12px;
@@ -800,7 +801,34 @@ body#streaming-mode div.appearance > form > input {
     font-size: 14px;
     border-radius: 3px;
     color: #fff;
+    margin-bottom: 15px;
 }
+
+.appearance > form {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.label-gr {
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    margin-right: 5%;
+}
+
+.label-gr:nth-child(3n) {
+    margin-right: 0;
+}
+
+.label-gr > input::before {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+}
+
 
 button#apply {
     position: absolute;
