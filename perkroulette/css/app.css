@@ -584,7 +584,6 @@ input#menu-toggle, .toggle-button {
 label[for="surv"], label[for="kill"] {
     display: inline-block;
     width: calc(50% - 44px);
-    margin-bottom: 10px;
     padding: 5px 5px 5px 35px;
     line-height: 25px;
     border-radius: 3px;
