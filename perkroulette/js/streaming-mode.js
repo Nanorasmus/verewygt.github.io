@@ -19,8 +19,8 @@ function applyChanges() {
             perk_blacklist.push(i);
         }
     }
-    console.log(perk_blacklist);
-    if (perk_blacklist != null) {
+    
+    if (perk_blacklist.length != 0) {
         link += "&exclude=" + perk_blacklist;
     }
 
