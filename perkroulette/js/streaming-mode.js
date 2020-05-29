@@ -19,7 +19,7 @@ function applyChanges() {
             perk_blacklist.push(i);
         }
     }
-    
+
     if (perk_blacklist.length != 0) {
         link += "&exclude=" + perk_blacklist;
     }
@@ -121,4 +121,13 @@ function resetFilter() {
             perk_elements[i].classList.remove('hidden');
     }
     document.getElementById("search-clear").classList.add('hidden');
+}
+
+function copyToClipboard() {
+  var copyText = document.getElementById("link-input");
+  var copyTextBtn = document.getElementById("link-copy-btn");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  copyTextBtn.value = "Copied";
 }
