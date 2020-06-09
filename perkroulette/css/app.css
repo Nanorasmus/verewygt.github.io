@@ -580,6 +580,12 @@ input#menu-toggle, .toggle-button {
     padding: 0 0 25px 0;
     border-bottom: 1px solid #555;
 }
+
+.perkroulette-app .configuration > .perks {
+    padding: unset;
+    border-bottom: unset;
+}
+
 .configuration input[type="radio"] {
     display: none;
 }
@@ -651,7 +657,7 @@ label[for="surv"]:hover, label[for="kill"]:hover {
 #perk-list {
     overflow-y: scroll;
     position: absolute;
-    top: 225px;
+    top: 245px;
     bottom: 15px;
     right: 15px;
     left: 15px;
@@ -1189,7 +1195,6 @@ button[name="accept-cookies"]:hover {
     .config-wrapper {
         z-index: 998;
         width: 0px;
-        background: url(img/icns/settings.png);
     }
 
     .configuration {
