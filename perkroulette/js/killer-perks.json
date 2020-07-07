@@ -77,6 +77,11 @@
         "character" : "The Deathslinger Teachable Perk"
     },
     {
+        "perk_name" : "Deathbound",
+        "perk_color" : "purple",
+        "character" : "The Executioner Teachable Perk"
+    },
+    {
         "perk_name" : "Deerstalker",
         "perk_color" : "green",
         "character" : "All Characters"
@@ -105,6 +110,11 @@
         "perk_name" : "Fire Up",
         "perk_color" : "green",
         "character" : "The Nightmare Teachable Perk"
+    },
+    {
+        "perk_name" : "Forced Penance",
+        "perk_color" : "green",
+        "character" : "The Executioner Teachable Perk"
     },
     {
         "perk_name" : "Franklin's Demise",
@@ -325,6 +335,11 @@
         "perk_name" : "Tinkerer",
         "perk_color" : "purple",
         "character" : "The Hillbilly Teachable Perk"
+    },
+    {
+        "perk_name" : "Trail of Torment",
+        "perk_color" : "purple",
+        "character" : "The Executioner Teachable Perk"
     },
     {
         "perk_name" : "Unnerving Presence",

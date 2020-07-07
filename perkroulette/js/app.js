@@ -11,11 +11,13 @@ function loadPerks() {
         request.open("GET", "js/survivor-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
+        console.log(perk_json);
         active_type = "surv";
     } else if (document.getElementById('kill').checked) {
         var request = new XMLHttpRequest();
         request.open("GET", "js/killer-perks.json", false);
         request.send(null);
+        console.log(perk_json);
         perk_json = JSON.parse(request.responseText);
         active_type = "kill";
     }

@@ -37,13 +37,18 @@
     },
     {
         "perk_name"     : "Balanced Landing",
-        "perk_color"    : "purple",
+        "perk_color"    : "green",
         "character"     : "Nea Karlsson Teachable Perk"
     },
     {
         "perk_name"     : "Better Together",
         "perk_color"    : "green",
         "character"     : "Nancy Wheeler Teachable Perk"
+    },
+    {
+        "perk_name"     : "Blood Pact",
+        "perk_color"    : "green",
+        "character"     : "Cheryl Mason Teachable Perk"
     },
     {
         "perk_name"     : "Boil Over",
@@ -147,7 +152,7 @@
     },
     {
         "perk_name"     : "Flip-Flop",
-        "perk_color"    : "purple",
+        "perk_color"    : "green",
         "character"     : "Ash Williams Teachable Perk"
     },
     {
@@ -271,6 +276,11 @@
         "character"     : "Zarina Kassir Teachable Perk"
     },
     {
+        "perk_name"     : "Repressed Alliance",
+        "perk_color"    : "purple",
+        "character"     : "Cheryl Mason Teachable Perk"
+    },
+    {
         "perk_name"     : "Resilience",
         "perk_color"    : "purple",
         "character"     : "All Characters"
@@ -307,8 +317,13 @@
     },
     {
         "perk_name"     : "Solidarity",
-        "perk_color"    : "purple",
+        "perk_color"    : "green",
         "character"     : "Jane Romero Teachable Perk"
+    },
+    {
+        "perk_name"     : "Soul Guard",
+        "perk_color"    : "purple",
+        "character"     : "Cheryl Mason Teachable Perk"
     },
     {
         "perk_name"     : "Spine Chill",
@@ -346,14 +361,14 @@
         "character"     : "All Characters"
     },
     {
-        "perk_name"     : "Up The Ante",
-        "perk_color"    : "purple",
-        "character"     : "Ace Visconti Teachable Perk"
-    },
-    {
         "perk_name"     : "Unbreakable",
         "perk_color"    : "purple",
         "character"     : "Bill Overbeck Teachable Perk"
+    },
+    {
+        "perk_name"     : "Up The Ante",
+        "perk_color"    : "purple",
+        "character"     : "Ace Visconti Teachable Perk"
     },
     {
         "perk_name"     : "Urban Evasion",
