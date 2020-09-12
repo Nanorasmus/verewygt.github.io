@@ -86,6 +86,11 @@
         "character"     : "Ash Williams Teachable Perk"
     },
     {
+        "perk_name"     : "Build to Last",
+        "perk_color"    : "purple",
+        "character"     : "Felix Richter Teachable Perk"
+    },
+    {
         "perk_name"     : "Calm Spirit",
         "perk_color"    : "purple",
         "character"     : "Jake Park Teachable Perk"
@@ -124,6 +129,11 @@
         "perk_name"     : "Deliverance",
         "perk_color"    : "purple",
         "character"     : "Adam Francis Teachable Perk"
+    },
+    {
+        "perk_name"     : "Desperate Measures",
+        "perk_color"    : "purple",
+        "character"     : "Felix Richter Teachable Perk"
     },
     {
         "perk_name"     : "Detective's Hunch",
@@ -379,6 +389,11 @@
         "perk_name"     : "Vigil",
         "perk_color"    : "purple",
         "character"     : "Quentin Smith Teachable Perk"
+    },
+    {
+        "perk_name"     : "Visionary",
+        "perk_color"    : "green",
+        "character"     : "Felix Richter Teachable Perk"
     },
     {
         "perk_name"     : "Wake Up!",

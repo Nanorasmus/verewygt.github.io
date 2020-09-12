@@ -97,6 +97,11 @@
         "character" : "All Characters"
     },
     {
+        "perk_name" : "Dragon's Grip",
+        "perk_color" : "green",
+        "character" : "The Blight Teachable Perk"
+    },
+    {
         "perk_name" : "Dying Light",
         "perk_color" : "purple",
         "character" : "The Shape Teachable Perk"
@@ -137,6 +142,11 @@
         "character" : "The Pig Teachable Perk"
     },
     {
+        "perk_name" : "Hex: Blood Favour",
+        "perk_color" : "purple",
+        "character" : "The Blight Teachable Perk"
+    },
+    {
         "perk_name" : "Hex: Devour Hope",
         "perk_color" : "purple",
         "character" : "The Hag Teachable Perk"
@@ -175,6 +185,11 @@
         "perk_name" : "Hex: Thrill of the Hunt",
         "perk_color" : "green",
         "character" : "All Characters"
+    },
+    {
+        "perk_name" : "Hex: Undying",
+        "perk_color" : "purple",
+        "character" : "The Blight Teachable Perk"
     },
     {
         "perk_name" : "I'm All Ears",

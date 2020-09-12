@@ -425,6 +425,22 @@ body#perkroulette-app h1.site-title {
     padding-right: 100px;
 }
 
+p.app-version {
+    margin-bottom: 30px;
+    color: #999;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+span.tag {
+    background: #fff;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 100px;
+    margin-right: 5px;
+}
+
 @keyframes perkRevealAnimation {
     0% {
         transform:  translateY(25px);
