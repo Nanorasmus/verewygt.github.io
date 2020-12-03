@@ -62,6 +62,11 @@
         "character" : "The Clown Teachable Perk"
     },
     {
+        "perk_name" : "Coup de Grâce",
+        "perk_color" : "purple",
+        "character" : "The Twins Teachable Perk"
+    },
+    {
         "perk_name" : "Cruel Limits",
         "perk_color" : "purple",
         "character" : "The Demogorgon Teachable Perk"
@@ -98,7 +103,7 @@
     },
     {
         "perk_name" : "Dragon's Grip",
-        "perk_color" : "green",
+        "perk_color" : "purple",
         "character" : "The Blight Teachable Perk"
     },
     {
@@ -192,6 +197,11 @@
         "character" : "The Blight Teachable Perk"
     },
     {
+        "perk_name" : "Hoarder",
+        "perk_color" : "purple",
+        "character" : "The Twins Teachable Perk"
+    },
+    {
         "perk_name" : "I'm All Ears",
         "perk_color" : "green",
         "character" : "The Ghost Face Teachable Perk"
@@ -255,6 +265,11 @@
         "perk_name" : "Nemesis",
         "perk_color" : "purple",
         "character" : "The Oni Teachable Perk"
+    },
+    {
+        "perk_name" : "Oppression",
+        "perk_color" : "purple",
+        "character" : "The Twins Teachable Perk"
     },
     {
         "perk_name" : "Overcharge",

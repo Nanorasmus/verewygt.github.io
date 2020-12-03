@@ -26,6 +26,11 @@
         "character"     : "Yui Kimura Teachable Perk"
     },
     {
+        "perk_name"     : "Appraisal",
+        "perk_color"    : "purple",
+        "character"     : "Élodie Rakoto Teachable Perk"
+    },
+    {
         "perk_name"     : "Autodidact",
         "perk_color"    : "purple",
         "character"     : "Adam Francis Teachable Perk"
@@ -114,6 +119,11 @@
         "perk_name"     : "Dead Hard",
         "perk_color"    : "purple",
         "character"     : "David King Teachable Perk"
+    },
+    {
+        "perk_name"     : "Deception",
+        "perk_color"    : "purple",
+        "character"     : "Élodie Rakoto Teachable Perk"
     },
     {
         "perk_name"     : "Decisive Strike",
@@ -264,6 +274,11 @@
         "perk_name"     : "Poised",
         "perk_color"    : "purple",
         "character"     : "Jane Romero Teachable Perk"
+    },
+    {
+        "perk_name"     : "Power Struggle",
+        "perk_color"    : "purple",
+        "character"     : "Élodie Rakoto Teachable Perk"
     },
     {
         "perk_name"     : "Premonition",

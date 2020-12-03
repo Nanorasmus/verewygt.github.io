@@ -272,6 +272,36 @@ div.error-message::after {
     background: #111;
 }
 
+/*------------------------------ SUB MENU ---------------------------------*/
+
+.sub-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.sub-menu > span {
+    color: #999;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+span.tag {
+    background: #fff;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 100px;
+}
+
+span.ver {
+    flex-grow: 1;
+}
+
 /*------------------------------ TUTORIAL ---------------------------------*/
 
 @keyframes show {
@@ -329,9 +359,6 @@ div.error-message::after {
 }
 
 label[for="show-tut"] {
-    position: absolute;
-    right: 0;
-    top: 50px;
     display: block;
     font-weight: bold;
     font-size: 16px;
@@ -423,22 +450,6 @@ label[for="hide-tut"]:hover {
 
 body#perkroulette-app h1.site-title {
     padding-right: 100px;
-}
-
-p.app-version {
-    margin-bottom: 30px;
-    color: #999;
-    font-weight: bold;
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-span.tag {
-    background: #fff;
-    color: #000;
-    padding: 4px 10px;
-    border-radius: 100px;
-    margin-right: 5px;
 }
 
 @keyframes perkRevealAnimation {
@@ -1100,6 +1111,8 @@ button[name="accept-cookies"]:hover {
     color: #aa0000;
 }
 
+
+
 /*------------------------------ RESPONSIVE ---------------------------------*/
 
 
@@ -1131,7 +1144,7 @@ button[name="accept-cookies"]:hover {
     }
 
     body.perkroulette-app h1.site-title, body.perkroulette-app h2.site-subtitle {
-        margin: 0 0 10px 65px;
+        margin: 0 0 10px 0;
     }
 
     /*--------- HEADER ----------*/
@@ -1141,10 +1154,11 @@ button[name="accept-cookies"]:hover {
     }
 
     p#main-text {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 16px;
     }
     p#subtext {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     /*--------- NAVIGATION ----------*/
@@ -1154,13 +1168,19 @@ button[name="accept-cookies"]:hover {
     }
 
     a.nav-link {
-        font-size: 16px;
-        padding: 10px;
+        font-size: 14px;
+        padding: 6px;
         margin-left: 5px;
     }
 
     a.nav-link[href="#"] {
         display: none;
+    }
+
+    /*--------- SUB MENU ----------*/
+
+    .sub-menu {
+    margin: 0 0 25px 65px;
     }
 
     /*--------- CONFIG ----------*/
@@ -1172,8 +1192,8 @@ button[name="accept-cookies"]:hover {
         background: #444;
         border-radius: 100px;
         box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.5);
-        height: 45px;
-        width: 45px;
+        height: 35px;
+        width: 35px;
         top: 90px;
         left: 25px;
         transition: left 0.1s ease-in-out;
@@ -1184,7 +1204,7 @@ button[name="accept-cookies"]:hover {
     }
 
     input#menu-toggle:checked ~ .toggle-button {
-        left: calc(100% - 55px);
+        left: calc(100% - 65px);
     }
 
 
@@ -1193,7 +1213,7 @@ button[name="accept-cookies"]:hover {
         background: url(img/icns/settings.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 30px;
+        background-size: 24px;
         height: 100%;
         width: 100%;
         border-radius: 100px;
@@ -1204,7 +1224,7 @@ button[name="accept-cookies"]:hover {
         background: url(img/icns/delete.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 25px;
+        background-size: 18px;
     }
 
 
@@ -1226,7 +1246,7 @@ button[name="accept-cookies"]:hover {
 
     input#menu-toggle:checked ~ .configuration {
         transform: unset;
-        box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 0px 0px 100px rgba(0, 0, 0, 0.9);
     }
 
 
