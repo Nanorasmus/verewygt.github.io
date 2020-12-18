@@ -608,7 +608,7 @@ input#menu-toggle, .toggle-button {
     border-bottom: 1px solid #555;
 }
 
-.perkroulette-app .configuration > .perks {
+body#perkroulette-app .configuration > .perks {
     padding: unset;
     border-bottom: unset;
 }
@@ -745,8 +745,20 @@ body#streaming-mode .config-wrapper {
 body#streaming-mode .configuration {
     width: 350px;
 }
+
+body#streaming-mode .sub-menu {
+    margin-bottom: 35px;
+}
+
 body#streaming-mode h1 {
-    margin-bottom: 50px;
+    flex-grow: 1;
+    margin-bottom: 0px;
+    line-height: 35px;
+}
+
+body#streaming-mode label[for="show-tut"] {
+    width: unset !important;
+    padding: 0px 15px;
 }
 
 .preview-container {
@@ -1230,7 +1242,7 @@ button[name="accept-cookies"]:hover {
 
     .config-wrapper {
         z-index: 998;
-        width: 0px;
+        width: 0px !important;
     }
 
     .configuration {
@@ -1246,13 +1258,13 @@ button[name="accept-cookies"]:hover {
 
     input#menu-toggle:checked ~ .configuration {
         transform: unset;
-        box-shadow: 10px 0px 0px 100px rgba(0, 0, 0, 0.9);
+        box-shadow: 10px 0px 0px 1000px rgba(0, 0, 0, 0.9);
     }
 
 
     /*--------- APP ----------*/
 
-    body#perkroulette-app div.main-content-area {
+    body#perkroulette-app div.main-content-area, body#streaming-mode div.main-content-area {
         position: relative;
         margin: 0 25px;
         padding: 25px 0;
