@@ -323,6 +323,7 @@ a.simple-white {
     text-align: center;
     line-height: 35px;
     text-transform: uppercase;
+    text-decoration: none;
     cursor: pointer;
     transition: color 0.1s ease-in-out;
 }
