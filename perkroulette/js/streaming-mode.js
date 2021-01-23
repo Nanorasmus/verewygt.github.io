@@ -44,6 +44,7 @@ function applyChanges() {
     document.querySelector("#embed-preview").src = link;
 }
 
+
 function loadPerks() {
     var list = document.getElementById('perk-list');
     list.innerHTML = "";

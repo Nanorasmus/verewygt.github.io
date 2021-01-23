@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+    outline: none;
+}
 body.perkroulette-app {
     margin: 0;
     padding: 0;
@@ -300,6 +303,32 @@ span.tag {
 
 span.ver {
     flex-grow: 1;
+}
+
+button.simple-white {
+    height: 35px;
+    margin-left: 15px;
+    padding: 0 25px 0 55px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border: unset;
+    border-radius: 50px;
+    background-image: url("https://verewygt.github.io/perkroulette/css/img/icns/donate.png");
+    background-size: 20px;
+    background-position: 25px center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 36px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out;
+}
+
+button.simple-white:hover {
+    color: #aa0000;
 }
 
 /*------------------------------ TUTORIAL ---------------------------------*/
@@ -742,6 +771,7 @@ body#privacy-policy h2.site-subtitle {
 body#streaming-mode .config-wrapper {
     width: 350px;
 }
+
 body#streaming-mode .configuration {
     width: 350px;
 }

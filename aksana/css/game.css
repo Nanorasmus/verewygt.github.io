@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/* -------- GENERAL -------- */
+
+body {
+    background-color: #0a0a0a;
+    margin: 0;
+    padding: 0;
+}
+body, h1, div, p, a, button {
+    font-family: 'DM Sans', sans-serif;
+    color: #bbb;
+    padding: 0;
+    margin: 0;
+}
+
+/* -------- HEADER -------- */
+
+header {
+    padding: 35px 0;
+    margin: 0;
+    position: relative;
+}
+h1.logo {
+    color: #FFEB3B;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    font-size: 62px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* -------- GAME SECTIONS -------- */
+
+section.game-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: -1;
+}
+
+section.game-sidebar {
+    min-width: 350px;
+    min-height: 865px;
+    width: 25vw;
+    height: 100vh;
+    background-color: #111;
+}
+
+section.game-frame {
+    min-width: 600px;
+    height: 100vh;
+    flex-grow: 1;
+}
+
+.content {
+    margin:  25px;
+    padding: 25px;
+    background-color: #151515;
+    border-radius: 10px;
+}
+
+.box {
+    position: relative;
+    margin: 25px 75px;
+    height: calc(100vh - 280px);
+}
+
+.stats-bar {
+    margin: 75px 25px 25px;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+p#money {
+    text-align: right;
+}
+
+.sidebar-tabs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 666px;
+    height: calc(100vh - 200px);
+}
+
+button.sidebar-selector.settings {
+    margin: auto auto 25px auto;
+}
+
+button.sidebar-selector {
+    display: block;
+    background: transparent;
+    border: none;
+    text-align: left;
+    margin: 15px auto;
+    padding: 30px 30px 30px 100px;
+    width: 320px;
+    font-size: 34px;
+    line-height: 40px;
+    outline: 0;
+    z-index: 10;
+    transition: color 0.1s ease-out;
+}
+
+button.sidebar-selector:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.selected-underlay {
+    position: absolute;
+    top: -5px;
+    bottom: 0px;
+    left: 50px;
+    height: 140px;
+    width: calc(25vw);
+    min-width: 350px;
+    background-color: #222;
+    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 0.50);
+    border-radius: 10px;
+    z-index: 5;
+    transition: all 0.1s ease-out;
+}
+
+h1.title {
+    color: #FFEB3B;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: left;
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.reminders.box, .transactions.box, .file-explorer.box, .settings.box {
+    display: none;
+}
+
+/* -------- CHAT-BOX -------- */
+
+.conversations {
+    display: flex;
+}
+
+ul.conv-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 30%;
+    max-width: 40%;
+}
+
+.chat-wrapper {
+    width: 100%;
+    margin: 0 0 0 25px;
+}
+
+.conv-list > li {
+    padding: 35px 35px 35px 75px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    border-radius: 10px;
+    transition: background-color 0.1s ease-out, color 0.1s ease-out;
+}
+
+.conv-list > li:hover {
+    color: #fff;
+    background-color: #222;
+    box-shadow: 0 5px 5px -4px rgb(0 0 0 / 0.50);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.messages {
+    scroll-behavior: smooth;
+    padding: 0 50px;
+    margin: 0 25px 0 0;
+    height: calc(100% - 115px);
+    overflow-y: auto;
+}
+.messages > li {
+    list-style-type: none;
+    overflow: auto;
+    padding: 20px 10px 20px 0;
+}
+
+p.user-msg {
+    float: right;
+    background: #333;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 5px;
+
+}
+p.fore-msg {
+    background: #222;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.chatbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    padding: 0;
+    box-shadow: -3px 0 0 0px #333, 3px 0 0 #333;
+}
+
+.answer-buttons {margin: 25px 0 0 0;}
+
+.answer-buttons > button {
+    font-size: 24px;
+    text-align: left;
+    background: #222;
+    color: #888;
+    border: 2px solid #888;
+    padding: 5px 15px 5px 50px;
+    margin-top: 5px;
+    border-radius: 3px;
+    transition: color, border 0.2s ease-in-out;
+    width: 100%;
+}
+.answer-buttons > button:hover {
+    border: 2px solid #ddd;
+    color: #ddd;
+}
+
+/* -------- ANIMATIONS -------- */
+
+@keyframes blink {
+    0% {
+      opacity: .2;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: .2;
+    }
+}
+.loadingDots span {
+    font-size: 28px;
+    line-height: 16px;
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.loadingDots span:nth-child(2) {
+    animation-delay: .2s;
+}
+.loadingDots span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+
+
+.glitch {
+    animation: 5s shake infinite alternate;
+}
+@keyframes shake {
+    0% { transform: skewX(0deg);}
+    1% { transform: skewX(5deg);}
+    2% { transform: skewX(0deg);}
+    50% { transform: skewX(0deg); }
+    51% { transform: skewX(-5deg); }
+    52% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }
+}
+
+/* -------- SCROLLBARS -------- */
+
+*::-webkit-scrollbar {
+    width: 5px !important;
+    border-radius: 0 3px 3px 0;
+    background-color: #222 !important;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #444 !important;
+}
