@@ -390,6 +390,21 @@
         "perk_name" : "Zanshin Tactics",
         "perk_color" : "green",
         "character" : "The Oni Teachable Perk"
+    },
+    {
+        "perk_name" : "Hex: Crowd Control",
+        "perk_color" : "purple",
+        "character" : "The Trickster Teachable Perk"
+    },
+    {
+        "perk_name" : "No Way Out",
+        "perk_color" : "purple",
+        "character" : "The Trickster Teachable Perk"
+    },
+    {
+        "perk_name" : "Starstruck",
+        "perk_color" : "purple",
+        "character" : "The Trickster Teachable Perk"
     }
 
     ]

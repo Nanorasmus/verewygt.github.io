@@ -429,6 +429,21 @@
         "perk_name"     : "Windows Of Opportunity",
         "perk_color"    : "green",
         "character"     : "Kate Denson Teachable Perk"
+    },
+    {
+        "perk_name"     : "Fast Track",
+        "perk_color"    : "purple",
+        "character"     : "Yun-Jin Lee Teachable Perk"
+    },
+    {
+        "perk_name"     : "Self-Preservation",
+        "perk_color"    : "purple",
+        "character"     : "Yun-Jin Lee Teachable Perk"
+    },
+    {
+        "perk_name"     : "Smash Hit",
+        "perk_color"    : "purple",
+        "character"     : "Yun-Jin Lee Teachable Perk"
     }
     ]
 }
