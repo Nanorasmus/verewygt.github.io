@@ -685,6 +685,7 @@ label[for="surv"]:hover, label[for="kill"]:hover {
     background-size: 16px;
     border: none;
     padding: 8px 8px 8px 35px;
+    margin: 0;
     width: calc(100% - 35px - 8px);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -696,11 +697,11 @@ label[for="surv"]:hover, label[for="kill"]:hover {
     background: url(img/icns/delete.png), #222;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 16px;
-    right: 5px;
-    top: 3px;
-    width: 25px;
-    height: 25px;
+    background-size: 15px;
+    right: 4px;
+    top: 4px;
+    width: 24px;
+    height: 24px;
     border: none;
     padding: 0;
     margin: 0;
