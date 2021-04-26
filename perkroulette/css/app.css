@@ -1027,7 +1027,7 @@ a.big-main.btn-link {
 
 section#sidebar {
     display: flex;
-    padding: 75px 100px;
+    padding: 125px 200px;
     background: #111111;
 }
 
@@ -1065,7 +1065,7 @@ section#sidebar .white {
 
 footer {
     display: flex;
-    padding: 25px 100px;
+    padding: 25px 200px;
     background: #010101;
 }
 
@@ -1091,7 +1091,7 @@ footer .footer-links {
     background: #333;
     color: #fff;
     padding: 25px 225px 25px 35px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 3px;
     margin-bottom: 50px;
