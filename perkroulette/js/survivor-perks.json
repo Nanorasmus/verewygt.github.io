@@ -444,6 +444,36 @@
         "perk_name"     : "Smash Hit",
         "perk_color"    : "purple",
         "character"     : "Yun-Jin Lee Teachable Perk"
+    },
+    {
+        "perk_name"     : "Counterforce",
+        "perk_color"    : "purple",
+        "character"     : "Jill Valentine Teachable Perk"
+    },
+    {
+        "perk_name"     : "Resurgence",
+        "perk_color"    : "purple",
+        "character"     : "Jill Valentine Teachable Perk"
+    },
+    {
+        "perk_name"     : "Blast Mine",
+        "perk_color"    : "purple",
+        "character"     : "Jill Valentine Teachable Perk"
+    },
+    {
+        "perk_name"     : "Bite the Bullet",
+        "perk_color"    : "purple",
+        "character"     : "Leon Scott Kennedy Teachable Perk"
+    },
+    {
+        "perk_name"     : "Flashbang",
+        "perk_color"    : "purple",
+        "character"     : "Leon Scott Kennedy Teachable Perk"
+    },
+    {
+        "perk_name"     : "Rookie Spirit",
+        "perk_color"    : "purple",
+        "character"     : "Leon Scott Kennedy Teachable Perk"
     }
     ]
 }

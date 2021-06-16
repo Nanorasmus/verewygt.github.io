@@ -405,6 +405,21 @@
         "perk_name" : "Starstruck",
         "perk_color" : "purple",
         "character" : "The Trickster Teachable Perk"
+    },
+    {
+        "perk_name" : "Lethal Pursuer",
+        "perk_color" : "purple",
+        "character" : "The Nemesis Teachable Perk"
+    },
+    {
+        "perk_name" : "Hysteria",
+        "perk_color" : "purple",
+        "character" : "The Nemesis Teachable Perk"
+    },
+    {
+        "perk_name" : "Eruption",
+        "perk_color" : "purple",
+        "character" : "The Nemesis Teachable Perk"
     }
 
     ]
