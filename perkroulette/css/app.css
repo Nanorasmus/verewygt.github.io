@@ -3,6 +3,7 @@
 * {
     outline: none;
 }
+
 body.perkroulette-app {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body.perkroulette-app {
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
+
 h1 {
     font-size: 50px;
     font-weight: bold;
@@ -20,6 +22,7 @@ h1 {
     text-transform: uppercase;
     color: #fff;
 }
+
 h2 {
     font-size: 24px;
     font-weight: bold;
@@ -30,6 +33,7 @@ h2 {
     text-transform: uppercase;
     color: #aa0101;
 }
+
 h3 {
     font-size: 14px;
     font-weight: bold;
@@ -40,15 +44,18 @@ h3 {
     text-transform: uppercase;
     color: #cccccc;
 }
+
 p {
     margin: unset;
     display: block;
 }
+
 p.site-paragraph {
     line-height: 1.5;
     font-size: 18px;
     margin-bottom: 15px;
 }
+
 a.link {
     color: #fff;
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
@@ -56,12 +63,12 @@ a.link {
     cursor: pointer;
     transition: color 0.1s ease-in-out;
 }
+
 a.link:hover {
     color: #aaa;
 }
 
 /*------------------------------ JS ---------------------------------*/
-
 .hidden {
     display: none !important;
 }
@@ -83,7 +90,6 @@ a.link:hover {
 }
 
 /*------------------------------ HEADER ---------------------------------*/
-
 header.app-header {
     position: fixed;
     z-index: 9999;
@@ -113,6 +119,7 @@ a.logo-link {
     margin: 0 0 0 50px;
     min-width: fit-content;
 }
+
 p#subtext {
     display: block;
     margin: 0;
@@ -120,7 +127,7 @@ p#subtext {
     line-height: 14px;
     text-transform: uppercase;
     font-weight: 300;
-    }
+}
 
 p#main-text {
     display: block;
@@ -149,14 +156,14 @@ a.nav-link {
     text-transform: uppercase;
     padding: 10px;
     margin-left: 25px;
-    transition: color  0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
+
 a.nav-link.current, a.nav-link:hover {
     color: #fff;
 }
 
 /*------------------------------ APP GRID ---------------------------------*/
-
 .app-content-parent {
     overflow: hidden;
 }
@@ -188,15 +195,15 @@ body#streaming-mode div.main-content-area {
     position: relative;
     margin: 0 100px 0 450px;
     padding: 50px 0;
-    min-height: 870px;
+    min-height: 800px;
 }
 
 /*------------------------------ BUTTONS ---------------------------------*/
-
 .big-main-wrapper {
     position: relative;
     margin: 100px 0 15px;
 }
+
 .big-main {
     font-family: 'Roboto', sans-serif;
     background: rgb(170, 0, 0);
@@ -214,11 +221,13 @@ body#streaming-mode div.main-content-area {
     margin: 0 auto;
     z-index: 100;
 }
+
 .big-main:disabled {
     background: #ccc;
     color: #aaa;
     cursor: not-allowed;
 }
+
 .big-main:not(:disabled):hover {
     color: rgb(170, 0, 0);
     background-color: #fff;
@@ -241,12 +250,15 @@ body#streaming-mode div.main-content-area {
     width: 49%;
     transition: background-color 0.1s;
 }
+
 .selection-button:hover {
     background: #2b2b2b;
 }
+
 .selection-button:active {
     background: #222;
 }
+
 .error-message {
     display: table;
     text-align: center;
@@ -260,6 +272,7 @@ body#streaming-mode div.main-content-area {
     margin: 0 auto 20px;
     max-width: 100vw;
 }
+
 div.error-message::after {
     content: "";
     display: block;
@@ -276,7 +289,6 @@ div.error-message::after {
 }
 
 /*------------------------------ SUB MENU ---------------------------------*/
-
 .sub-menu {
     display: flex;
     flex-direction: row;
@@ -286,7 +298,7 @@ div.error-message::after {
     margin-bottom: 10px;
 }
 
-.sub-menu > span {
+.sub-menu>span {
     color: #999;
     font-weight: bold;
     font-size: 13px;
@@ -333,25 +345,27 @@ a.simple-white:hover {
 }
 
 /*------------------------------ TUTORIAL ---------------------------------*/
-
 @keyframes show {
     0% {
         z-index: -1;
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         z-index: 999;
         opacity: 1;
         transform: translateY(0px);
     }
 }
+
 @keyframes hide {
     0% {
         z-index: 999;
         opacity: 1;
         transform: translateY(0px);
     }
+
     100% {
         z-index: -1;
         opacity: 0;
@@ -359,15 +373,15 @@ a.simple-white:hover {
     }
 }
 
-.info > input {
+.info>input {
     display: none;
 }
 
-#show-tut:checked ~ .tutorial-panel {
+#show-tut:checked~.tutorial-panel {
     animation: show 0.3s ease-in-out forwards;
 }
 
-#hide-tut:checked ~ .tutorial-panel {
+#hide-tut:checked~.tutorial-panel {
     animation: hide 0.3s ease-in-out forwards;
 }
 
@@ -434,6 +448,7 @@ label[for="hide-tut"]:hover {
 .tutorial-panel h2 {
     margin-bottom: 20px;
 }
+
 .tutorial-panel h2:nth-of-type(2) {
     margin-top: 50px;
 }
@@ -458,9 +473,11 @@ label[for="hide-tut"]:hover {
 .tutorial-panel p.site-paragraph:nth-of-type(2)::before {
     content: '1' !important;
 }
+
 .tutorial-panel p.site-paragraph:nth-of-type(3)::before {
     content: '2' !important;
 }
+
 .tutorial-panel p.site-paragraph:nth-of-type(4)::before {
     content: '3' !important;
 }
@@ -475,18 +492,17 @@ label[for="hide-tut"]:hover {
     margin-top: 50px;
 }
 
-
 /*------------------------------ PERKS ---------------------------------*/
-
 body#perkroulette-app h1.site-title {
     padding-right: 100px;
 }
 
 @keyframes perkRevealAnimation {
     0% {
-        transform:  translateY(25px);
+        transform: translateY(25px);
         opacity: 0;
     }
+
     100% {
         transform: none;
         opacity: 1;
@@ -498,6 +514,7 @@ body#perkroulette-app h1.site-title {
         transform: scaleY(3);
         filter: drop-shadow(0 0 20px #fff) blur(10px);
     }
+
     100% {
         transform: scaleY(1);
         filter: none;
@@ -519,6 +536,7 @@ body#perkroulette-app h1.site-title {
 .perk_wrapper:last-of-type {
     padding-right: 0;
 }
+
 .perk {
     position: relative;
     background: url("img/perk_empty.png");
@@ -530,6 +548,7 @@ body#perkroulette-app h1.site-title {
     background-size: cover;
     background-position: center;
 }
+
 .perk_shadow {
     width: 70%;
     height: 70%;
@@ -570,6 +589,7 @@ body#perkroulette-app h1.site-title {
     transition: border-color 0.2s ease-in-out;
     margin: auto;
 }
+
 div.perk_outline:hover {
     border-color: #fff;
 }
@@ -586,6 +606,7 @@ div.perk_outline:hover {
     animation-fill-mode: forwards !important;
     word-break: break-word;
 }
+
 .perk_name_container {
     height: 48px;
     position: relative;
@@ -602,9 +623,7 @@ div.perk_outline:hover {
     animation-fill-mode: forwards !important;
 }
 
-
 /*------------------------------ CUSTOMIZATION ---------------------------------*/
-
 .config-wrapper {
     z-index: 100;
     position: absolute;
@@ -632,13 +651,13 @@ input#menu-toggle, .toggle-button {
     display: none;
 }
 
-.configuration > div {
+.configuration>div {
     margin: 25px 15px 0 15px;
     padding: 0 0 25px 0;
     border-bottom: 1px solid #555;
 }
 
-body#perkroulette-app .configuration > .perks {
+body#perkroulette-app .configuration>.perks {
     padding: unset;
     border-bottom: unset;
 }
@@ -646,6 +665,7 @@ body#perkroulette-app .configuration > .perks {
 .configuration input[type="radio"] {
     display: none;
 }
+
 .configuration h3 {
     margin-bottom: 10px;
 }
@@ -665,10 +685,12 @@ label[for="surv"], label[for="kill"] {
     background-position: 10px center;
     background-size: 20px;
 }
+
 label[for="surv"]:hover, label[for="kill"]:hover {
-    background-color: #2b2b2b ;
+    background-color: #2b2b2b;
 }
-#surv:checked ~ .label_container label[for="surv"], #kill:checked ~ .label_container label[for="kill"] {
+
+#surv:checked~.label_container label[for="surv"], #kill:checked~.label_container label[for="kill"] {
     background-image: url(img/icns/check-active.png);
     background-color: #222222;
 }
@@ -677,6 +699,7 @@ label[for="surv"]:hover, label[for="kill"]:hover {
     position: relative;
     margin: 0 0 10px 0;
 }
+
 #search-input {
     background-image: url(img/icns/search.png);
     background-color: #222;
@@ -692,6 +715,7 @@ label[for="surv"]:hover, label[for="kill"]:hover {
     border-radius: 3px;
     color: #fff;
 }
+
 #search-clear {
     position: absolute;
     background: url(img/icns/delete.png), #222;
@@ -708,10 +732,12 @@ label[for="surv"]:hover, label[for="kill"]:hover {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
+
 #search-clear:hover {
     background-color: #333;
     border-radius: 50%;
 }
+
 #perk-list {
     overflow-y: scroll;
     position: absolute;
@@ -724,6 +750,7 @@ label[for="surv"]:hover, label[for="kill"]:hover {
 #perk-list::-webkit-scrollbar {
     width: 8px;
 }
+
 #perk-list::-webkit-scrollbar-thumb {
     background: #222;
     border-radius: 4px;
@@ -739,12 +766,13 @@ label[for="surv"]:hover, label[for="kill"]:hover {
     line-height: 24px;
     border-bottom: 1px solid #2b2b2b;
     cursor: default;
-
 }
+
 .perk-list-item:hover {
     background-color: #2b2b2b;
     border-radius: 3px;
 }
+
 span.perk-name {
     display: block;
     padding-right: 8px;
@@ -752,6 +780,7 @@ span.perk-name {
     color: #fff;
     white-space: nowrap;
 }
+
 span.perk-character {
     text-transform: uppercase;
     font-weight: bold;
@@ -763,22 +792,23 @@ span.perk-character {
     color: #ff8800;
     white-space: nowrap;
 }
+
 input[name="perk-check"] {
     float: right;
     position: absolute;
     right: 10px;
 }
 
-input[name="perk-check"]:not(:checked) ~ span.perk-name {
+input[name="perk-check"]:not(:checked)~span.perk-name {
     opacity: 0.25;
     text-decoration: line-through;
 }
-input[name="perk-check"]:not(:checked) ~ span.perk-character {
+
+input[name="perk-check"]:not(:checked)~span.perk-character {
     opacity: 0.25;
 }
 
 /*------------------------------ PRIVACY POLICY ---------------------------------*/
-
 body#privacy-policy h1.site-title {
     margin-bottom: 25px;
 }
@@ -788,7 +818,6 @@ body#privacy-policy h2.site-subtitle {
 }
 
 /*------------------------------ STREAMING MODE ---------------------------------*/
-
 body#streaming-mode .config-wrapper {
     width: 350px;
 }
@@ -886,7 +915,7 @@ body#streaming-mode div#perk-list {
     height: 300px;
 }
 
-body#streaming-mode div.appearance > form > div > label {
+body#streaming-mode div.appearance>form>div>label {
     display: inline-block;
     width: 100%;
     line-height: 18px;
@@ -897,7 +926,7 @@ body#streaming-mode div.appearance > form > div > label {
     margin-bottom: 5px;
 }
 
-body#streaming-mode div.appearance > form > div > input {
+body#streaming-mode div.appearance>form>div>input {
     width: calc(100% - 25px);
     background-color: #222;
     border: none;
@@ -909,7 +938,7 @@ body#streaming-mode div.appearance > form > div > input {
     margin-bottom: 15px;
 }
 
-.appearance > form {
+.appearance>form {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -926,7 +955,7 @@ body#streaming-mode div.appearance > form > div > input {
     margin-right: 0;
 }
 
-.label-gr > input::before {
+.label-gr>input::before {
     content: "";
     display: block;
     height: 10px;
@@ -934,6 +963,9 @@ body#streaming-mode div.appearance > form > div > input {
     background-color: #000;
 }
 
+.label-gr-wide {
+    width: 100%;
+}
 
 button#apply {
     position: absolute;
@@ -962,7 +994,6 @@ button#apply:hover {
 }
 
 /*------------------------------ STREAMING MODE EMBED ---------------------------------*/
-
 body#streaming-mode-embed {
     background: transparent;
     position: relative;
@@ -997,7 +1028,6 @@ body#streaming-mode-embed .perk_character {
 }
 
 /*------------------------------ ERROR 404 ---------------------------------*/
-
 .img-404 {
     position: absolute;
     background-image: url(https://verewygt.github.io/perkroulette/css/img/surv/iconperks-distortion.png);
@@ -1037,13 +1067,11 @@ a.big-main.btn-link {
 }
 
 /*------------------------------ ADS ---------------------------------*/
-
 .ad-box {
     margin-top: 50px;
 }
 
 /*------------------------------ SIDEBAR ---------------------------------*/
-
 section#sidebar {
     display: flex;
     padding: 125px 200px;
@@ -1053,6 +1081,7 @@ section#sidebar {
 section#sidebar .sidebar-column {
     width: 48%;
 }
+
 section#sidebar .sidebar-column:first-of-type {
     margin-right: 4%;
 }
@@ -1073,15 +1102,16 @@ section#sidebar .sidebar-text {
     margin-bottom: 25px;
     line-height: 1.5;
 }
+
 section#sidebar .uppercase {
     text-transform: uppercase;
 }
+
 section#sidebar .white {
     color: #fff;
 }
 
 /*------------------------------ FOOTER ---------------------------------*/
-
 footer {
     display: flex;
     padding: 25px 200px;
@@ -1102,9 +1132,7 @@ footer .footer-links {
     margin: 10px 0 10px auto;
 }
 
-
 /*---------------------- NO JAVASCRIPT MESSAGE ------------------------*/
-
 .noscriptmsg {
     position: relative;
     background: #333;
@@ -1116,7 +1144,7 @@ footer .footer-links {
     margin-bottom: 50px;
 }
 
-.noscriptmsg > a {
+.noscriptmsg>a {
     position: absolute;
     color: rgb(170, 0, 0);
     border-radius: 3px;
@@ -1125,13 +1153,12 @@ footer .footer-links {
     top: 15px;
     padding: 10px 15px;
 }
-.noscriptmsg > a:active {
+
+.noscriptmsg>a:active {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-
 /*------------------------------ COOKIES ---------------------------------*/
-
 span#optout-msg {
     color: green;
 }
@@ -1174,17 +1201,13 @@ button[name="accept-cookies"]:hover {
     color: #aa0000;
 }
 
-
-
 /*------------------------------ RESPONSIVE ---------------------------------*/
-
-
 @media only screen and (max-width: 768px) {
-
     h1 {
         font-size: 28px;
         line-height: 28px;
     }
+
     h2 {
         font-size: 18px;
         line-height: 18px;
@@ -1211,7 +1234,6 @@ button[name="accept-cookies"]:hover {
     }
 
     /*--------- HEADER ----------*/
-
     .logo {
         margin: 0 0 0 25px;
     }
@@ -1220,12 +1242,12 @@ button[name="accept-cookies"]:hover {
         font-size: 16px;
         line-height: 16px;
     }
+
     p#subtext {
         font-size: 10px;
     }
 
     /*--------- NAVIGATION ----------*/
-
     nav.navigation {
         margin: 0 25px 0 auto;
     }
@@ -1241,13 +1263,11 @@ button[name="accept-cookies"]:hover {
     }
 
     /*--------- SUB MENU ----------*/
-
     .sub-menu {
-    margin: 0 0 25px 65px;
+        margin: 0 0 25px 65px;
     }
 
     /*--------- CONFIG ----------*/
-
     .toggle-button {
         z-index: 999;
         display: unset;
@@ -1266,10 +1286,9 @@ button[name="accept-cookies"]:hover {
         background: #555;
     }
 
-    input#menu-toggle:checked ~ .toggle-button {
+    input#menu-toggle:checked~.toggle-button {
         left: calc(100% - 65px);
     }
-
 
     label[for="menu-toggle"] {
         display: block;
@@ -1283,13 +1302,12 @@ button[name="accept-cookies"]:hover {
         transition: all 0.1s ease-in-out;
     }
 
-    input#menu-toggle:checked ~ .toggle-button > label {
+    input#menu-toggle:checked~.toggle-button>label {
         background: url(img/icns/delete.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 18px;
     }
-
 
     .config-wrapper {
         z-index: 998;
@@ -1307,14 +1325,12 @@ button[name="accept-cookies"]:hover {
         transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     }
 
-    input#menu-toggle:checked ~ .configuration {
+    input#menu-toggle:checked~.configuration {
         transform: unset;
         box-shadow: 10px 0px 0px 1000px rgba(0, 0, 0, 0.9);
     }
 
-
     /*--------- APP ----------*/
-
     body#perkroulette-app div.main-content-area, body#streaming-mode div.main-content-area {
         position: relative;
         margin: 0 25px;
@@ -1336,6 +1352,7 @@ button[name="accept-cookies"]:hover {
         padding-right: unset;
         margin-bottom: 10px;
     }
+
     .perk {
         flex: 0 0 100px;
         width: 100px;
@@ -1368,6 +1385,7 @@ button[name="accept-cookies"]:hover {
         left: 0;
         margin: 0 auto;
     }
+
     #btn-error-msg {
         position: fixed;
         left: 0;
@@ -1380,7 +1398,6 @@ button[name="accept-cookies"]:hover {
     }
 
     /*--------- SIDEBAR / FOOTER ----------*/
-
     section#sidebar {
         padding: 25px;
     }
@@ -1400,7 +1417,6 @@ button[name="accept-cookies"]:hover {
     }
 
     /*--------- COOKIES ----------*/
-
     .cookie-banner {
         font-size: 12px;
         z-index: 997;
@@ -1413,7 +1429,7 @@ button[name="accept-cookies"]:hover {
         border-radius: 10px;
     }
 
-    .cookie-banner > p {
+    .cookie-banner>p {
         font-size: 12px;
     }
 

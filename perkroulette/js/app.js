@@ -8,17 +8,23 @@ function loadPerks() {
 
     if (document.getElementById('surv').checked) {
         var request = new XMLHttpRequest();
-        request.open("GET", "js/survivor-perks.json", false);
+        request.open("GET", "https://verewygt.github.io/perkroulette/js/survivor-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
         active_type = "surv";
     } else if (document.getElementById('kill').checked) {
         var request = new XMLHttpRequest();
-        request.open("GET", "js/killer-perks.json", false);
+        request.open("GET", "https://verewygt.github.io/perkroulette/js/killer-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
         active_type = "kill";
     }
+
+    //  --- Sort perks alphabetically ---
+
+    perk_json.perks.sort(function(a, b) {
+        return a.perk_name.localeCompare(b.perk_name);
+    });
 
     for (var i = 0; i < perk_json.perks.length; i++) {
         var pn = perk_json.perks[i].perk_name;

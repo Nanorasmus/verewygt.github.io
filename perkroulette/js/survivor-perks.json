@@ -1,479 +1,289 @@
 {
-    "perks" : [
-
-    {   "perk_name"     : "Ace in The Hole",
-        "perk_color"    : "purple",
-        "character"     : "Ace Visconti Teachable Perk"
-    },
-    {
-        "perk_name"     : "Adrenaline",
-        "perk_color"    : "purple",
-        "character"     : "Meg Thomas Teachable Perk"
-    },
-    {
-        "perk_name"     : "Aftercare",
-        "perk_color"    : "purple",
-        "character"     : "Jeff Johansen Teachable Perk"
-    },
-    {
-        "perk_name"     : "Alert",
-        "perk_color"    : "purple",
-        "character"     : "Feng Min Teachable Perk"
-    },
-    {
-        "perk_name"     : "Any Means Necessary",
-        "perk_color"    : "green",
-        "character"     : "Yui Kimura Teachable Perk"
-    },
-    {
-        "perk_name"     : "Appraisal",
-        "perk_color"    : "purple",
-        "character"     : "Élodie Rakoto Teachable Perk"
-    },
-    {
-        "perk_name"     : "Autodidact",
-        "perk_color"    : "purple",
-        "character"     : "Adam Francis Teachable Perk"
-    },
-    {
-        "perk_name"     : "Babysitter",
-        "perk_color"    : "green",
-        "character"     : "Steve Harrington Teachable Perk"
-    },
-    {
-        "perk_name"     : "Balanced Landing",
-        "perk_color"    : "green",
-        "character"     : "Nea Karlsson Teachable Perk"
-    },
-    {
-        "perk_name"     : "Better Together",
-        "perk_color"    : "green",
-        "character"     : "Nancy Wheeler Teachable Perk"
-    },
-    {
-        "perk_name"     : "Blood Pact",
-        "perk_color"    : "green",
-        "character"     : "Cheryl Mason Teachable Perk"
-    },
-    {
-        "perk_name"     : "Boil Over",
-        "perk_color"    : "purple",
-        "character"     : "Kate Denson Teachable Perk"
-    },
-    {
-        "perk_name"     : "Bond",
-        "perk_color"    : "green",
-        "character"     : "Dwight Fairfield Teachable Perk"
-    },
-    {
-        "perk_name"     : "Borrowed Time",
-        "perk_color"    : "purple",
-        "character"     : "Bill Overbeck Teachable Perk"
-    },
-    {
-        "perk_name"     : "Botany Knowledge",
-        "perk_color"    : "purple",
-        "character"     : "Claudette Morel Teachable Perk"
-    },
-    {
-        "perk_name"     : "Breakdown",
-        "perk_color"    : "green",
-        "character"     : "Jeff Johansen Teachable Perk"
-    },
-    {
-        "perk_name"     : "Breakout",
-        "perk_color"    : "purple",
-        "character"     : "Yui Kimura Teachable Perk"
-    },
-    {
-        "perk_name"     : "Buckle Up",
-        "perk_color"    : "purple",
-        "character"     : "Ash Williams Teachable Perk"
-    },
-    {
-        "perk_name"     : "Built to Last",
-        "perk_color"    : "purple",
-        "character"     : "Felix Richter Teachable Perk"
-    },
-    {
-        "perk_name"     : "Calm Spirit",
-        "perk_color"    : "purple",
-        "character"     : "Jake Park Teachable Perk"
-    },
-    {
-        "perk_name"     : "Camaraderie",
-        "perk_color"    : "purple",
-        "character"     : "Steve Harrington Teachable Perk"
-    },
-    {
-        "perk_name"     : "Dance With Me",
-        "perk_color"    : "purple",
-        "character"     : "Kate Denson Teachable Perk"
-    },
-    {
-        "perk_name"     : "Dark Sense",
-        "perk_color"    : "purple",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Dead Hard",
-        "perk_color"    : "purple",
-        "character"     : "David King Teachable Perk"
-    },
-    {
-        "perk_name"     : "Deception",
-        "perk_color"    : "purple",
-        "character"     : "Élodie Rakoto Teachable Perk"
-    },
-    {
-        "perk_name"     : "Decisive Strike",
-        "perk_color"    : "purple",
-        "character"     : "Laurie Strode Teachable Perk"
-    },
-    {
-        "perk_name"     : "Déjà Vu",
-        "perk_color"    : "purple",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Deliverance",
-        "perk_color"    : "purple",
-        "character"     : "Adam Francis Teachable Perk"
-    },
-    {
-        "perk_name"     : "Desperate Measures",
-        "perk_color"    : "purple",
-        "character"     : "Felix Richter Teachable Perk"
-    },
-    {
-        "perk_name"     : "Detective's Hunch",
-        "perk_color"    : "purple",
-        "character"     : "David Tapp Teachable Perk"
-    },
-    {
-        "perk_name"     : "Distortion",
-        "perk_color"    : "purple",
-        "character"     : "Jeff Johansen Teachable Perk"
-    },
-    {
-        "perk_name"     : "Diversion",
-        "perk_color"    : "green",
-        "character"     : "Adam Francis Teachable Perk"
-    },
-    {
-        "perk_name"     : "Empathy",
-        "perk_color"    : "green",
-        "character"     : "Claudette Morel Teachable Perk"
-    },
-    {
-        "perk_name"     : "Fixated",
-        "perk_color"    : "purple",
-        "character"     : "Nancy Wheeler Teachable Perk"
-    },
-    {
-        "perk_name"     : "Flip-Flop",
-        "perk_color"    : "green",
-        "character"     : "Ash Williams Teachable Perk"
-    },
-    {
-        "perk_name"     : "For the People",
-        "perk_color"    : "purple",
-        "character"     : "Zarina Kassir Teachable Perk"
-    },
-    {
-        "perk_name"     : "Head On",
-        "perk_color"    : "purple",
-        "character"     : "Jane Romero Teachable Perk"
-    },
-    {
-        "perk_name"     : "Hope",
-        "perk_color"    : "purple",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Inner Strength",
-        "perk_color"    : "purple",
-        "character"     : "Nancy Wheeler Teachable Perk"
-    },
-    {
-        "perk_name"     : "Iron Will",
-        "perk_color"    : "green",
-        "character"     : "Jake Park Teachable Perk"
-    },
-    {
-        "perk_name"     : "Kindred",
-        "perk_color"    : "purple",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Leader",
-        "perk_color"    : "purple",
-        "character"     : "Dwight Fairfield Teachable Perk"
-    },
-    {
-        "perk_name"     : "Left Behind",
-        "perk_color"    : "green",
-        "character"     : "Bill Overbeck Teachable Perk"
-    },
-    {
-        "perk_name"     : "Lightweight",
-        "perk_color"    : "green",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Lithe",
-        "perk_color"    : "purple",
-        "character"     : "Feng Min Teachable Perk"
-    },
-    {
-        "perk_name"     : "Lucky Break",
-        "perk_color"    : "purple",
-        "character"     : "Yui Kimura Teachable Perk"
-    },
-    {
-        "perk_name"     : "Mettle of Man",
-        "perk_color"    : "purple",
-        "character"     : "Ash Williams Teachable Perk"
-    },
-    {
-        "perk_name"     : "No Mither",
-        "perk_color"    : "purple",
-        "character"     : "David King Teachable Perk"
-    },
-    {
-        "perk_name"     : "No One Left Behind",
-        "perk_color"    : "purple",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Object of Obsession",
-        "perk_color"    : "purple",
-        "character"     : "Laurie Strode Teachable Perk"
-    },
-    {
-        "perk_name"     : "Off the Record",
-        "perk_color"    : "purple",
-        "character"     : "Zarina Kassir Teachable Perk"
-    },
-    {
-        "perk_name"     : "Open Handed",
-        "perk_color"    : "purple",
-        "character"     : "Ace Visconti Teachable Perk"
-    },
-    {
-        "perk_name"     : "Pharmacy",
-        "perk_color"    : "purple",
-        "character"     : "Quentin Smith Teachable Perk"
-    },
-    {
-        "perk_name"     : "Plunderer's Instinct",
-        "perk_color"    : "green",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Poised",
-        "perk_color"    : "purple",
-        "character"     : "Jane Romero Teachable Perk"
-    },
-    {
-        "perk_name"     : "Power Struggle",
-        "perk_color"    : "purple",
-        "character"     : "Élodie Rakoto Teachable Perk"
-    },
-    {
-        "perk_name"     : "Premonition",
-        "perk_color"    : "purple",
-        "character"     : "Dwight Fairfield Teachable Perk"
-    },
-    {
-        "perk_name"     : "Prove Thyself",
-        "perk_color"    : "purple",
-        "character"     : "Dwight Fairfield Teachable Perk"
-    },
-    {
-        "perk_name"     : "Quick & Quiet",
-        "perk_color"    : "green",
-        "character"     : "Meg Thomas Teachable Perk"
-    },
-    {
-        "perk_name"     : "Red Herring",
-        "perk_color"    : "green",
-        "character"     : "Zarina Kassir Teachable Perk"
-    },
-    {
-        "perk_name"     : "Repressed Alliance",
-        "perk_color"    : "purple",
-        "character"     : "Cheryl Mason Teachable Perk"
-    },
-    {
-        "perk_name"     : "Resilience",
-        "perk_color"    : "purple",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Saboteur",
-        "perk_color"    : "purple",
-        "character"     : "Jake Park Teachable Perk"
-    },
-    {
-        "perk_name"     : "Second Wind",
-        "perk_color"    : "purple",
-        "character"     : "Steve Harrington Teachable Perk"
-    },
-    {
-        "perk_name"     : "Self-Care",
-        "perk_color"    : "purple",
-        "character"     : "Claudette Morel Teachable Perk"
-    },
-    {
-        "perk_name"     : "Slippery Meat",
-        "perk_color"    : "green",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Small Game",
-        "perk_color"    : "green",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Sole Survivor",
-        "perk_color"    : "purple",
-        "character"     : "Laurie Strode Teachable Perk"
-    },
-    {
-        "perk_name"     : "Solidarity",
-        "perk_color"    : "green",
-        "character"     : "Jane Romero Teachable Perk"
-    },
-    {
-        "perk_name"     : "Soul Guard",
-        "perk_color"    : "purple",
-        "character"     : "Cheryl Mason Teachable Perk"
-    },
-    {
-        "perk_name"     : "Spine Chill",
-        "perk_color"    : "purple",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Sprint Burst",
-        "perk_color"    : "purple",
-        "character"     : "Meg Thomas Teachable Perk"
-    },
-    {
-        "perk_name"     : "Stake Out",
-        "perk_color"    : "purple",
-        "character"     : "David Tapp Teachable Perk"
-    },
-    {
-        "perk_name"     : "Streetwise",
-        "perk_color"    : "purple",
-        "character"     : "Nea Karlsson Teachable Perk"
-    },
-    {
-        "perk_name"     : "Technician",
-        "perk_color"    : "green",
-        "character"     : "Feng Min Teachable Perk"
-    },
-    {
-        "perk_name"     : "Tenacity",
-        "perk_color"    : "green",
-        "character"     : "David Tapp Teachable Perk"
-    },
-    {
-        "perk_name"     : "This Is Not Happening",
-        "perk_color"    : "purple",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "Unbreakable",
-        "perk_color"    : "purple",
-        "character"     : "Bill Overbeck Teachable Perk"
-    },
-    {
-        "perk_name"     : "Up The Ante",
-        "perk_color"    : "purple",
-        "character"     : "Ace Visconti Teachable Perk"
-    },
-    {
-        "perk_name"     : "Urban Evasion",
-        "perk_color"    : "purple",
-        "character"     : "Nea Karlsson Teachable Perk"
-    },
-    {
-        "perk_name"     : "Vigil",
-        "perk_color"    : "purple",
-        "character"     : "Quentin Smith Teachable Perk"
-    },
-    {
-        "perk_name"     : "Visionary",
-        "perk_color"    : "green",
-        "character"     : "Felix Richter Teachable Perk"
-    },
-    {
-        "perk_name"     : "Wake Up!",
-        "perk_color"    : "green",
-        "character"     : "Quentin Smith Teachable Perk"
-    },
-    {
-        "perk_name"     : "We'll Make It",
-        "perk_color"    : "purple",
-        "character"     : "All Characters"
-    },
-    {
-        "perk_name"     : "We're Gonna Live Forever",
-        "perk_color"    : "green",
-        "character"     : "David King Teachable Perk"
-    },
-    {
-        "perk_name"     : "Windows Of Opportunity",
-        "perk_color"    : "green",
-        "character"     : "Kate Denson Teachable Perk"
-    },
-    {
-        "perk_name"     : "Fast Track",
-        "perk_color"    : "purple",
-        "character"     : "Yun-Jin Lee Teachable Perk"
-    },
-    {
-        "perk_name"     : "Self-Preservation",
-        "perk_color"    : "purple",
-        "character"     : "Yun-Jin Lee Teachable Perk"
-    },
-    {
-        "perk_name"     : "Smash Hit",
-        "perk_color"    : "purple",
-        "character"     : "Yun-Jin Lee Teachable Perk"
-    },
-    {
-        "perk_name"     : "Counterforce",
-        "perk_color"    : "purple",
-        "character"     : "Jill Valentine Teachable Perk"
-    },
-    {
-        "perk_name"     : "Resurgence",
-        "perk_color"    : "purple",
-        "character"     : "Jill Valentine Teachable Perk"
-    },
-    {
-        "perk_name"     : "Blast Mine",
-        "perk_color"    : "purple",
-        "character"     : "Jill Valentine Teachable Perk"
-    },
-    {
-        "perk_name"     : "Bite the Bullet",
-        "perk_color"    : "purple",
-        "character"     : "Leon Scott Kennedy Teachable Perk"
-    },
-    {
-        "perk_name"     : "Flashbang",
-        "perk_color"    : "purple",
-        "character"     : "Leon Scott Kennedy Teachable Perk"
-    },
-    {
-        "perk_name"     : "Rookie Spirit",
-        "perk_color"    : "purple",
-        "character"     : "Leon Scott Kennedy Teachable Perk"
-    }
-    ]
+	"perks": [{
+		"perk_name": "Ace in The Hole",
+		"character": "Ace Visconti Teachable Perk"
+	}, {
+		"perk_name": "Adrenaline",
+		"character": "Meg Thomas Teachable Perk"
+	}, {
+		"perk_name": "Aftercare",
+		"character": "Jeff Johansen Teachable Perk"
+	}, {
+		"perk_name": "Alert",
+		"character": "Feng Min Teachable Perk"
+	}, {
+		"perk_name": "Any Means Necessary",
+		"character": "Yui Kimura Teachable Perk"
+	}, {
+		"perk_name": "Appraisal",
+		"character": "Élodie Rakoto Teachable Perk"
+	}, {
+		"perk_name": "Autodidact",
+		"character": "Adam Francis Teachable Perk"
+	}, {
+		"perk_name": "Babysitter",
+		"character": "Steve Harrington Teachable Perk"
+	}, {
+		"perk_name": "Balanced Landing",
+		"character": "Nea Karlsson Teachable Perk"
+	}, {
+		"perk_name": "Better Together",
+		"character": "Nancy Wheeler Teachable Perk"
+	}, {
+		"perk_name": "Blood Pact",
+		"character": "Cheryl Mason Teachable Perk"
+	}, {
+		"perk_name": "Boil Over",
+		"character": "Kate Denson Teachable Perk"
+	}, {
+		"perk_name": "Bond",
+		"character": "Dwight Fairfield Teachable Perk"
+	}, {
+		"perk_name": "Borrowed Time",
+		"character": "Bill Overbeck Teachable Perk"
+	}, {
+		"perk_name": "Botany Knowledge",
+		"character": "Claudette Morel Teachable Perk"
+	}, {
+		"perk_name": "Breakdown",
+		"character": "Jeff Johansen Teachable Perk"
+	}, {
+		"perk_name": "Breakout",
+		"character": "Yui Kimura Teachable Perk"
+	}, {
+		"perk_name": "Buckle Up",
+		"character": "Ash Williams Teachable Perk"
+	}, {
+		"perk_name": "Built to Last",
+		"character": "Felix Richter Teachable Perk"
+	}, {
+		"perk_name": "Calm Spirit",
+		"character": "Jake Park Teachable Perk"
+	}, {
+		"perk_name": "Camaraderie",
+		"character": "Steve Harrington Teachable Perk"
+	}, {
+		"perk_name": "Dance With Me",
+		"character": "Kate Denson Teachable Perk"
+	}, {
+		"perk_name": "Dark Sense",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Dead Hard",
+		"character": "David King Teachable Perk"
+	}, {
+		"perk_name": "Deception",
+		"character": "Élodie Rakoto Teachable Perk"
+	}, {
+		"perk_name": "Decisive Strike",
+		"character": "Laurie Strode Teachable Perk"
+	}, {
+		"perk_name": "Déjà Vu",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Deliverance",
+		"character": "Adam Francis Teachable Perk"
+	}, {
+		"perk_name": "Desperate Measures",
+		"character": "Felix Richter Teachable Perk"
+	}, {
+		"perk_name": "Detective's Hunch",
+		"character": "David Tapp Teachable Perk"
+	}, {
+		"perk_name": "Distortion",
+		"character": "Jeff Johansen Teachable Perk"
+	}, {
+		"perk_name": "Diversion",
+		"character": "Adam Francis Teachable Perk"
+	}, {
+		"perk_name": "Empathy",
+		"character": "Claudette Morel Teachable Perk"
+	}, {
+		"perk_name": "Fixated",
+		"character": "Nancy Wheeler Teachable Perk"
+	}, {
+		"perk_name": "Flip-Flop",
+		"character": "Ash Williams Teachable Perk"
+	}, {
+		"perk_name": "For the People",
+		"character": "Zarina Kassir Teachable Perk"
+	}, {
+		"perk_name": "Head On",
+		"character": "Jane Romero Teachable Perk"
+	}, {
+		"perk_name": "Hope",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Inner Strength",
+		"character": "Nancy Wheeler Teachable Perk"
+	}, {
+		"perk_name": "Iron Will",
+		"character": "Jake Park Teachable Perk"
+	}, {
+		"perk_name": "Kindred",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Leader",
+		"character": "Dwight Fairfield Teachable Perk"
+	}, {
+		"perk_name": "Left Behind",
+		"character": "Bill Overbeck Teachable Perk"
+	}, {
+		"perk_name": "Lightweight",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Lithe",
+		"character": "Feng Min Teachable Perk"
+	}, {
+		"perk_name": "Lucky Break",
+		"character": "Yui Kimura Teachable Perk"
+	}, {
+		"perk_name": "Mettle of Man",
+		"character": "Ash Williams Teachable Perk"
+	}, {
+		"perk_name": "No Mither",
+		"character": "David King Teachable Perk"
+	}, {
+		"perk_name": "No One Left Behind",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Object of Obsession",
+		"character": "Laurie Strode Teachable Perk"
+	}, {
+		"perk_name": "Off the Record",
+		"character": "Zarina Kassir Teachable Perk"
+	}, {
+		"perk_name": "Open Handed",
+		"character": "Ace Visconti Teachable Perk"
+	}, {
+		"perk_name": "Pharmacy",
+		"character": "Quentin Smith Teachable Perk"
+	}, {
+		"perk_name": "Plunderer's Instinct",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Poised",
+		"character": "Jane Romero Teachable Perk"
+	}, {
+		"perk_name": "Power Struggle",
+		"character": "Élodie Rakoto Teachable Perk"
+	}, {
+		"perk_name": "Premonition",
+		"character": "Dwight Fairfield Teachable Perk"
+	}, {
+		"perk_name": "Prove Thyself",
+		"character": "Dwight Fairfield Teachable Perk"
+	}, {
+		"perk_name": "Quick & Quiet",
+		"character": "Meg Thomas Teachable Perk"
+	}, {
+		"perk_name": "Red Herring",
+		"character": "Zarina Kassir Teachable Perk"
+	}, {
+		"perk_name": "Repressed Alliance",
+		"character": "Cheryl Mason Teachable Perk"
+	}, {
+		"perk_name": "Resilience",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Saboteur",
+		"character": "Jake Park Teachable Perk"
+	}, {
+		"perk_name": "Second Wind",
+		"character": "Steve Harrington Teachable Perk"
+	}, {
+		"perk_name": "Self-Care",
+		"character": "Claudette Morel Teachable Perk"
+	}, {
+		"perk_name": "Slippery Meat",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Small Game",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Sole Survivor",
+		"character": "Laurie Strode Teachable Perk"
+	}, {
+		"perk_name": "Solidarity",
+		"character": "Jane Romero Teachable Perk"
+	}, {
+		"perk_name": "Soul Guard",
+		"character": "Cheryl Mason Teachable Perk"
+	}, {
+		"perk_name": "Spine Chill",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Sprint Burst",
+		"character": "Meg Thomas Teachable Perk"
+	}, {
+		"perk_name": "Stake Out",
+		"character": "David Tapp Teachable Perk"
+	}, {
+		"perk_name": "Streetwise",
+		"character": "Nea Karlsson Teachable Perk"
+	}, {
+		"perk_name": "Technician",
+		"character": "Feng Min Teachable Perk"
+	}, {
+		"perk_name": "Tenacity",
+		"character": "David Tapp Teachable Perk"
+	}, {
+		"perk_name": "This Is Not Happening",
+		"character": "All Characters"
+	}, {
+		"perk_name": "Unbreakable",
+		"character": "Bill Overbeck Teachable Perk"
+	}, {
+		"perk_name": "Up The Ante",
+		"character": "Ace Visconti Teachable Perk"
+	}, {
+		"perk_name": "Urban Evasion",
+		"character": "Nea Karlsson Teachable Perk"
+	}, {
+		"perk_name": "Vigil",
+		"character": "Quentin Smith Teachable Perk"
+	}, {
+		"perk_name": "Visionary",
+		"character": "Felix Richter Teachable Perk"
+	}, {
+		"perk_name": "Wake Up!",
+		"character": "Quentin Smith Teachable Perk"
+	}, {
+		"perk_name": "We'll Make It",
+		"character": "All Characters"
+	}, {
+		"perk_name": "We're Gonna Live Forever",
+		"character": "David King Teachable Perk"
+	}, {
+		"perk_name": "Windows Of Opportunity",
+		"perk_color": "green",
+		"character": "Kate Denson Teachable Perk"
+	}, {
+		"perk_name": "Fast Track",
+		"character": "Yun-Jin Lee Teachable Perk"
+	}, {
+		"perk_name": "Self-Preservation",
+		"character": "Yun-Jin Lee Teachable Perk"
+	}, {
+		"perk_name": "Smash Hit",
+		"character": "Yun-Jin Lee Teachable Perk"
+	}, {
+		"perk_name": "Counterforce",
+		"character": "Jill Valentine Teachable Perk"
+	}, {
+		"perk_name": "Resurgence",
+		"character": "Jill Valentine Teachable Perk"
+	}, {
+		"perk_name": "Blast Mine",
+		"character": "Jill Valentine Teachable Perk"
+	}, {
+		"perk_name": "Bite the Bullet",
+		"character": "Leon Scott Kennedy Teachable Perk"
+	}, {
+		"perk_name": "Flashbang",
+		"character": "Leon Scott Kennedy Teachable Perk"
+	}, {
+		"perk_name": "Rookie Spirit",
+		"character": "Leon Scott Kennedy Teachable Perk"
+	}]
 }

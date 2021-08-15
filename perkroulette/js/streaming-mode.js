@@ -58,6 +58,12 @@ function loadPerks() {
         perk_json = JSON.parse(request.responseText);
     }
 
+    //  --- Sort perks alphabetically ---
+
+    perk_json.perks.sort(function(a, b) {
+        return a.perk_name.localeCompare(b.perk_name);
+    });
+
     for (var i = 0; i < perk_json.perks.length; i++) {
         var pn = perk_json.perks[i].perk_name;
         var pc = perk_json.perks[i].character.replace(/ Teachable Perk/gi, '');
