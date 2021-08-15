@@ -33,11 +33,8 @@ function applyChanges() {
     if (document.querySelector("input[name=char-color]").value != "#ff8800") {
         link += "&ch-c=" + document.querySelector("input[name=char-color]").value;
     }
-    if (document.querySelector("input[name=bg-g-url]").value != "Default") {
-        link += "&img-g-url=" + document.querySelector("input[name=bg-g-url]").value;
-    }
-    if (document.querySelector("input[name=bg-p-url]").value != "Default") {
-        link += "&img-p-url=" + document.querySelector("input[name=bg-p-url]").value;
+    if (document.querySelector("input[name=bg-url]").value != "Default") {
+        link += "&bg-url=" + document.querySelector("input[name=bg-url]").value;
     }
 
     document.querySelector("#link-input").value = link;
@@ -63,6 +60,7 @@ function loadPerks() {
 
     for (var i = 0; i < perk_json.perks.length; i++) {
         var pn = perk_json.perks[i].perk_name;
+        var pc = perk_json.perks[i].character.replace(/ Teachable Perk/gi, '');
 
         var newLabel = document.createElement('label');
         newLabel.id = 'element-' + i;
@@ -70,7 +68,7 @@ function loadPerks() {
 
         var pchid = "pch-" + i;
         newLabel.setAttribute("for", pchid);
-        newLabel.innerHTML = "<input type=\"checkbox\" name=\"perk-check\" id=\"pch-" + i + "\" checked><span class=\"perk-name\">" + pn + "<\/span>";
+        newLabel.innerHTML = "<input type=\"checkbox\" name=\"perk-check\" id=\"pch-" + i + "\" checked><span class=\"perk-name\">" + pn + "<\/span><span class=\"perk-character\">" + pc + "<\/span>";
 
         list.appendChild(newLabel);
     }
@@ -98,9 +96,12 @@ function filter() {
     var filter = input.value.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
 
     for (var i = 0; i < perk_elements.length; i++) {
-        var perk_name = perk_elements[i].getElementsByTagName("span")[0];
-        if (perk_name) {
-            if (perk_name.innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '').indexOf(filter) != -1) {
+        var perk_name = perk_elements[i].getElementsByTagName("span")[0].innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
+        var perk_char = perk_elements[i].getElementsByTagName("span")[1].innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
+        var stringToCompare = perk_name + perk_char;
+
+        if (stringToCompare) {
+            if (stringToCompare.indexOf(filter) != -1) {
                 perk_elements[i].classList.remove('hidden');
             } else {
                 perk_elements[i].classList.add('hidden');

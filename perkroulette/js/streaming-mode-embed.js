@@ -71,18 +71,10 @@ function pickRandomPerk() {
         var i = 0;
         while (i < 4) {
             var id = 'p' + i.toString();
-            if (perk_json.perks[sel_perks[i]].perk_color == "purple") {
-                if (getUrlVars()["img-p-url"] != null) {
-                    document.getElementById(id).style.backgroundImage = "url(" + getUrlVars()["img-p-url"] + ")";
-                } else {
-                    document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_purple.png)";
-                }
-            } else if (perk_json.perks[sel_perks[i]].perk_color == "green") {
-                if (getUrlVars()["img-g-url"] != null) {
-                    document.getElementById(id).style.backgroundImage = "url(" + getUrlVars()["img-g-url"] + ")";
-                } else {
-                    document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_green.png)";
-                }
+            if (getUrlVars()["bg-url"] != null) {
+                document.getElementById(id).style.backgroundImage = "url(" + getUrlVars()["bg-url"] + ")";
+            } else {
+                document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_purple.png)";
             }
             i++;
 

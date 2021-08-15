@@ -625,7 +625,7 @@ input#menu-toggle, .toggle-button {
     top: 0;
     bottom: 0;
     background: #333;
-    width: 250px;
+    width: 300px;
 }
 
 .inputs {
@@ -730,32 +730,51 @@ label[for="surv"]:hover, label[for="kill"]:hover {
 }
 
 .perk-list-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     position: relative;
-    display: block;
+    padding: 5px 40px 5px 10px;
     font-size: 14px;
     line-height: 24px;
-    padding: 5px 10px;
     border-bottom: 1px solid #2b2b2b;
     cursor: default;
+
 }
 .perk-list-item:hover {
     background-color: #2b2b2b;
     border-radius: 3px;
 }
-.perk-name {
+span.perk-name {
+    display: block;
+    padding-right: 8px;
     font-weight: 500;
     color: #fff;
+    white-space: nowrap;
+}
+span.perk-character {
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #ff88001e;
+    font-size: 11px;
+    line-height: 10px;
+    padding: 4px 5px;
+    border-radius: 3px;
+    color: #ff8800;
+    white-space: nowrap;
 }
 input[name="perk-check"] {
     float: right;
     position: absolute;
     right: 10px;
-    top: 8px;
 }
 
 input[name="perk-check"]:not(:checked) ~ span.perk-name {
     opacity: 0.25;
     text-decoration: line-through;
+}
+input[name="perk-check"]:not(:checked) ~ span.perk-character {
+    opacity: 0.25;
 }
 
 /*------------------------------ PRIVACY POLICY ---------------------------------*/

@@ -22,6 +22,7 @@ function loadPerks() {
 
     for (var i = 0; i < perk_json.perks.length; i++) {
         var pn = perk_json.perks[i].perk_name;
+        var pc = perk_json.perks[i].character.replace(/ Teachable Perk/gi, '');
 
         var newLabel = document.createElement('label');
         newLabel.id = 'element-' + i;
@@ -29,7 +30,7 @@ function loadPerks() {
 
         var pchid = "pch-" + i;
         newLabel.setAttribute("for", pchid);
-        newLabel.innerHTML = "<input type=\"checkbox\" name=\"perk-check\" id=\"pch-" + i + "\" checked><span class=\"perk-name\">" + pn + "<\/span>";
+        newLabel.innerHTML = "<input type=\"checkbox\" name=\"perk-check\" id=\"pch-" + i + "\" checked><span class=\"perk-name\">" + pn + "<\/span><span class=\"perk-character\">" + pc + "<\/span>";
 
         list.appendChild(newLabel);
     }
@@ -62,9 +63,12 @@ function filter() {
     var filter = input.value.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
 
     for (var i = 0; i < perk_elements.length; i++) {
-        var perk_name = perk_elements[i].getElementsByTagName("span")[0];
-        if (perk_name) {
-            if (perk_name.innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '').indexOf(filter) != -1) {
+        var perk_name = perk_elements[i].getElementsByTagName("span")[0].innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
+        var perk_char = perk_elements[i].getElementsByTagName("span")[1].innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
+        var stringToCompare = perk_name + perk_char;
+
+        if (stringToCompare) {
+            if (stringToCompare.indexOf(filter) != -1) {
                 perk_elements[i].classList.remove('hidden');
             } else {
                 perk_elements[i].classList.add('hidden');
@@ -126,13 +130,8 @@ function pickRandomPerk() {
         var i = 0;
         while (i < 4) {
             var id = 'p' + i.toString();
-            if (perk_json.perks[sel_perks[i]].perk_color == "purple") {
-                document.getElementById(id).style.backgroundImage = "url(css/img/perk_purple.png)";
-            } else if (perk_json.perks[sel_perks[i]].perk_color == "green") {
-                document.getElementById(id).style.backgroundImage = "url(css/img/perk_green.png)";
-            }
+            document.getElementById(id).style.backgroundImage = "url(css/img/perk_purple.png)";
             i++;
-
         }
 
         for (var i = 0; i < 4; i++) {
