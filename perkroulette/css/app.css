@@ -1204,8 +1204,8 @@ button[name="accept-cookies"]:hover {
 /*------------------------------ RESPONSIVE ---------------------------------*/
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 22px;
+        line-height: 22px;
     }
 
     h2 {
@@ -1235,27 +1235,28 @@ button[name="accept-cookies"]:hover {
 
     /*--------- HEADER ----------*/
     .logo {
-        margin: 0 0 0 25px;
+        margin: 0 0 0 15px;
     }
 
     p#main-text {
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 12px;
+        line-height: 12px;
     }
 
     p#subtext {
-        font-size: 10px;
+        font-size: 9px;
+        line-height: 12px;
     }
 
     /*--------- NAVIGATION ----------*/
     nav.navigation {
-        margin: 0 25px 0 auto;
+        margin: 0 8px 0 auto;
     }
 
     a.nav-link {
-        font-size: 14px;
-        padding: 6px;
-        margin-left: 5px;
+        font-size: 13px;
+        padding: 16px;
+        margin-left: 8px;
     }
 
     a.nav-link[href="#"] {
