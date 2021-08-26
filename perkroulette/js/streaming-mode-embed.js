@@ -83,7 +83,7 @@ function pickRandomPerk() {
         for (var i = 0; i < 4; i++) {
             document.getElementById("pn" + i).innerHTML = perk_json.perks[sel_perks[i]].perk_name;
             document.getElementById("pc" + i).innerHTML = perk_json.perks[sel_perks[i]].character;
-            document.getElementById("pi" + i).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/" + active_type + "/iconperks-" + perk_json.perks[sel_perks[i]].perk_name.toLowerCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/é/gi, 'e').replace(/è/gi, 'e').replace(/à/gi, 'a').replace(/&/gi, 'and').replace(/!/gi, '').replace(/:/gi, '') + ".png)";
+            document.getElementById("pi" + i).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/" + active_type + "/iconperks-" + perk_json.perks[sel_perks[i]].perk_name.toString().toLowerCase().normalize("NFD").replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/&/gi, 'and').replace(/!/gi, '').replace(/:/gi, '').replace(/\p{Diacritic}/gu, '') + ".png)";
 
             document.getElementById("pn" + i).classList.add('transparent');
             document.getElementById("pc" + i).classList.add('transparent');

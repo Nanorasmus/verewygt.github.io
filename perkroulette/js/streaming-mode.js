@@ -97,13 +97,19 @@ function selNone() {
     }
 }
 function filter() {
+
+    function format(s) {
+        var r = s.toString().toLowerCase().normalize("NFD").replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/:/gi, '').replace(/\p{Diacritic}/gu, '');
+        return r;
+    }
+
     var input = document.getElementById("search-input");
     var perk_elements = document.getElementById("perk-list").getElementsByTagName("label");
-    var filter = input.value.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
+    var filter = format(input.value);
 
     for (var i = 0; i < perk_elements.length; i++) {
-        var perk_name = perk_elements[i].getElementsByTagName("span")[0].innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
-        var perk_char = perk_elements[i].getElementsByTagName("span")[1].innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
+        var perk_name = format(perk_elements[i].getElementsByTagName("span")[0].innerHTML);
+        var perk_char = format(perk_elements[i].getElementsByTagName("span")[1].innerHTML);
         var stringToCompare = perk_name + perk_char;
 
         if (stringToCompare) {
@@ -135,7 +141,7 @@ function copyToClipboard() {
   var copyText = document.getElementById("link-input");
   var copyTextBtn = document.getElementById("link-copy-btn");
   copyText.select();
-  copyText.setSelectionRange(0, 99999)
+  copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
   copyTextBtn.value = "Copied";
 }

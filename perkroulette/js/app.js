@@ -64,13 +64,19 @@ function selNone() {
 }
 
 function filter() {
+
+    function format(s) {
+        var r = s.toString().toLowerCase().normalize("NFD").replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/:/gi, '').replace(/\p{Diacritic}/gu, '');
+        return r;
+    }
+
     var input = document.getElementById("search-input");
     var perk_elements = document.getElementById("perk-list").getElementsByTagName("label");
-    var filter = input.value.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
+    var filter = format(input.value);
 
     for (var i = 0; i < perk_elements.length; i++) {
-        var perk_name = perk_elements[i].getElementsByTagName("span")[0].innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
-        var perk_char = perk_elements[i].getElementsByTagName("span")[1].innerHTML.toUpperCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/É/gi, 'E').replace(/È/gi, 'E').replace(/À/gi, 'A').replace(/:/gi, '');
+        var perk_name = format(perk_elements[i].getElementsByTagName("span")[0].innerHTML);
+        var perk_char = format(perk_elements[i].getElementsByTagName("span")[1].innerHTML);
         var stringToCompare = perk_name + perk_char;
 
         if (stringToCompare) {
@@ -143,7 +149,7 @@ function pickRandomPerk() {
         for (var i = 0; i < 4; i++) {
             document.getElementById("pn" + i).innerHTML = perk_json.perks[sel_perks[i]].perk_name;
             document.getElementById("pc" + i).innerHTML = perk_json.perks[sel_perks[i]].character;
-            document.getElementById("pi" + i).style.backgroundImage = "url(css/img/" + active_type + "/iconperks-" + perk_json.perks[sel_perks[i]].perk_name.toLowerCase().replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/é/gi, 'e').replace(/è/gi, 'e').replace(/à/gi, 'a').replace(/&/gi, 'and').replace(/!/gi, '').replace(/:/gi, '') + ".png)";
+            document.getElementById("pi" + i).style.backgroundImage = "url(css/img/" + active_type + "/iconperks-" + perk_json.perks[sel_perks[i]].perk_name.toString().toLowerCase().normalize("NFD").replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/&/gi, 'and').replace(/!/gi, '').replace(/:/gi, '').replace(/\p{Diacritic}/gu, '') + ".png)";
 
             document.getElementById("pn" + i).style.opacity = "0";
             document.getElementById("pc" + i).style.opacity = "0";
