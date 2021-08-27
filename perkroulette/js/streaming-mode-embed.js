@@ -43,6 +43,12 @@ function loadPerks() {
         perk_json = JSON.parse(request.responseText);
         active_type = "kill";
     }
+
+    //  --- Sort perks alphabetically ---
+
+    perk_json.perks.sort(function(a, b) {
+        return a.perk_name.localeCompare(b.perk_name);
+    });
 }
 
 function pickRandomPerk() {
