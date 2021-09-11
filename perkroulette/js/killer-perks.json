@@ -251,5 +251,14 @@
 	}, {
 		"perk_name": "Eruption",
 		"character": "The Nemesis Teachable Perk"
+	}, {
+		"perk_name": "Deadlock",
+		"character": "The Cenobite Teachable Perk"
+	}, {
+		"perk_name": "Hex: Plaything",
+		"character": "The Cenobite Teachable Perk"
+	}, {
+		"perk_name": "Scourge Hook: Gift of Pain",
+		"character": "The Cenobite Teachable Perk"
 	}]
 }
