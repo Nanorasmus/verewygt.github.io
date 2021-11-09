@@ -285,5 +285,14 @@
 	}, {
 		"perk_name": "Rookie Spirit",
 		"character": "Leon Scott Kennedy Teachable Perk"
+	}, {
+		"perk_name": "Clairvoyance",
+		"character": "Mikaela Reid Teachable Perk"
+	}, {
+		"perk_name": "Boon: Circle of Healing",
+		"character": "Mikaela Reid Teachable Perk"
+	}, {
+		"perk_name": "Boon: Shadow Step",
+		"character": "Mikaela Reid Teachable Perk"
 	}]
 }
