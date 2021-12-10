@@ -294,5 +294,14 @@
 	}, {
 		"perk_name": "Boon: Shadow Step",
 		"character": "Mikaela Reid Teachable Perk"
+	}, {
+		"perk_name": "Overcome",
+		"character": "Jonah Vasquez Teachable Perk"
+	}, {
+		"perk_name": "Corrective Action",
+		"character": "Jonah Vasquez Teachable Perk"
+	}, {
+		"perk_name": "Boon: Exponential",
+		"character": "Jonah Vasquez Teachable Perk"
 	}]
 }

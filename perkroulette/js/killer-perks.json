@@ -260,5 +260,14 @@
 	}, {
 		"perk_name": "Scourge Hook: Gift of Pain",
 		"character": "The Cenobite Teachable Perk"
+	}, {
+		"perk_name": "Grim Embrace",
+		"character": "The Artist Teachable Perk"
+	}, {
+		"perk_name": "Scourge Hook: Pain Resonance",
+		"character": "The Artist Teachable Perk"
+	}, {
+		"perk_name": "Hex: Pentimento",
+		"character": "The Artist Teachable Perk"
 	}]
 }
