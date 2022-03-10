@@ -303,5 +303,14 @@
 	}, {
 		"perk_name": "Boon: Exponential",
 		"character": "Jonah Vasquez Teachable Perk"
+	}, {
+		"perk_name": "Parental Guidance",
+		"character": "Yoichi Asakawa Teachable Perk"
+	}, {
+		"perk_name": "Empathic Connection",
+		"character": "Yoichi Asakawa Teachable Perk"
+	}, {
+		"perk_name": "Boon: Dark Theory",
+		"character": "Yoichi Asakawa Teachable Perk"
 	}]
 }

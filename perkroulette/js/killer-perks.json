@@ -269,5 +269,14 @@
 	}, {
 		"perk_name": "Hex: Pentimento",
 		"character": "The Artist Teachable Perk"
+	}, {
+		"perk_name": "Scourge Hook: Floods of Rage",
+		"character": "The Onryō's Teachable Perk"
+	}, {
+		"perk_name": "Call of Brine",
+		"character": "The Onryō's Teachable Perk"
+	}, {
+		"perk_name": "Merciless Storm",
+		"character": "The Onryō's Teachable Perk"
 	}]
 }
