@@ -21,14 +21,14 @@
 		"perk_name": "Autodidact",
 		"character": "Adam Francis Teachable Perk"
 	}, {
-		"perk_name": "Babysitter",
-		"character": "Steve Harrington Teachable Perk"
+		"perk_name": "Guardian",
+		"character": "All Characters (Steve Harrington)"
 	}, {
 		"perk_name": "Balanced Landing",
 		"character": "Nea Karlsson Teachable Perk"
 	}, {
-		"perk_name": "Better Together",
-		"character": "Nancy Wheeler Teachable Perk"
+		"perk_name": "Situational Awareness",
+		"character": "All Characters (Nancy Wheeler)"
 	}, {
 		"perk_name": "Blood Pact",
 		"character": "Cheryl Mason Teachable Perk"
@@ -60,8 +60,8 @@
 		"perk_name": "Calm Spirit",
 		"character": "Jake Park Teachable Perk"
 	}, {
-		"perk_name": "Camaraderie",
-		"character": "Steve Harrington Teachable Perk"
+		"perk_name": "Kinship",
+		"character": "All Characters (Steve Harrington)"
 	}, {
 		"perk_name": "Dance With Me",
 		"character": "Kate Denson Teachable Perk"
@@ -99,8 +99,8 @@
 		"perk_name": "Empathy",
 		"character": "Claudette Morel Teachable Perk"
 	}, {
-		"perk_name": "Fixated",
-		"character": "Nancy Wheeler Teachable Perk"
+		"perk_name": "Self-Aware",
+		"character": "All Characters (Nancy Wheeler)"
 	}, {
 		"perk_name": "Flip-Flop",
 		"character": "Ash Williams Teachable Perk"
@@ -114,8 +114,8 @@
 		"perk_name": "Hope",
 		"character": "All Characters"
 	}, {
-		"perk_name": "Inner Strength",
-		"character": "Nancy Wheeler Teachable Perk"
+		"perk_name": "Inner Healing",
+		"character": "All Characters (Nancy Wheeler)"
 	}, {
 		"perk_name": "Iron Will",
 		"character": "Jake Park Teachable Perk"
@@ -189,8 +189,8 @@
 		"perk_name": "Saboteur",
 		"character": "Jake Park Teachable Perk"
 	}, {
-		"perk_name": "Second Wind",
-		"character": "Steve Harrington Teachable Perk"
+		"perk_name": "Renewal",
+		"character": "All Characters (Steve Harrington)"
 	}, {
 		"perk_name": "Self-Care",
 		"character": "Claudette Morel Teachable Perk"

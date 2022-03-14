@@ -39,8 +39,8 @@
 		"perk_name": "Coup de Grâce",
 		"character": "The Twins Teachable Perk"
 	}, {
-		"perk_name": "Cruel Limits",
-		"character": "The Demogorgon Teachable Perk"
+		"perk_name": "Claustrophobia",
+		"character": "All Characters (The Demogorgon)"
 	}, {
 		"perk_name": "Dark Devotion",
 		"character": "The Plague Teachable Perk"
@@ -147,8 +147,8 @@
 		"perk_name": "Make Your Choice",
 		"character": "The Pig Teachable Perk"
 	}, {
-		"perk_name": "Mindbreaker",
-		"character": "The Demogorgon Teachable Perk"
+		"perk_name": "Fearmonger",
+		"character": "All Characters (The Demogorgon)"
 	}, {
 		"perk_name": "Monitor & Abuse",
 		"character": "The Doctor Teachable Perk"
@@ -201,8 +201,8 @@
 		"perk_name": "Stridor",
 		"character": "The Nurse Teachable Perk"
 	}, {
-		"perk_name": "Surge",
-		"character": "The Demogorgon Teachable Perk"
+		"perk_name": "Jolt",
+		"character": "All Characters (The Demogorgon)"
 	}, {
 		"perk_name": "Surveillance",
 		"character": "The Pig Teachable Perk"
