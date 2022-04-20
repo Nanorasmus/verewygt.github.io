@@ -1183,7 +1183,7 @@ span#optout-msg {
     box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.25);
 }
 
-button[name="accept-cookies"] {
+button[name="accept-cookies"], button[name="opt-out"] {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -1192,12 +1192,18 @@ button[name="accept-cookies"] {
     border-radius: 50px;
     background: #fff;
     color: #000;
-    padding: 10px 30px;
-    margin-left: 25px;
+    padding: 10px 24px;
+    margin-left: 24px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
-button[name="accept-cookies"]:hover {
+button[name="opt-out"] {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+button[name="accept-cookies"]:hover, button[name="opt-out"]:hover {
     color: #aa0000;
 }
 
@@ -1434,9 +1440,10 @@ button[name="accept-cookies"]:hover {
         font-size: 12px;
     }
 
-    button[name="accept-cookies"] {
+    button[name="accept-cookies"], button[name="opt-out"] {
         font-size: 14px;
         padding: 10px 15px;
         margin-left: 15px;
     }
+    /*------------------------------ RESPONSIVE END ---------------------------------*/
 }
