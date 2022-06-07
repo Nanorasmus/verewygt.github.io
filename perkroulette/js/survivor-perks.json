@@ -312,5 +312,14 @@
 	}, {
 		"perk_name": "Boon: Dark Theory",
 		"character": "Yoichi Asakawa Teachable Perk"
+	}, {
+		"perk_name": "Inner Focus",
+		"character": "Haddie Kaur Teachable Perk"
+	}, {
+		"perk_name": "Residual Manifest",
+		"character": "Haddie Kaur Teachable Perk"
+	}, {
+		"perk_name": "Overzealous",
+		"character": "Haddie Kaur Teachable Perk"
 	}]
 }

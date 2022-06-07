@@ -278,5 +278,17 @@
 	}, {
 		"perk_name": "Merciless Storm",
 		"character": "The Onryō's Teachable Perk"
+	}, {
+		"perk_name": "Dissolution",
+		"character": "The Dredge Teachable Perk"
+	}, {
+		"perk_name": "Darkness Revealed",
+		"character": "The Dredge Teachable Perk"
+	}, {
+		"perk_name": "Septic Touch",
+		"character": "The Dredge Teachable Perk"
+	}, {
+		"perk_name": "Shattered Hope",
+		"character": "All Characters"
 	}]
 }
