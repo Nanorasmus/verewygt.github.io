@@ -321,5 +321,23 @@
 	}, {
 		"perk_name": "Overzealous",
 		"character": "Haddie Kaur Teachable Perk"
+	}, {
+		"perk_name": "Wiretap",
+		"character": "Ada Wong Teachable Perk"
+	}, {
+		"perk_name": "Reactive Healing",
+		"character": "Ada Wong Teachable Perk"
+	}, {
+		"perk_name": "Low Profile",
+		"character": "Ada Wong Teachable Perk"
+	}, {
+		"perk_name": "Better than New",
+		"character": "Rebecca Chambers Teachable Perk"
+	}, {
+		"perk_name": "Reassurance",
+		"character": "Rebecca Chambers Teachable Perk"
+	}, {
+		"perk_name": "Hyperfocus",
+		"character": "Rebecca Chambers Teachable Perk"
 	}]
 }

@@ -290,5 +290,14 @@
 	}, {
 		"perk_name": "Shattered Hope",
 		"character": "All Characters"
+	}, {
+		"perk_name": "Superior Anatomy",
+		"character": "The Mastermind Teachable Perk"
+	}, {
+		"perk_name": "Awakened Awareness",
+		"character": "The Mastermind Teachable Perk"
+	}, {
+		"perk_name": "Terminus",
+		"character": "The Mastermind Teachable Perk"
 	}]
 }
