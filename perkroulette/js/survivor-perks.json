@@ -339,5 +339,14 @@
 	}, {
 		"perk_name": "Hyperfocus",
 		"character": "Rebecca Chambers Teachable Perk"
+	}, {
+		"perk_name": "Potential Energy",
+		"character": "Vittorio Toscano Teachable Perk"
+	}, {
+		"perk_name": "Fogwise",
+		"character": "Vittorio Toscano Teachable Perk"
+	}, {
+		"perk_name": "Quick Gambit",
+		"character": "Vittorio Toscano Teachable Perk"
 	}]
 }

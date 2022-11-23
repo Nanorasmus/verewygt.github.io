@@ -299,5 +299,14 @@
 	}, {
 		"perk_name": "Terminus",
 		"character": "The Mastermind Teachable Perk"
+	}, {
+		"perk_name": "Nowhere to Hide",
+		"character": "The Knight Teachable Perk"
+	}, {
+		"perk_name": "Hex: Face the Darkness",
+		"character": "The Knight Teachable Perk"
+	}, {
+		"perk_name": "Hubris",
+		"character": "The Knight Teachable Perk"
 	}]
 }
