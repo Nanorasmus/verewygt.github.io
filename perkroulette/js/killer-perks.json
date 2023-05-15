@@ -308,5 +308,14 @@
 	}, {
 		"perk_name": "Hubris",
 		"character": "The Knight Teachable Perk"
+	}, {
+		"perk_name": "Game Afoot",
+		"character": "The Skull Merchant Teachable Perk"
+	}, {
+		"perk_name": "Leverage",
+		"character": "The Skull Merchant Teachable Perk"
+	}, {
+		"perk_name": "THWACK!",
+		"character": "The Skull Merchant Teachable Perk"
 	}]
 }

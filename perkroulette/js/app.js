@@ -1,10 +1,10 @@
 var perk_json;
 var active_type;
 
-function loadPerks() {
+function loadContent() {
 
-    var list = document.getElementById('perk-list');
-    list.innerHTML = "";
+    var perkList = document.getElementById('perk-list');
+    perkList.innerHTML = "";
 
     if (document.getElementById('surv').checked) {
         var request = new XMLHttpRequest();
@@ -38,7 +38,7 @@ function loadPerks() {
         newLabel.setAttribute("for", pchid);
         newLabel.innerHTML = "<input type=\"checkbox\" name=\"perk-check\" id=\"pch-" + i + "\" checked><span class=\"perk-name\">" + pn + "<\/span><span class=\"perk-character\">" + pc + "<\/span>";
 
-        list.appendChild(newLabel);
+        perkList.appendChild(newLabel);
     }
 }
 

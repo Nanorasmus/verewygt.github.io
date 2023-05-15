@@ -38,7 +38,7 @@
 
 </head>
 
-<body class="perkroulette-app" id="perkroulette-app" onload="loadPerks()">
+<body class="perkroulette-app" id="perkroulette-app" onload="loadContent()">
     <div class="app-content-parent" id="inner">
 
         <header class="app-header">
@@ -75,11 +75,11 @@
 
                     <div class="teams">
                         <h3>Perk type</h3>
-                        <input onclick="loadPerks()" type="radio" name="teams" id="surv" checked>
-                        <input onclick="loadPerks()" type="radio" name="teams" id="kill">
+                        <input onclick="loadContent()" type="radio" name="teams" id="surv" checked>
+                        <input onclick="loadContent()" type="radio" name="teams" id="kill">
                         <div class="label_container">
-                            <label for="surv" onclick="loadPerks()">Survivor</label>
-                            <label for="kill" onclick="loadPerks()">Killer</label>
+                            <label for="surv" onclick="loadContent()">Survivor</label>
+                            <label for="kill" onclick="loadContent()">Killer</label>
                         </div>
                     </div>
 
@@ -114,7 +114,7 @@
 
                 <div class="sub-menu">
                     <span class="tag">UPDATED</span>
-                    <span class="ver">CHAPTER 26: Forged in Fog</span>
+                    <span class="ver">CHAPTER 27: Tools of Torment</span>
 
                     <div class="info">
                         <input type="radio" name="tut-toggle" id="hide-tut">

@@ -348,5 +348,23 @@
 	}, {
 		"perk_name": "Quick Gambit",
 		"character": "Vittorio Toscano Teachable Perk"
+	}, {
+		"perk_name": "Cut Loose",
+		"character": "Thalita Lyra Teachable Perk"
+	}, {
+		"perk_name": "Friendly Competition",
+		"character": "Thalita Lyra Teachable Perk"
+	}, {
+		"perk_name": "Teamwork: Power of Two",
+		"character": "Thalita Lyra Teachable Perk"
+	}, {
+		"perk_name": "Background Player",
+		"character": "Renato Lyra Teachable Perk"
+	}, {
+		"perk_name": "Blood Rush",
+		"character": "Renato Lyra Teachable Perk"
+	}, {
+		"perk_name": "Teamwork: Collective Stealth",
+		"character": "Renato Lyra Teachable Perk"
 	}]
 }
