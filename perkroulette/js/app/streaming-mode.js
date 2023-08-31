@@ -21,16 +21,16 @@ function applyChanges() {
     }
 
     if (perk_blacklist.length != 0) {
-        link += "&exclude=" + perk_blacklist;
+        link += "?exclude=" + perk_blacklist;
     }
 
     if (document.querySelector("input[name=bg-color]").value != "transparent") {
         link += "&bg-c=" + document.querySelector("input[name=bg-color]").value;
     }
-    if (document.querySelector("input[name=perk-name-color]").value != "#ffffff") {
+    if (document.querySelector("input[name=perk-name-color]").value != "ffffff") {
         link += "&pn-c=" + document.querySelector("input[name=perk-name-color]").value;
     }
-    if (document.querySelector("input[name=char-color]").value != "#ff8800") {
+    if (document.querySelector("input[name=char-color]").value != "ff8800") {
         link += "&ch-c=" + document.querySelector("input[name=char-color]").value;
     }
     if (document.querySelector("input[name=bg-url]").value != "Default") {
@@ -48,19 +48,19 @@ function loadPerks() {
 
     if (document.querySelector("input#surv").checked) {
         var request = new XMLHttpRequest();
-        request.open("GET", "https://verewygt.github.io/perkroulette/js/survivor-perks.json", false);
+        request.open("GET", "/perkroulette/json/survivor-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
     } else if (document.querySelector("input#kill").checked) {
         var request = new XMLHttpRequest();
-        request.open("GET", "https://verewygt.github.io/perkroulette/js/killer-perks.json", false);
+        request.open("GET", "/perkroulette/json/killer-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
     }
 
     //  --- Sort perks alphabetically ---
 
-    perk_json.perks.sort(function(a, b) {
+    perk_json.perks.sort(function (a, b) {
         return a.perk_name.localeCompare(b.perk_name);
     });
 
@@ -132,16 +132,16 @@ function resetFilter() {
     var perk_elements = document.getElementById("perk-list").getElementsByTagName("label");
 
     for (i = 0; i < perk_elements.length; i++) {
-            perk_elements[i].classList.remove('hidden');
+        perk_elements[i].classList.remove('hidden');
     }
     document.getElementById("search-clear").classList.add('hidden');
 }
 
 function copyToClipboard() {
-  var copyText = document.getElementById("link-input");
-  var copyTextBtn = document.getElementById("link-copy-btn");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  document.execCommand("copy");
-  copyTextBtn.value = "Copied";
+    var copyText = document.getElementById("link-input");
+    var copyTextBtn = document.getElementById("link-copy-btn");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    copyTextBtn.value = "Copied";
 }

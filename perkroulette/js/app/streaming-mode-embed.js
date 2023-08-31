@@ -1,52 +1,57 @@
 var perk_json;
 var active_type;
-
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
-        vars[key] = value;
-    });
-    return vars;
-}
+let url_vars = new URL(document.location).searchParams;
 
 function customColors() {
-    if (getUrlVars()["bg-c"] != null) {
-        document.querySelector("#streaming-mode-embed").style.background = getUrlVars()["bg-c"];
+    if (url_vars.has("bg-c")) {
+        if (url_vars.get("bg-c").includes("rgb")) {
+            document.querySelector("#streaming-mode-embed").style.background = `${url_vars.get("bg-c")}`;
+        } else {
+            document.querySelector("#streaming-mode-embed").style.background = `#${url_vars.get("bg-c")}`;
+        }
     }
-    if (getUrlVars()["pn-c"] != null) {
+    if (url_vars.has("pn-c")) {
         var x, i;
         x = document.querySelectorAll(".perk_name");
         for (i = 0; i < x.length; i++) {
-            x[i].style.color = getUrlVars()["pn-c"];
+            if (url_vars.get("pn-c").includes("rgb")) {
+                x[i].style.color = `${url_vars.get("pn-c")}`;
+            } else {
+                x[i].style.color = `#${url_vars.get("pn-c")}`;
+            }
         }
     }
-    if (getUrlVars()["ch-c"] != null) {
+    if (url_vars.has("ch-c")) {
         var x, i;
         x = document.querySelectorAll(".perk_character");
         for (i = 0; i < x.length; i++) {
-            x[i].style.color = getUrlVars()["ch-c"];
+            if (url_vars.get("ch-c").includes("rgb")) {
+                x[i].style.color = `${url_vars.get("ch-c")}`;
+            } else {
+                x[i].style.color = `#${url_vars.get("ch-c")}`;
+            }
         }
     }
 }
 
 function loadPerks() {
-    if (getUrlVars()["type"] == "surv") {
+    if (url_vars.get("type") == "surv") {
         var request = new XMLHttpRequest();
-        request.open("GET", "https://verewygt.github.io/perkroulette/js/survivor-perks.json", false);
+        request.open("GET", "/perkroulette/json/survivor-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
         active_type = "surv";
-    } else if (getUrlVars()["type"] == "kill") {
+
+    } else if (url_vars.get("type") == "kill") {
         var request = new XMLHttpRequest();
-        request.open("GET", "https://verewygt.github.io/perkroulette/js/killer-perks.json", false);
+        request.open("GET", "/perkroulette/json/killer-perks.json", false);
         request.send(null);
         perk_json = JSON.parse(request.responseText);
         active_type = "kill";
     }
 
     //  --- Sort perks alphabetically ---
-
-    perk_json.perks.sort(function(a, b) {
+    perk_json.perks.sort(function (a, b) {
         return a.perk_name.localeCompare(b.perk_name);
     });
 }
@@ -55,8 +60,8 @@ function pickRandomPerk() {
     customColors();
     loadPerks();
 
-    if (getUrlVars()["exclude"] != null) {
-        var perk_blacklist = getUrlVars()["exclude"].split(",").map(Number);
+    if (url_vars.has("exclude")) {
+        var perk_blacklist = url_vars.get("exclude").split(",").map(Number);
     } else {
         perk_blacklist = [];
     }
@@ -70,17 +75,17 @@ function pickRandomPerk() {
         while (sel_perks.length < 4) {
             var randomnumber = Math.floor(Math.random() * (perk_json.perks.length));
             if (perk_blacklist.indexOf(randomnumber) > -1) continue;
-        if (sel_perks.indexOf(randomnumber) > -1) continue;
+            if (sel_perks.indexOf(randomnumber) > -1) continue;
             sel_perks[sel_perks.length] = randomnumber;
         }
 
         var i = 0;
         while (i < 4) {
             var id = 'p' + i.toString();
-            if (getUrlVars()["bg-url"] != null) {
-                document.getElementById(id).style.backgroundImage = "url(" + getUrlVars()["bg-url"] + ")";
+            if (url_vars.has("bg-url")) {
+                document.getElementById(id).style.backgroundImage = `url("${url_vars.get("bg-url")}")`;
             } else {
-                document.getElementById(id).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/perk_purple.png)";
+                document.getElementById(id).style.backgroundImage = `url("/perkroulette/css/img/perk_purple.png")`;
             }
             i++;
 
@@ -89,7 +94,7 @@ function pickRandomPerk() {
         for (var i = 0; i < 4; i++) {
             document.getElementById("pn" + i).innerHTML = perk_json.perks[sel_perks[i]].perk_name;
             document.getElementById("pc" + i).innerHTML = perk_json.perks[sel_perks[i]].character;
-            document.getElementById("pi" + i).style.backgroundImage = "url(https://verewygt.github.io/perkroulette/css/img/" + active_type + "/iconperks-" + perk_json.perks[sel_perks[i]].perk_name.toString().toLowerCase().normalize("NFD").replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/&/gi, 'and').replace(/!/gi, '').replace(/:/gi, '').replace(/\p{Diacritic}/gu, '') + ".png)";
+            document.getElementById("pi" + i).style.backgroundImage = "url(/perkroulette/css/img/" + active_type + "/iconperks-" + perk_json.perks[sel_perks[i]].perk_name.toString().toLowerCase().normalize("NFD").replace(/ /gi, '').replace(/'/gi, '').replace(/-/gi, '').replace(/&/gi, 'and').replace(/!/gi, '').replace(/:/gi, '').replace(/\p{Diacritic}/gu, '') + ".png)";
 
             document.getElementById("pn" + i).classList.add('transparent');
             document.getElementById("pc" + i).classList.add('transparent');
