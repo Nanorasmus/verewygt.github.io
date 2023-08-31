@@ -22,7 +22,7 @@ function loadContent() {
 
     //  --- Sort perks alphabetically ---
 
-    perk_json.perks.sort(function(a, b) {
+    perk_json.perks.sort(function (a, b) {
         return a.perk_name.localeCompare(b.perk_name);
     });
 
@@ -99,7 +99,7 @@ function resetFilter() {
     var perk_elements = document.getElementById("perk-list").getElementsByTagName("label");
 
     for (i = 0; i < perk_elements.length; i++) {
-            perk_elements[i].classList.remove('hidden');
+        perk_elements[i].classList.remove('hidden');
     }
     document.getElementById("search-clear").classList.add('hidden');
 }
@@ -135,7 +135,7 @@ function pickRandomPerk() {
         while (sel_perks.length < 4) {
             var randomnumber = Math.floor(Math.random() * (perk_json.perks.length));
             if (perk_blacklist.indexOf(randomnumber) > -1) continue;
-        if (sel_perks.indexOf(randomnumber) > -1) continue;
+            if (sel_perks.indexOf(randomnumber) > -1) continue;
             sel_perks[sel_perks.length] = randomnumber;
         }
 
