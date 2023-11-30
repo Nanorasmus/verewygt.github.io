@@ -447,6 +447,18 @@
 		{
 			"perk_name": "Ultimate Weapon",
 			"character": "The Xenomorph Teachable Perk"
+		},
+		{
+			"perk_name": "Hex: Two Can Play",
+			"character": "The Good Guy Teachable Perk"
+		},
+		{
+			"perk_name": "Friends 'til the End",
+			"character": "The Good Guy Teachable Perk"
+		},
+		{
+			"perk_name": "Batteries Included",
+			"character": "The Good Guy Teachable Perk"
 		}
 	]
 }
