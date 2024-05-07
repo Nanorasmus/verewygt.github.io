@@ -524,6 +524,18 @@
 		{
 			"perk_name": "Chemical Trap",
 			"character": "Ellen Ripley Teachable Perk"
+		},
+		{
+			"perk_name": "Invocation: Weaving Spiders",
+			"character": "Sable Ward Teachable Perk"
+		},
+		{
+			"perk_name": "Strength in Shadows",
+			"character": "Sable Ward Teachable Perk"
+		},
+		{
+			"perk_name": "Wicked",
+			"character": "Sable Ward Teachable Perk"
 		}
 	]
 }

@@ -459,6 +459,18 @@
 		{
 			"perk_name": "Batteries Included",
 			"character": "The Good Guy Teachable Perk"
+		},
+		{
+			"perk_name": "Unbound",
+			"character": "The Unknown Teachable Perk"
+		},
+		{
+			"perk_name": "Undone",
+			"character": "The Unknown Teachable Perk"
+		},
+		{
+			"perk_name": "Unforeseen",
+			"character": "The Unknown Teachable Perk"
 		}
 	]
 }

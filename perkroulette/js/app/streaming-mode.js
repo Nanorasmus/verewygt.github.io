@@ -1,7 +1,7 @@
 var perk_json;
 
 function applyChanges() {
-    var link = "https://verewygt.github.io/perkroulette/streaming-mode/embed/";
+    var link = "/perkroulette/streaming-mode/embed/";
 
     if (document.querySelector("input#surv").checked) {
         link += "?type=surv";
@@ -21,7 +21,7 @@ function applyChanges() {
     }
 
     if (perk_blacklist.length != 0) {
-        link += "?exclude=" + perk_blacklist;
+        link += "&exclude=" + perk_blacklist;
     }
 
     if (document.querySelector("input[name=bg-color]").value != "transparent") {
@@ -37,8 +37,9 @@ function applyChanges() {
         link += "&bg-url=" + document.querySelector("input[name=bg-url]").value;
     }
 
-    document.querySelector("#link-input").value = link;
+    document.querySelector("#link-input").value = "https://verewygt.github.io" + link;
     document.querySelector("#embed-preview").src = link;
+    document.getElementById("link-copy-btn").value = "Copy URL";
 }
 
 
@@ -140,8 +141,8 @@ function resetFilter() {
 function copyToClipboard() {
     var copyText = document.getElementById("link-input");
     var copyTextBtn = document.getElementById("link-copy-btn");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    copyTextBtn.value = "Copied";
+    navigator.clipboard.writeText(copyText.value).then(() => {
+        copyTextBtn.value = "Copied";
+    });
+
 }
